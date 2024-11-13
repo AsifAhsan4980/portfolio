@@ -29,26 +29,25 @@ const menuList: Menu [] = [
         isComponent: false
     },
     {
-        id: 2,
+        id: 3,
         title: "Resume",
         route: "/resume",
         isComponent: false
     },
     {
-        id: 3,
+        id: 4,
         title: "Projects",
         route: "/projects",
         isComponent: false
     },
     {
-        id: 4,
+        id: 5,
         title: "Contacts",
         route: "/contacts",
         isComponent: false
     }, {
-        id: 1,
+        id: 6,
         title: "Home",
-        component: <ModeToggle/>,
         route: "/",
         isComponent: true
     },
@@ -64,7 +63,7 @@ const Navbar = () => {
                 <Link href={"/"}>
                     <h1>
                         <div className={"text-4xl font-semibold"}>
-                            Asif <span>.</span>
+                            Asif <span className={'text-[#469D89]'}>.</span>
                         </div>
 
                     </h1>
@@ -80,7 +79,7 @@ const Navbar = () => {
                         {
                             menuList.map(r => !r.isComponent ? (
 
-                                <Link href={r.route} key={r.id} className={`${r.route===pathname && 'text-red border-b-2 border-red'} capitalize font-medium hover: text-black transition-all pt-1.5`}>
+                                <Link href={r.route} key={r.id} className={`${r.route===pathname && 'text-[#469D89] border-b-2 border-[#469D89]'} capitalize font-medium transition-all pt-1.5`}>
                                     <h6 >
                                         {r.title}
                                     </h6>
