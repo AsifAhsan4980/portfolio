@@ -58,7 +58,7 @@ const Navbar = () => {
     const pathname = usePathname()
 
     return (
-        <header className={"py-2 xl:py-4"}>
+        <header className={"py-2 xl:py-4 z-40"}>
             <div className={"container mx-auto flex justify-between items-center"}>
                 <Link href={"/"}>
                     <h1>
@@ -89,7 +89,7 @@ const Navbar = () => {
 
                             ) : (<div key={r.id}><ModeToggle/></div>))
                         }
-                        <Button>
+                        <Button className={"bg-[#469D89]"}>
                             <Link href={"hire-me"}>
                                 Hire me
                             </Link>

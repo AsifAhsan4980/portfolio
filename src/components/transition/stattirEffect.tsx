@@ -1,8 +1,12 @@
+"use client"
 import {usePathname} from "next/navigation";
 import {AnimatePresence} from "framer-motion";
 import Stairs from "@/components/transition/stairs";
 
-const StairEffect = () => {
+
+
+
+const StairEffect  = () =>{
     const pathName = usePathname();
     return (
         <AnimatePresence mode="wait">
