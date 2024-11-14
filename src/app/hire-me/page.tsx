@@ -3,7 +3,7 @@ import MyContact from "@/components/hire-me/myContact";
 
 const HireME = () => {
     return (
-        <div className="container mx-auto mt-20 p-4 lg:p-8">
+        <div className="container mx-auto mt-10 p-4 lg:p-8">
             <div className="relative grid gap-8 lg:grid-cols-2 lg:items-center">
                 {/* Left Side - Email Sent Option */}
                 <div className="space-y-6">

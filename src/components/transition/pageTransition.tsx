@@ -11,20 +11,19 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
     const pathName = usePathname();
 
     return (
-        <AnimatePresence mode="wait">
-            {/* Background layer (transition effect) */}
+        <AnimatePresence mode="wait" key={pathName}>
             <motion.div
                 key={pathName}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="w-screen h-screen top-0 left-0 pointer-events-none" // Background layer with no interaction
+                transition={{ duration: 4, ease: "easeInOut" }}
+                className=" inset-0  pointer-events-none z-50"
             >
                 {/* Child wrapper (allows interaction with navbar and other elements) */}
                 <motion.div
                     className="w-full h-full"
-                    style={{ pointerEvents: 'auto' }} // Ensures the children are interactive
+                    style={{ pointerEvents: "auto" }}
                 >
                     {children}
                 </motion.div>
