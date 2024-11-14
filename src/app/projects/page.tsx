@@ -95,16 +95,18 @@ const Projects = () => {
     return (
         <div className="container mt-10">
             <div>
-                <h1 className="text-center text-4xl font-semibold mb-8 ">Projects</h1>
+                <h1 className="text-center text-2xl font-semibold mb-8 sm:text-3xl xs:text-4xl">
+                    Projects
+                </h1>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 mb-10">
+            <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8 mb-10">
                 {project.map((item) => (
                     <motion.div
                         key={item.id}
                         className="cursor-pointer"
                         initial={{opacity: 0.8}}
-                        whileHover={{scale: 1.05, boxShadow: "0 10px 15px rgba(0, 0, 0, 0.1)"}}
+                        whileHover={{scale: 1.01, boxShadow: "0 10px 15px rgba(0, 0, 0, 0.1)"}}
                         whileTap={{scale: 0.98}}
                         transition={{
                             type: "spring",
@@ -113,7 +115,7 @@ const Projects = () => {
                         }}
                         onClick={() => window.open(item.website, "_blank")}
                     >
-                        <Card className="relative  shadow-lg hover:shadow-2xl transition-all rounded-lg">
+                        <Card className="relative shadow-lg hover:shadow-2xl transition-all rounded-lg">
                             <CardHeader>
                                 <img
                                     src={item.image}
@@ -127,7 +129,7 @@ const Projects = () => {
                                 </div>
                             </CardHeader>
 
-                            <CardContent className="h-[12rem] p-4">
+                            <CardContent className="min-h-[12rem] p-4 pt-0">
                                 <p className=" text-base leading-relaxed">{item.description}</p>
                             </CardContent>
                         </Card>

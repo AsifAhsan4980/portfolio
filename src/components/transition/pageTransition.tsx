@@ -17,7 +17,7 @@ const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 4, ease: "easeInOut" }}
+                transition={{ duration: 2, ease: "easeInOut" }}
                 className=" inset-0  pointer-events-none z-50"
             >
                 {/* Child wrapper (allows interaction with navbar and other elements) */}
