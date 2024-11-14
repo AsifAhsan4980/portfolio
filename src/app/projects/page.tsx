@@ -75,7 +75,7 @@ const project: Project[] = [
         technologies: ["Node.js", "Express", "MongoDB", "AWS (Lambda, S3, DynamoDB)", "React", "TypeScript"],
         responsibilities: "Developed a RESTful API to handle user data and prayer time calculations, designed a responsive admin dashboard for managing schedules and notifications, and implemented location-based Azan time updates.",
         status: "Finished",
-        website: "https://azan.com" // Placeholder URL
+        website: "" // Placeholder URL
     },
     {
         name: "Doodle Odoo",
