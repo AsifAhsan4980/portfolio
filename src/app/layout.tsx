@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar/navbar";
 import React from "react";
 import PageTransition from "@/components/transition/pageTransition";
 import StairEffect from "@/components/transition/stattirEffect";
+import Footer from "@/components/footer/Footer";
 
 const jetbrainMono = JetBrains_Mono({
     subsets: ['latin'],
@@ -51,6 +52,7 @@ export default function RootLayout({
                         <PageTransition>
                             {children}
                         </PageTransition>
+                    <Footer/>
                 </ThemeProvider>
 
             </body>

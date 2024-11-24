@@ -28,12 +28,12 @@ const menuList: Menu [] = [
         route: "/expertise",
         isComponent: false
     },
-    {
-        id: 3,
-        title: "Resume",
-        route: "/resume",
-        isComponent: false
-    },
+    // {
+    //     id: 3,
+    //     title: "Resume",
+    //     route: "/resume",
+    //     isComponent: false
+    // },
     {
         id: 4,
         title: "Projects",
