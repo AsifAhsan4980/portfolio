@@ -28,9 +28,9 @@ export function ContactInfo() {
                     <div
                         className="flex gap-5 self-start mt-16 text-2xl tracking-wide leading-none whitespace-nowrap max-md:mt-10">
 
-                        <a href="mailto:contact@palombo.com" className="grow underline">
+                        <div className="grow underline">
                             asifashan727@gmail.com
-                        </a>
+                        </div>
                         <img
                             loading="lazy"
                             src="https://cdn.builder.io/api/v1/image/assets/f657d172884e47fb95c0f9a4c68ba602/97da5c4acf59638ea961a61d68e5fbd5ae8debd24ccff5e8f408c7df5b62a28f"

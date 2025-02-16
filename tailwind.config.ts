@@ -80,9 +80,9 @@ export default {
                 }
             },
             animation: {
-              "accordion-down"  : {
-
-              }
+              // "accordion-down"  : {
+              //
+              // }
             }
         }
     },
