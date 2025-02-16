@@ -10,7 +10,7 @@ const expertiseData = [
     },
     {
         title: "Backend",
-        skills: ["Node.js", "Express"],
+        skills: ["Node.js", "Express", "AWS AppSync", "AWS Amplify"],
     },
 
     {
@@ -23,7 +23,7 @@ const expertiseData = [
     },
     {
         title: "Languages",
-        skills: ["TypeScript", "JavaScript", "Java", "C++"],
+        skills: ["TypeScript", "JavaScript", "Java"],
     },
     {
         title: "DevOps",

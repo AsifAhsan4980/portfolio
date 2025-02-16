@@ -31,7 +31,7 @@ const project: Project[] = [
     },
     {
         name: "Tribel",
-        type: "Social Media",
+        type: "social Media",
         image: "https://cdntribel.com/public/uploads/post_images/Tribel_logo.png",
         description: "A hybrid social media platform that combines features of Facebook and Twitter, targeted primarily towards the US audience. The platform focuses on user engagement, content sharing, and community building.",
         id: "2",
@@ -51,7 +51,7 @@ const project: Project[] = [
         technologies: ["Next.js", "React", "i18n for localization", "AWS (Lambda, AppSync, S3, Cognito)", "GraphQL", "TypeScript"],
         responsibilities: "Developed and optimized the job search and application modules, integrated multilingual support for a diverse audience in Asia, and managed backend APIs with AWS AppSync and Lambda for seamless functionality.",
         status: "Ongoing",
-        website: "https://dev.djxlw0btr3uzt.amplifyapp.com/"
+        website: "https://www.wozaif.com/"
     },
     {
         name: "Pipo Bazar",

@@ -1,8 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
-import mapboxgl from "mapbox-gl";
-import "mapbox-gl/dist/mapbox-gl.css";
+// import { GoogleMap, LoadScript, Marker  } from "@react-google-maps/api";
 import React, { useEffect } from "react";
 import {useTheme} from "next-themes";
 
@@ -54,30 +53,41 @@ const ContactPage: React.FC = () => {
         ],
     };
 
+    // const [mapStyle, setMapStyle] = useState<google.maps.MapTypeStyle[]>(lightModeStyle);
+    // const mapRef = useRef<google.maps.Map | null>(null);
+    // const [markerPosition] = useState({ lat: 23.7956785, lng: 90.3597853 });
+    // const onLoad = useCallback((map: google.maps.Map) => {
+    //     mapRef.current = map;
+    // }, []);
     useEffect(() => {
-        const latitude = 23.7956785;
-        const longitude = 90.3597853;
+        // const latitude = 23.7956785;
+        // const longitude = 90.3597853;
+        //
+        // // Replace with your Mapbox access token
+        // mapboxgl.accessToken = "pk.eyJ1IjoiZG9vZGxlZm9ydHQiLCJhIjoiY2xvcGNiczRwMGFkMDJxcDU0c3g2dTA2MyJ9.fZI7Sl23QkIDT56_dIkNBQ";
+        //
+        // // Initialize map
+        // const map = new mapboxgl.Map({
+        //     container: "mapbox-map",
+        //     // style: "mapbox://styles/mapbox/streets-v12",
+        //     style: theme === "dark" ? "mapbox://styles/mapbox/dark-v10" : "mapbox://styles/mapbox/streets-v12",
+        //     center: [longitude, latitude],
+        //     zoom: 13,
+        // });
+        //
+        // // Add a marker to the map
+        // new mapboxgl.Marker().setLngLat([longitude, latitude]).addTo(map);
+        //
+        // // Cleanup function to remove the map on unmount
+        // return () => {
+        //     map.remove();
+        // };
 
-        // Replace with your Mapbox access token
-        mapboxgl.accessToken = "pk.eyJ1IjoiZG9vZGxlZm9ydHQiLCJhIjoiY2xvcGNiczRwMGFkMDJxcDU0c3g2dTA2MyJ9.fZI7Sl23QkIDT56_dIkNBQ";
+        // setMapStyle(theme === "dark" ? darkModeStyle : lightModeStyle);
 
-        // Initialize map
-        const map = new mapboxgl.Map({
-            container: "mapbox-map",
-            // style: "mapbox://styles/mapbox/streets-v12",
-            style: theme === "dark" ? "mapbox://styles/mapbox/dark-v10" : "mapbox://styles/mapbox/streets-v12",
-            center: [longitude, latitude],
-            zoom: 13,
-        });
-
-        // Add a marker to the map
-        new mapboxgl.Marker().setLngLat([longitude, latitude]).addTo(map);
-
-        // Cleanup function to remove the map on unmount
-        return () => {
-            map.remove();
-        };
     }, [theme]); // The empty dependency array ensures this runs only once on mount
+
+
 
     return (
         <main className="min-h-screen p-6 flex flex-col items-center">
@@ -92,7 +102,7 @@ const ContactPage: React.FC = () => {
                 <p className="mt-2">Let’s get connected!</p>
             </motion.div>
 
-            {/* Social Links Section */}
+            {/* social Links Section */}
             <motion.div
                 initial={{opacity: 0, y: 50}}
                 animate={{opacity: 1, y: 0}}
@@ -164,10 +174,36 @@ const ContactPage: React.FC = () => {
             </motion.div>
 
             {/* Map */}
-            <div
-                id="mapbox-map"
-                className="w-full lg:w-3/4 xl:w-1/2 h-72 lg:h-96 mt-12 rounded-lg shadow-lg"
-            ></div>
+            {/*<div*/}
+            {/*    id="mapbox-map"*/}
+            {/*    className="w-full lg:w-3/4 xl:w-1/2 h-72 lg:h-96 mt-12 rounded-lg shadow-lg"*/}
+            {/*></div>*/}
+
+            <iframe
+                width="600"
+                height="450"
+                loading="lazy"
+                className="w-full lg:w-3/4 xl:w-1/2 h-72 lg:h-96 mt-12 rounded-lg shadow-lg dark"
+                color={'dark'}
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCPpxjgXy_Z3lYdkwYsEXccmBRSARHVWvw&q=Kayenath,Dhaka+Bangladesh">
+            </iframe>
+
+            {/*<div  className="w-full lg:w-3/4 xl:w-1/2 h-72 lg:h-96 mt-12 rounded-lg shadow-lg">*/}
+            {/*    <LoadScript googleMapsApiKey="AIzaSyCPpxjgXy_Z3lYdkwYsEXccmBRSARHVWvw">*/}
+            {/*        <GoogleMap*/}
+            {/*            id="google-map"*/}
+            {/*            mapContainerStyle={{ height: "500px", width: "100%" }}*/}
+            {/*            center={markerPosition}*/}
+            {/*            zoom={19}*/}
+            {/*            options={{ styles: mapStyle }}*/}
+            {/*            onLoad={onLoad}*/}
+            {/*        />*/}
+            {/*        <Marker position={markerPosition} />*/}
+            {/*    </LoadScript>*/}
+            {/*</div>*/}
+
 
         </main>
     );
