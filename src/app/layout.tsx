@@ -50,7 +50,7 @@ export const metadata: Metadata = {
         siteName: "Asif Ahsan",
         images: [
             {
-                url: "https://asifahsan.com/assets/images/asifahsan.jpg", // Ensure this is an absolute URL
+                url: "/assets/images/asifahsan.jpg", // Ensure this is an absolute URL
                 width: 1200,
                 height: 630,
                 alt: "Asif Ahsan - Senior Software Engineer",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
         title: "Asif Ahsan | Senior Software Engineer",
         description:
             "🚀 Senior Software Engineer specializing in JavaScript, TypeScript, React, Next.js, Angular, and AWS serverless technologies.",
-        images: ["https://asifahsan.com/assets/images/asifahsan.jpg"], // Use an absolute URL
+        images: ["/assets/images/asifahsan.jpg"], // Use an absolute URL
     },
     metadataBase: new URL("https://asifahsan.com"), // Helps with generating absolute URLs
 };
