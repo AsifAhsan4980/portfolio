@@ -12,9 +12,9 @@ const ProfileIntro = () => {
                 <p>Introduction</p>
             </div>
             <h2 className="mt-9 text-3xl font-bold tracking-wide leading-9 ">
-                <span>UX Designer & Developer</span>
+                <span>Senior Software Developer</span>
                 <br/>
-                <span>based on Florence, Italy</span>
+                <span>based on Dhaka, Bangladesh</span>
             </h2>
             <p className="mt-6 text-base leading-7">
                 Hi, My name is Asif Ahsan. I&apos;m a Senior Software Engineer on Dhaka,
