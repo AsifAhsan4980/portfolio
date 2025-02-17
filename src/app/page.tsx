@@ -2,10 +2,10 @@ import PortfolioHeader from "@/components/home/PortfolioHeader";
 import PartnerBox from "@/components/home/PartnerBox";
 import ContentSection from "@/components/home/ContentSection";
 import Head from "next/head";
-import ServicesSection from "@/components/home/ServicesSection";
-import FeaturedWork from "@/components/home/FeaturedWork";
-import BlogSection from "@/components/home/BlogSection";
-import TestimonialSection from "@/components/home/TestimonialSection";
+// import ServicesSection from "@/components/home/ServicesSection";
+// import FeaturedWork from "@/components/home/FeaturedWork";
+// import BlogSection from "@/components/home/BlogSection";
+// import TestimonialSection from "@/components/home/TestimonialSection";
 
 
 export default function Home() {
@@ -44,10 +44,10 @@ export default function Home() {
               <PortfolioHeader/>
               <PartnerBox/>
               <ContentSection/>
-              <ServicesSection/>
-              <FeaturedWork/>
-              <BlogSection/>
-              <TestimonialSection/>
+              {/*<ServicesSection/>*/}
+              {/*<FeaturedWork/>*/}
+              {/*<BlogSection/>*/}
+              {/*<TestimonialSection/>*/}
           </div>
       </>
 
