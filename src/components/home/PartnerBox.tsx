@@ -35,6 +35,7 @@ function Partners() {
         <section className="flex flex-col px-5 py-0 mx-auto my-0 w-full max-w-[1140px] max-md:px-4 max-md:py-0 max-sm:px-2.5 max-sm:py-0 mt-10">
             <div className="flex gap-5 justify-center self-center mt-5 w-full max-md:flex-wrap max-md:gap-4 max-sm:gap-2.5">
                 <PartnerBox logoSrc="https://www.tickettomorrow.com/_next/static/media/Logo.585c4ecc.svg" />
+                <PartnerBox logoSrc="https://www.asifahsan.com/assets/svg/tribel.svg" />
                 <PartnerBox logoSrc="https://www.wozaif.com/_next/static/media/navbarLogo.7695c96c.svg" />
                 <PartnerBox logoSrc="https://www.pipobazar.com/logo.png" />
             </div>
