@@ -56,13 +56,13 @@ const Navbar = () => {
     };
 
     return (
-        <header className="py-2 xl:py-4 z-40">
+        <header className="py-2 xl:py-4 z-40 mb-10">
             <div className="container mx-auto flex justify-between items-center">
                 <Link href={"/"}>
                     <h1>
                         <div className="text-4xl font-semibold">
                             Asif <span className="text-[#469D89]">.</span>
-                            <div className="mb-14 w-16 h-2 bg-[#469D89] rounded"/>
+                            <div className=" w-16 h-2 bg-[#469D89] rounded"/>
                         </div>
                     </h1>
                 </Link>
