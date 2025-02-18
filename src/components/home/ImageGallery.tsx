@@ -21,7 +21,11 @@ type abc = {
         },
         {
             number: "12+",
-            text: "Live Project"
+            text: "Projects are  Live"
+        },
+        {
+            number: "15+",
+            text: "Success on Fiver"
         }
     ];
 
