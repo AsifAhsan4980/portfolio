@@ -24,7 +24,7 @@ const PartnerBox: React.FC<PartnerBoxProps> = ({ logoSrc, altText = "Partner log
     return (
         <motion.article
             className={`flex items-center justify-center p-2 rounded-xl transition-transform duration-300 ease-in-out
-                        h-[60px] w-[200px] max-md:w-[160px] max-md:h-[50px] max-sm:h-[45px] max-sm:w-[140px] 
+                        h-[60px] w-[200px] max-md:w-[260px] max-md:h-[60px] max-sm:h-[60px] max-sm:w-[240px] 
                         ${bgColor} border border-[#469d89] dark:border-gray-700 shadow-lg`}
             role="img"
             aria-label={altText}
@@ -60,7 +60,7 @@ function Partners() {
             </motion.h2>
 
             <motion.div
-                className="grid grid-cols-3 gap-6 place-items-center max-md:grid-cols-2 max-lg:grid-cols-3 max-sm:grid-cols-1"
+                className="grid grid-cols-1 xl:grid-cols-5 gap-6 place-items-center"
                 initial="hidden"
                 animate="visible"
                 variants={{

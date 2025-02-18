@@ -2,9 +2,11 @@ import React from "react";
 
 const ProfileIntro = () => {
     return (
-        <section className="pt-14 w-[32%] max-md:w-full">
-            <div className="mb-5 ml-14 bg-cyan-500 rounded-full h-[30px] w-[30px]"/>
-            <div className="w-[50px] h-[50px] bg-red-500 clip-path-triangle rounded-lg"/>
+        <section className="pt-14 w-full max-md:w-full">
+            <div className={"max-lg:hidden"}>
+                <div className="mb-5 ml-14 bg-cyan-500 rounded-full h-[30px] w-[30px] "/>
+                <div className="w-[50px] h-[50px] bg-red-500 clip-path-triangle rounded-lg"/>
+            </div>
 
 
             <div className="flex gap-3.5 items-center mt-16 text-sm font-bold">

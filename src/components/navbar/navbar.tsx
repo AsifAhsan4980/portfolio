@@ -62,6 +62,7 @@ const Navbar = () => {
                     <h1>
                         <div className="text-4xl font-semibold">
                             Asif <span className="text-[#469D89]">.</span>
+                            <div className="mb-14 w-16 h-2 bg-[#469D89] rounded"/>
                         </div>
                     </h1>
                 </Link>

@@ -18,6 +18,10 @@ type abc = {
         {
             number: "10+",
             text: "Delivered Project"
+        },
+        {
+            number: "12+",
+            text: "Live Project"
         }
     ];
 

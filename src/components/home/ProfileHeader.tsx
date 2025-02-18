@@ -1,5 +1,5 @@
 import React from "react";
-import {FaFacebook, FaGithub, FaInstagram, FaLinkedin} from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
 interface ContactInfo {
@@ -45,14 +45,14 @@ const ProfileHeader = () => {
         ],
     };
     return (
-        <section className="w-[28%] max-md:w-full">
-            <div className="mb-14 w-16 h-2 bg-[#469D89] rounded"/>
-            <h1 className="text-8xl font-bold tracking-wide  leading-[110px] max-md:text-4xl max-md:leading-[49px] max-sm:text-3xl max-sm:leading-10">
+        <section className="w-full max-md:w-full flex flex-col items-center">
+
+            <h1 className="text-8xl font-bold tracking-wide leading-[110px] max-md:text-4xl max-md:leading-[49px] max-sm:text-3xl max-sm:leading-10 text-center">
                 <span>Asif</span>
-                <br/>
+                <br />
                 <span>Ahsan</span>
             </h1>
-            <div className="flex gap-6 mt-16 max-sm:justify-center">
+            <div className="flex gap-6 mt-16 justify-center max-lg:justify-center">
                 {contactInfo.socialLinks.map((link) => (
                     <div key={link.url}>
                         <Link href={link.url}>
@@ -64,7 +64,6 @@ const ProfileHeader = () => {
                     </div>
                 ))}
             </div>
-
         </section>
     );
 };
