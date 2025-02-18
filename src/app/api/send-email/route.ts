@@ -7,8 +7,8 @@ import { NextResponse } from 'next/server';
 const transporter = nodemailer.createTransport({
     service: 'gmail',  // Use your mail provider (e.g., Gmail, SMTP, etc.)
     auth: {
-        user: "asif626282@gmail.com",  // Your email address
-        // pass: "Ahsan4980%%",  // Your email password or app-specific password
+        user: "asifahsan727@gmail.com",  // Your email address
+        pass: "aopi jqqm whie eqrz",  // Your email password or app-specific password
     },
 });
 
@@ -24,11 +24,11 @@ export async function POST(request: Request) {
 
         // Email details
         const mailOptions = {
-            from: process.env.EMAIL_USER,  // Sender's email address
-            to: process.env.EMAIL_USER,    // Receiver's email address (e.g., your email address)
+            from: clientEmail,  // Sender's email address
+            to: "asifahsan727@gmail.com",    // Receiver's email address (e.g., your email address)
             subject: subject,
-            text: message,
-            html: `<p>${message}</p>`,  // Optional: if you want to send an HTML email
+            text: message + `email : ${clientEmail}`,
+            html: `<p>${message}</p><p>\`email : ${clientEmail}\`</p>`,  // Optional: if you want to send an HTML email
         };
 
         // Send the email using Nodemailer
