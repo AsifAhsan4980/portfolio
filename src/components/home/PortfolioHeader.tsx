@@ -9,9 +9,9 @@ const PortfolioHeader = () => {
     return (
         <header className="flex flex-col w-full">
             <div className="flex flex-col items-center px-4 lg:px-20 w-full">
-                <div className="flex flex-col w-full max-w-[1140px]">
+                <div className="flex flex-col w-full max-w-[1487px]">
                     {/* Main Content */}
-                    <main className="flex flex-col lg:flex-row gap-5 w-full max-w-[1087px]">
+                    <main className="flex flex-col lg:flex-row gap-5 w-full max-w-[1487px]">
                         {/* ProfileHeader Section */}
                         <div className="w-full lg:w-1/3 mx-auto">
                             <ProfileHeader/>
