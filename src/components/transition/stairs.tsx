@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
+import {useEffect, useState} from "react";
 
 const stairAnimation = {
   initial: {
@@ -20,9 +21,29 @@ const reverseIndex = (index: number) => {
 };
 
 const Stairs = () => {
-  const { theme } = useTheme();
+  const { theme, resolvedTheme } = useTheme(); // resolvedTheme gives actual applied theme
+  const [systemTheme, setSystemTheme] = useState<"light" | "dark">("light");
 
-  console.log(theme);
+  useEffect(() => {
+    if (theme === "system") {
+      const darkModeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+      // Set initial system theme
+      setSystemTheme(darkModeQuery.matches ? "dark" : "light");
+
+      // Listener for system theme changes
+      const handleChange = (e: MediaQueryListEvent) => {
+        setSystemTheme(e.matches ? "dark" : "light");
+      };
+
+      darkModeQuery.addEventListener("change", handleChange);
+      return () => darkModeQuery.removeEventListener("change", handleChange);
+    }
+  }, [theme]);
+
+  console.log("Theme:", theme); // "light", "dark", or "system"
+  console.log("Resolved Theme:", resolvedTheme); // "light" or "dark"
+  console.log("System Theme:", systemTheme);
 
   return (
       <>
@@ -39,7 +60,7 @@ const Stairs = () => {
                   delay: reverseIndex(index) * 0.1
                 }}
                 className={`h-full w-full relative z-10 ${
-                    theme === "dark" ? "bg-white" : "bg-black"
+                    resolvedTheme === "dark" ? "bg-white" : "bg-black"
                 }`}
             />
         ))}
