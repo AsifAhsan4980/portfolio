@@ -45,7 +45,7 @@ const project: Project[] = [
     {
         name: "Wozaif",
         type: "Job Recruitment",
-        image: "https://www.wozaif.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcommonHero.ec0c1a1d.png&w=1920&q=75",
+        image: "https://www.wozaif.com/logo.svg",
         description: "A job recruitment platform designed to connect job seekers and employers across Asia. The platform includes advanced search, filtering, and application management features, focusing on a user-friendly experience for both job seekers and recruiters.",
         id: "3",
         timeLine: "January 2024 - Present",
@@ -89,6 +89,18 @@ const project: Project[] = [
         responsibilities: "Implemented the company portfolio site with multilingual support using i18n, focusing on responsiveness and optimized performance with AWS Amplify.",
         status: "Finished",
         website: "https://main.d366eb4x13z3cz.amplifyapp.com"
+    },
+    {
+        name: "Doodle INC",
+        type: "Company Portfolio",
+        image: "https://www.thedoodleinc.com/asset/header/1200-by-675.jpg",
+        description: "A portfolio website for Doodle, showcasing company achievements, services, and project highlights. Designed to represent the company's brand and provide information on its mission and work.",
+        id: "7",
+        timeLine: "April 2023 - June 2023",
+        technologies: ["Next.js", "React", "i18n for localization", "AWS Amplify", "TypeScript"],
+        responsibilities: "Implemented the company portfolio site with multilingual support using i18n, focusing on responsiveness and optimized performance with AWS Amplify.",
+        status: "Finished",
+        website: "https://www.thedoodleinc.com/"
     }
 ];
 
