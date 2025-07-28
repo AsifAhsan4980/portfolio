@@ -29,6 +29,29 @@ const project: Project[] = [
         responsibilities: "Developed the frontend using Next.js and React, implemented AWS services for a serverless backend, integrated multiple payment gateways like Bkash and SSL for user convenience.",
         status: "Ongoing",
         website: "https://tickettomorrow.com"
+    },{
+        "name": "Admin Dashboard Zodolive",
+        "type": "Live Event Platform",
+        "image": "https://www.zlaprit.zodolive.com/static/images/zodolive-logo.jpg",
+        "description": "An online platform for discovering and accessing live events, potentially including streaming, ticketing, or interactive experiences. The project encompasses frontend development for user interfaces and backend systems for event management and user engagement.",
+        "id": "2",
+        "timeLine": "January 2024 - Present",
+        "technologies": ["React", "Node.js", "AWS Amplify", "AWS (S3, EC2)", "DynamoDB","PostGre SQL", "JavaScript"],
+        "responsibilities": "Built responsive frontend interfaces using React, developed backend APIs with AWS Amplify and Node.js, integrated AWS S3 for media storage and EC2 for hosting, and implemented MongoDB for efficient event and user data management.",
+        "status": "Ongoing",
+        "website": ""
+    },
+    {
+        "name": "Right Tracks IT",
+        "type": "Custom Software Development",
+        "image": "https://www.righttracksit.com/right-tracks-meta-image.jpeg",
+        "description": "A comprehensive software development platform offering custom solutions for businesses, including web and mobile app development, UI/UX design, cloud solutions, ERP systems, and analytics. Focused on driving digital transformation with scalable, high-performance applications.",
+        "id": "3",
+        "timeLine": "2017 - Present",
+        "technologies": ["React", "React Native", "Node.js", "AWS", "Azure", "Google Cloud", "Swift", "Kotlin", "Java", "Xamarin", "Ionic"],
+        "responsibilities": "Designed and developed responsive web applications using React and Node.js, built cross-platform mobile apps with React Native and native apps with Swift and Kotlin, implemented cloud solutions using AWS, Azure, and Google Cloud, and integrated analytics for data-driven insights.",
+        "status": "Ongoing",
+        "website": "https://www.righttracksit.com/"
     },
     {
         name: "Tribel",

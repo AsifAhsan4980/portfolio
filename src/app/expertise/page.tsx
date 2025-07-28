@@ -20,7 +20,7 @@ const expertiseData = [
     },
     {
         title: "Databases",
-        skills: ["MongoDB", "Firebase", "DynamoDB", "MySQL"],
+        skills: [ "DynamoDB","PostGRE SQL","MongoDB","MySQL", "Firebase"],
     },
     {
         title: "Languages",
