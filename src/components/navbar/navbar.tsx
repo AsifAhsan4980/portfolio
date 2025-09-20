@@ -131,7 +131,7 @@ const Navbar = () => {
                         ) : (<div key={r.id}><ModeToggle /></div>))
                     }
                     <Button className="bg-[#469D89]">
-                        <Link href="hire-me">Hire me</Link>
+                        <Link onClick={toggleMobileMenu} href="hire-me">Hire me</Link>
                     </Button>
                 </nav>
             </motion.div>
