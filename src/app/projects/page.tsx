@@ -30,16 +30,28 @@ const project: Project[] = [
         status: "Ongoing",
         website: "https://tickettomorrow.com"
     },{
+        "name": "ZodoLive",
+        "type": "Live Streaming & Entertainment Platform",
+        "image": "https://www.zodolive.com/logo.png",
+        "description": "ZodoLive is a global live streaming and entertainment platform enabling creators, influencers, and performers to engage with audiences through interactive live sessions. It features live events, gifting, virtual economies, and real-time audience interactions.",
+        "id": "1",
+        "timeLine": "2024 - Present",
+        "technologies": ["Next.js", "React", "Node.js", "AWS Amplify", "AWS (S3, CloudFront, EC2)", "DynamoDB", "PostgreSQL", "TypeScript"],
+        "responsibilities": "Designed and developed scalable frontend applications using Next.js and React, implemented backend services with Node.js and AWS Amplify, integrated AWS S3 for media storage and CloudFront for optimized content delivery, and managed real-time interactions and virtual gifting systems.",
+        "status": "Live",
+        "website": "https://www.zodolive.com"
+    },
+    {
         "name": "Admin Dashboard Zodolive",
         "type": "Live Event Platform",
-        "image": "https://www.zlaprit.zodolive.com/static/images/zodolive-logo.jpg",
+        "image": "https://www.zodolive.com/logo.png",
         "description": "An online platform for discovering and accessing live events, potentially including streaming, ticketing, or interactive experiences. The project encompasses frontend development for user interfaces and backend systems for event management and user engagement.",
         "id": "2",
         "timeLine": "January 2024 - Present",
         "technologies": ["React", "Node.js", "AWS Amplify", "AWS (S3, EC2)", "DynamoDB","PostGre SQL", "JavaScript"],
         "responsibilities": "Built responsive frontend interfaces using React, developed backend APIs with AWS Amplify and Node.js, integrated AWS S3 for media storage and EC2 for hosting, and implemented MongoDB for efficient event and user data management.",
         "status": "Ongoing",
-        "website": ""
+        "website": "https://www.zlaprit.zodolive.com/home"
     },
     {
         "name": "Right Tracks IT",
@@ -111,7 +123,7 @@ const project: Project[] = [
         technologies: ["Next.js", "React", "i18n for localization", "AWS Amplify", "TypeScript"],
         responsibilities: "Implemented the company portfolio site with multilingual support using i18n, focusing on responsiveness and optimized performance with AWS Amplify.",
         status: "Finished",
-        website: "https://main.d366eb4x13z3cz.amplifyapp.com"
+        website: "https://odoo.thedoodleinc.com/"
     },
     {
         name: "Doodle INC",
