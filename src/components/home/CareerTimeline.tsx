@@ -9,6 +9,7 @@ interface TimelineEntry {
     description: string;
     tags: string[];
     highlight?: boolean;
+    activities?: { title: string; period: string }[];
 }
 
 const entries: TimelineEntry[] = [
@@ -16,8 +17,13 @@ const entries: TimelineEntry[] = [
         year: "2016–2020",
         role: "BSc in Computer Science",
         company: "BRAC University · Dhaka",
-        description: "Graduated with a CS degree while staying active beyond academics — Assistant Director of IT at BizBee (2016–2020), Director of the Chess Club (2017–2020), and Senior Executive at the Computer Club (2017–2018).",
-        tags: ["BizBee IT", "Chess Club", "Computer Club", "CS"],
+        description: "Four years of computer science alongside active involvement in campus clubs — leading IT operations, competitive chess, and the university's tech community.",
+        tags: ["Algorithms", "Data Structures", "OOP", "Web Dev"],
+        activities: [
+            { title: "BizBee Business Club — Assistant Director of IT", period: "2016–2020" },
+            { title: "Chess Club — Director", period: "2017–2020" },
+            { title: "Computer Club — Senior Executive", period: "2017–2018" },
+        ],
         highlight: false,
     },
     {
@@ -157,6 +163,17 @@ const CareerTimeline: React.FC = () => {
                                     <h3 className="font-bold text-sm text-foreground mb-0.5">{entry.role}</h3>
                                     <p className="text-[11px] font-mono text-[#469D89]/60 mb-3 tracking-wide">{entry.company}</p>
                                     <p className="text-xs text-muted-foreground leading-5 mb-4">{entry.description}</p>
+                                    {entry.activities && (
+                                        <div className="mb-4 space-y-1.5">
+                                            <p className="text-[9px] font-mono text-[#469D89]/50 tracking-[0.2em] uppercase mb-2">Co-Curricular</p>
+                                            {entry.activities.map((a, j) => (
+                                                <div key={j} className="flex items-center justify-between gap-3 px-3 py-1.5 rounded-lg border border-[#469D89]/15 bg-[#469D89]/4">
+                                                    <span className="text-[11px] text-foreground/80">{a.title}</span>
+                                                    <span className="text-[9px] font-mono text-[#469D89]/50 shrink-0">{a.period}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    )}
                                     <div className="flex flex-wrap gap-1.5">
                                         {entry.tags.map((tag, j) => (
                                             <span key={j} className="px-2 py-0.5 text-[9px] font-mono text-[#469D89] border border-[#469D89]/20 rounded-full bg-[#469D89]/5">
