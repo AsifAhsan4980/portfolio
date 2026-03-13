@@ -11,7 +11,8 @@ const expertiseData = [
     { title: "WebRTC & Realtime", skills: ["WebRTC", "LiveKit SFU", "WebSocket", "MediaSoup", "ClickHouse", "Signal Server"] },
     { title: "CSS Frameworks",    skills: ["Material UI", "Ant Design", "Bootstrap", "Tailwind", "Shadcn"] },
     { title: "Databases",         skills: ["DynamoDB", "PostgreSQL", "MongoDB", "MySQL", "Firebase", "Redis"] },
-    { title: "Languages",         skills: ["TypeScript", "JavaScript", "Kotlin", "Swift", "C++", "Java"] },
+    { title: "Languages",         skills: ["TypeScript", "JavaScript", "Kotlin", "Swift", "C++", "Java", "C#"] },
+    { title: "Design & Creative", skills: ["Figma", "Adobe XD", "Photoshop", "Illustrator", "After Effects", "Premiere Pro", "Media Encoder"] },
     { title: "Infrastructure",    skills: ["Docker", "Kubernetes", "Helm", "Terraform", "Redis", "DigitalOcean", "CI/CD"] },
     {
         title: "AWS",
