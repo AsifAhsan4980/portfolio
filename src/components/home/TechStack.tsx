@@ -17,6 +17,19 @@ const row1 = [
     { name: "Redux",        color: "#764ABC" },
 ];
 
+const row3 = [
+    { name: "Unity",          color: "#ffffff" },
+    { name: "C#",             color: "#9B4F9B" },
+    { name: "Kotlin",         color: "#7F52FF" },
+    { name: "Swift",          color: "#F05138" },
+    { name: "WebRTC",         color: "#469D89" },
+    { name: "ClickHouse",     color: "#FFCC00" },
+    { name: "Kubernetes",     color: "#326CE5" },
+    { name: "Terraform",      color: "#7B42BC" },
+    { name: "Prisma",         color: "#5A67D8" },
+    { name: "Docker",         color: "#2496ED" },
+];
+
 const row2 = [
     { name: "AWS AppSync",   color: "#FF9900" },
     { name: "AWS Cognito",   color: "#FF9900" },
@@ -76,13 +89,36 @@ const TechStack: React.FC = () => {
             </div>
 
             {/* Row 2 — scrolls right */}
-            <div className="overflow-hidden">
+            <div className="overflow-hidden mb-3">
                 <div className="marquee-track-reverse">
                     {[...row2, ...row2].map((tech, i) => (
                         <Chip key={i} name={tech.name} color={tech.color} />
                     ))}
                 </div>
             </div>
+
+            {/* Row 3 — scrolls left, exploring label */}
+            <div className="overflow-hidden mb-6">
+                <div className="marquee-track">
+                    {[...row3, ...row3].map((tech, i) => (
+                        <Chip key={i} name={tech.name} color={tech.color} />
+                    ))}
+                </div>
+            </div>
+
+            <motion.div
+                className="flex items-center justify-center gap-2"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+            >
+                <span className="w-1.5 h-1.5 rounded-full bg-[#469D89]/40" />
+                <span className="text-[9px] font-mono text-[#469D89]/40 tracking-[0.3em] uppercase">
+                    Currently exploring: Unity · C#
+                </span>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#469D89]/40" />
+            </motion.div>
         </section>
     );
 };

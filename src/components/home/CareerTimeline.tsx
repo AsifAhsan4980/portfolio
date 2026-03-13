@@ -78,8 +78,8 @@ const entries: TimelineEntry[] = [
         year: "2025",
         role: "Senior Software Engineer",
         company: "Right Tracks IT · Mohakhali DOHS, Dhaka",
-        description: "Current role — delivering custom software solutions across web, mobile, and cloud. Building production systems for clients in fintech, healthcare, and e-commerce alongside personal projects Gunti, Nexus RTC, and Nagorik.",
-        tags: ["React", "Next.js", "AWS", "React Native"],
+        description: "Current role — delivering custom software solutions across web, mobile, and cloud. Building personal projects (Gunti, Nexus RTC, Nagorik) and exploring Unity game development with C# on the side.",
+        tags: ["React", "Next.js", "AWS", "React Native", "Unity"],
         highlight: false,
     },
 ];
