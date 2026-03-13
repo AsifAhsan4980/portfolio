@@ -17,6 +17,16 @@ const row1 = [
     { name: "Redux",        color: "#764ABC" },
 ];
 
+const rowDesign = [
+    { name: "Figma",           color: "#F24E1E" },
+    { name: "Adobe XD",        color: "#FF61F6" },
+    { name: "Photoshop",       color: "#31A8FF" },
+    { name: "Illustrator",     color: "#FF9A00" },
+    { name: "After Effects",   color: "#9999FF" },
+    { name: "Premiere Pro",    color: "#9999FF" },
+    { name: "Media Encoder",   color: "#B197FC" },
+];
+
 const row3 = [
     { name: "Unity",          color: "#ffffff" },
     { name: "C#",             color: "#9B4F9B" },
@@ -75,7 +85,7 @@ const TechStack: React.FC = () => {
                 transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
                 <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#469D89]/40" />
-                <span className="text-[10px] font-mono text-[#469D89]/60 tracking-[0.3em] uppercase">Tech Stack</span>
+                <span className="text-[10px] font-mono text-[#469D89]/60 tracking-[0.3em] uppercase">Tech Stack & Tools</span>
                 <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#469D89]/40" />
             </motion.div>
 
@@ -92,6 +102,15 @@ const TechStack: React.FC = () => {
             <div className="overflow-hidden mb-3">
                 <div className="marquee-track-reverse">
                     {[...row2, ...row2].map((tech, i) => (
+                        <Chip key={i} name={tech.name} color={tech.color} />
+                    ))}
+                </div>
+            </div>
+
+            {/* Row Design — scrolls right */}
+            <div className="overflow-hidden mb-3">
+                <div className="marquee-track-reverse">
+                    {[...rowDesign, ...rowDesign].map((tech, i) => (
                         <Chip key={i} name={tech.name} color={tech.color} />
                     ))}
                 </div>
