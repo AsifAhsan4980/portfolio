@@ -1,60 +1,53 @@
+import { Metadata } from "next";
 import EmailSentOption from "@/components/hire-me/emailSentOption";
 import MyContact from "@/components/hire-me/myContact";
-import Head from "next/head";
+
+export const metadata: Metadata = {
+    title: "Hire Me | Asif Ahsan",
+    description: "Get in touch with Asif Ahsan for your software development needs. Specializing in React, Next.js, and AWS solutions.",
+};
 
 const HireME = () => {
     return (
-        <div className="container mx-auto mt-10 p-4 lg:p-8">
-            <Head>
-                <title>Asif Ahsan | Senior Software Engineer | JavaScript, React, Next.js, AWS</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <meta charSet="UTF-8"/>
+        <div className="relative container mx-auto py-12 px-4 lg:px-8 min-h-screen">
+            {/* Ambient glow */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-[#469D89]/6 rounded-full blur-[100px] pointer-events-none" />
 
-                <meta name="description"
-                      content="🚀 Senior Software Engineer with expertise in JavaScript, TypeScript, React, Next.js, Angular, and AWS serverless technologies. Passionate about building scalable and high-performance web applications."/>
-                <meta name="keywords"
-                      content="Software Engineer, JavaScript, TypeScript, React, Next.js, AWS, Serverless, Web Development"/>
-                <meta name="author" content="Asif Ahsan"/>
+            {/* HUD corners */}
+            <div className="absolute top-4 left-4 w-5 h-5 border-t-2 border-l-2 border-[#469D89]/25 pointer-events-none" />
+            <div className="absolute top-4 right-4 w-5 h-5 border-t-2 border-r-2 border-[#469D89]/25 pointer-events-none" />
 
-                {/* Open Graph (Facebook, LinkedIn, etc.) */}
-                <meta property="og:title" content="Asif Ahsan | Senior Software Engineer | JavaScript, React, Next.js, AWS"/>
-                <meta property="og:description"
-                      content="E🚀 Senior Software Engineer with expertise in JavaScript, TypeScript, React, Next.js, Angular, and AWS serverless technologies. Passionate about building scalable and high-performance web applications."/>
-                <meta property="og:image" content="/assets/images/asifahsan.jpg"/>
-                <meta property="og:url" content="https://asifahsan.com/"/>
-                <meta property="og:type" content="website"/>
-
-                {/* Twitter Cards */}
-                <meta name="twitter:card" content="summary_large_image"/>
-                <meta name="twitter:title" content="Asif Ahsan | Senior Software Engineer | JavaScript, React, Next.js, AWS."/>
-                <meta name="twitter:description"
-                      content="🚀 Senior Software Engineer with expertise in JavaScript, TypeScript, React, Next.js, Angular, and AWS serverless technologies. Passionate about building scalable and high-performance web applications."/>
-                <meta name="twitter:image" content="/assets/images/asifahsan.jpg"/>
-
-                {/* Favicon */}
-                <link rel="icon" href="/favicon.ico"/>
-            </Head>
-            <div className="relative grid gap-8 lg:grid-cols-2 lg:items-center">
-                {/* Left Side - Email Sent Option */}
-                <div className="space-y-6">
-                    <EmailSentOption />
+            {/* Page header — CSS blur-fade-in animation */}
+            <div className="text-center mb-12 relative z-10 animate-blur-fade-in">
+                <div className="flex items-center justify-center gap-3 mb-4">
+                    <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#469D89]/50" />
+                    <span className="text-[10px] font-mono text-[#469D89]/60 tracking-[0.3em] uppercase">Hire Me</span>
+                    <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#469D89]/50" />
                 </div>
+                <h1 className="text-4xl lg:text-5xl font-bold neon-text-pulse">
+                    Let&apos;s <span className="gradient-text">Work Together</span>
+                </h1>
+                <p className="mt-3 text-sm font-mono text-muted-foreground">
+                    <span className="text-[#469D89]/50">{'>'}</span> Send me a message or reach out directly
+                </p>
+            </div>
 
-                {/* Divider Line */}
+            {/* Two-column layout */}
+            <div className="relative z-10 grid gap-8 lg:grid-cols-2 lg:items-start">
+                {/* Left: Email form */}
+                <EmailSentOption />
+
+                {/* Neon divider (desktop) */}
                 <div
-                    className="
-            absolute inset-0
-            lg:h-full lg:w-px lg:top-0 lg:left-1/2
-            bg-gray-300 dark:bg-gray-600
-            w-full h-px lg:my-0 my-6
-          "
+                    className="hidden lg:block absolute inset-y-0 left-1/2 w-px"
+                    style={{
+                        background: "linear-gradient(to bottom, transparent, rgba(70,157,137,0.3), transparent)",
+                    }}
                     aria-hidden="true"
                 />
 
-                {/* Right Side - My Contact */}
-                <div className="space-y-6">
-                    <MyContact />
-                </div>
+                {/* Right: Contact info */}
+                <MyContact />
             </div>
         </div>
     );

@@ -1,143 +1,75 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
-// import { GoogleMap, LoadScript, Marker  } from "@react-google-maps/api";
-import React, { useEffect } from "react";
-import {useTheme} from "next-themes";
-import Head from "next/head";
+import { FaEnvelope, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhone, FaWhatsapp } from "react-icons/fa";
+import React from "react";
 
 interface ContactInfo {
     email: string;
     phone: { number: string; isWhatsApp: boolean }[];
     address: string;
-    socialLinks: {
-        platform: string;
-        url: string;
-        icon: JSX.Element;
-    }[];
+    socialLinks: { platform: string; url: string; icon: React.JSX.Element }[];
 }
 
+const contactInfo: ContactInfo = {
+    email: "asifahsan727@gmail.com",
+    phone: [
+        { number: "+8801795870994", isWhatsApp: false },
+        { number: "+8801685436578", isWhatsApp: true },
+    ],
+    address: "35/c Shah Alibag, Mirpur 1, Dhaka, Bangladesh",
+    socialLinks: [
+        { platform: "Facebook",  url: "https://www.facebook.com/asif.ahsan727/",           icon: <FaFacebook size={24} /> },
+        { platform: "Instagram", url: "https://www.instagram.com/aragorn_isildurr/",        icon: <FaInstagram size={24} /> },
+        { platform: "LinkedIn",  url: "https://www.linkedin.com/in/asif-ahsan-27832012b/", icon: <FaLinkedin size={24} /> },
+        { platform: "GitHub",    url: "https://github.com/AsifAhsan4980",                   icon: <FaGithub size={24} /> },
+    ],
+};
+
 const ContactPage: React.FC = () => {
-
-    const { theme } = useTheme()
-
-    console.log(theme)
-
-    const contactInfo: ContactInfo = {
-        email: "asifahsan727@gmail.com",
-        phone: [
-            { number: "+8801795870994", isWhatsApp: false },
-            { number: "+8801685436578", isWhatsApp: true },
-        ],
-        address: "35/c Shah Alibag, Mirpur 1, Dhaka, Bangladesh",
-        socialLinks: [
-            {
-                platform: "Facebook",
-                url: "https://www.facebook.com/asif.ahsan727/",
-                icon: <FaFacebook size={30} color="#469D89" />,
-            },
-            {
-                platform: "Instagram",
-                url: "https://www.instagram.com/aragorn_isildurr/",
-                icon: <FaInstagram size={30} color="#469D89" />,
-            },
-            {
-                platform: "LinkedIn",
-                url: "https://www.linkedin.com/in/asif-ahsan-27832012b/",
-                icon: <FaLinkedin size={30} color="#469D89" />,
-            },
-            {
-                platform: "GitHub",
-                url: "https://github.com/AsifAhsan4980",
-                icon: <FaGithub size={30} color="#469D89" />,
-            },
-        ],
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { staggerChildren: 0.12 } },
+    };
+    const itemVariants = {
+        hidden: { opacity: 0, y: 28, filter: "blur(8px)" },
+        visible: { opacity: 1, y: 0, filter: "blur(0px)", transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } },
     };
 
-    // const [mapStyle, setMapStyle] = useState<google.maps.MapTypeStyle[]>(lightModeStyle);
-    // const mapRef = useRef<google.maps.Map | null>(null);
-    // const [markerPosition] = useState({ lat: 23.7956785, lng: 90.3597853 });
-    // const onLoad = useCallback((map: google.maps.Map) => {
-    //     mapRef.current = map;
-    // }, []);
-    useEffect(() => {
-        // const latitude = 23.7956785;
-        // const longitude = 90.3597853;
-        //
-        // // Replace with your Mapbox access token
-        // mapboxgl.accessToken = "pk.eyJ1IjoiZG9vZGxlZm9ydHQiLCJhIjoiY2xvcGNiczRwMGFkMDJxcDU0c3g2dTA2MyJ9.fZI7Sl23QkIDT56_dIkNBQ";
-        //
-        // // Initialize map
-        // const map = new mapboxgl.Map({
-        //     container: "mapbox-map",
-        //     // style: "mapbox://styles/mapbox/streets-v12",
-        //     style: theme === "dark" ? "mapbox://styles/mapbox/dark-v10" : "mapbox://styles/mapbox/streets-v12",
-        //     center: [longitude, latitude],
-        //     zoom: 13,
-        // });
-        //
-        // // Add a marker to the map
-        // new mapboxgl.Marker().setLngLat([longitude, latitude]).addTo(map);
-        //
-        // // Cleanup function to remove the map on unmount
-        // return () => {
-        //     map.remove();
-        // };
-
-        // setMapStyle(theme === "dark" ? darkModeStyle : lightModeStyle);
-
-    }, [theme]); // The empty dependency array ensures this runs only once on mount
-
-
-
     return (
-        <main className="min-h-screen p-6 flex flex-col items-center">
-            <Head>
-                <title>Asif Ahsan | Senior Software Engineer | JavaScript, React, Next.js, AWS</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <meta charSet="UTF-8"/>
+        <main className="relative min-h-screen px-4 py-12 flex flex-col items-center overflow-hidden">
+            {/* Ambient glow */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#469D89]/6 rounded-full blur-[100px] pointer-events-none" />
 
-                <meta name="description"
-                      content="🚀 Senior Software Engineer with expertise in JavaScript, TypeScript, React, Next.js, Angular, and AWS serverless technologies. Passionate about building scalable and high-performance web applications."/>
-                <meta name="keywords"
-                      content="Software Engineer, JavaScript, TypeScript, React, Next.js, AWS, Serverless, Web Development"/>
-                <meta name="author" content="Asif Ahsan"/>
+            {/* HUD corner brackets */}
+            <div className="absolute top-6 left-6 w-6 h-6 border-t-2 border-l-2 border-[#469D89]/30 pointer-events-none" />
+            <div className="absolute top-6 right-6 w-6 h-6 border-t-2 border-r-2 border-[#469D89]/30 pointer-events-none" />
 
-                {/* Open Graph (Facebook, LinkedIn, etc.) */}
-                <meta property="og:title" content="Asif Ahsan | Senior Software Engineer | JavaScript, React, Next.js, AWS"/>
-                <meta property="og:description"
-                      content="E🚀 Senior Software Engineer with expertise in JavaScript, TypeScript, React, Next.js, Angular, and AWS serverless technologies. Passionate about building scalable and high-performance web applications."/>
-                <meta property="og:image" content="/assets/images/asifahsan.jpg"/>
-                <meta property="og:url" content="https://asifahsan.com/"/>
-                <meta property="og:type" content="website"/>
-
-                {/* Twitter Cards */}
-                <meta name="twitter:card" content="summary_large_image"/>
-                <meta name="twitter:title" content="Asif Ahsan | Senior Software Engineer | JavaScript, React, Next.js, AWS."/>
-                <meta name="twitter:description"
-                      content="🚀 Senior Software Engineer with expertise in JavaScript, TypeScript, React, Next.js, Angular, and AWS serverless technologies. Passionate about building scalable and high-performance web applications."/>
-                <meta name="twitter:image" content="/assets/images/asifahsan.jpg"/>
-
-                {/* Favicon */}
-                <link rel="icon" href="/favicon.ico"/>
-            </Head>
-            {/* Header */}
+            {/* Page Header */}
             <motion.div
-                initial={{opacity: 0, y: -50}}
-                animate={{opacity: 1, y: 0}}
-                transition={{duration: 0.8}}
-                className="text-center"
+                className="text-center mb-14 relative z-10"
+                initial={{ opacity: 0, y: -30, filter: "blur(10px)" }}
+                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                transition={{ duration: 0.75, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
-                <h1 className="text-3xl font-bold">Contact Me</h1>
-                <p className="mt-2">Let’s get connected!</p>
+                <div className="flex items-center justify-center gap-3 mb-4">
+                    <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#469D89]/50" />
+                    <span className="text-[10px] font-mono text-[#469D89]/60 tracking-[0.3em] uppercase">Get in touch</span>
+                    <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#469D89]/50" />
+                </div>
+                <h1 className="text-4xl lg:text-5xl font-bold neon-text-pulse">
+                    Contact <span className="gradient-text">Me</span>
+                </h1>
+                <p className="mt-3 text-muted-foreground font-mono text-sm">
+                    <span className="text-[#469D89]/50">{'>'}</span> Let&apos;s get connected!
+                </p>
             </motion.div>
 
-            {/* social Links Section */}
+            {/* Social Links */}
             <motion.div
-                initial={{opacity: 0, y: 50}}
-                animate={{opacity: 1, y: 0}}
-                transition={{duration: 0.8, delay: 0.2}}
-                className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mt-8 w-full max-w-4xl"
+                className="grid gap-4 grid-cols-2 lg:grid-cols-4 w-full max-w-3xl mb-14 relative z-10"
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
             >
                 {contactInfo.socialLinks.map((link, index) => (
                     <motion.a
@@ -145,96 +77,108 @@ const ContactPage: React.FC = () => {
                         href={link.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center border border-gray-300 rounded-lg p-4 hover:shadow-lg"
-                        whileHover={{scale: 1.05}}
-                        whileTap={{scale: 0.95}}
+                        aria-label={`Visit ${link.platform} profile`}
+                        className="flex flex-col items-center justify-center gap-3 p-6 border border-[#469D89]/20 rounded-xl bg-background/50 backdrop-blur-sm transition-all duration-300 hover:border-[#469D89]/60 hover:shadow-[0_0_22px_rgba(70,157,137,0.18)] hover:bg-[#469D89]/5 group"
+                        variants={itemVariants}
+                        whileHover={{ scale: 1.04, y: -3 }}
+                        whileTap={{ scale: 0.97 }}
                     >
-                        <div className="flex flex-col items-center">
+                        <span className="text-[#469D89] group-hover:scale-110 transition-transform duration-200">
                             {link.icon}
-                            <span className="mt-2 text-sm">{link.platform}</span>
-                        </div>
+                        </span>
+                        <span className="text-xs font-mono text-muted-foreground group-hover:text-[#469D89] transition-colors tracking-widest uppercase">
+                            {link.platform}
+                        </span>
                     </motion.a>
                 ))}
             </motion.div>
 
-            {/* Contact Info Section */}
+            {/* Contact Info Cards */}
             <motion.div
-                initial={{opacity: 0, y: 50}}
-                animate={{opacity: 1, y: 0}}
-                transition={{duration: 0.8, delay: 0.4}}
-                className="mt-12 w-full max-w-4xl"
+                className="grid grid-cols-1 md:grid-cols-3 gap-5 w-full max-w-3xl mb-14 relative z-10"
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
             >
-                <div className="grid grid-cols-1 gap-6 md:grid-cols-3 text-center">
-                    {/* Email */}
-                    <div className="flex flex-col items-center">
-                        <FaEnvelope size={30}/>
-                        <h2 className="font-semibold text-lg mt-2">Email</h2>
-                        <p>{contactInfo.email}</p>
+                {/* Email */}
+                <motion.div
+                    className="flex flex-col items-center gap-3 p-6 border border-[#469D89]/20 rounded-xl bg-background/50 backdrop-blur-sm"
+                    variants={itemVariants}
+                >
+                    <div className="w-10 h-10 flex items-center justify-center border border-[#469D89]/40 rounded-full text-[#469D89]">
+                        <FaEnvelope size={16} />
                     </div>
+                    <div className="text-center">
+                        <p className="text-[10px] font-mono text-[#469D89]/50 tracking-[0.2em] uppercase mb-1">Email</p>
+                        <p className="text-sm font-mono text-foreground break-all">{contactInfo.email}</p>
+                    </div>
+                </motion.div>
 
-                    {/* Phone Numbers */}
-                    <div className="flex flex-col items-center">
-                        <FaPhone size={30}/>
-                        <h2 className="font-semibold text-lg mt-2">Phone</h2>
-                        {contactInfo.phone.map((phone, index) => (
-                            <p key={index}>
+                {/* Phone */}
+                <motion.div
+                    className="flex flex-col items-center gap-3 p-6 border border-[#469D89]/20 rounded-xl bg-background/50 backdrop-blur-sm"
+                    variants={itemVariants}
+                >
+                    <div className="w-10 h-10 flex items-center justify-center border border-[#469D89]/40 rounded-full text-[#469D89]">
+                        <FaPhone size={16} />
+                    </div>
+                    <div className="text-center">
+                        <p className="text-[10px] font-mono text-[#469D89]/50 tracking-[0.2em] uppercase mb-1">Phone</p>
+                        {contactInfo.phone.map((phone, i) => (
+                            <div key={i} className="flex items-center gap-1.5 justify-center">
+                                {phone.isWhatsApp && <FaWhatsapp size={12} className="text-green-500" />}
                                 {phone.isWhatsApp ? (
-                                    <a
-                                        href={`https://wa.me/${phone.number.replace("+", "")}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="underline"
-                                    >
-                                        {phone.number} (WhatsApp)
+                                    <a href={`https://wa.me/${phone.number.replace("+", "")}`} target="_blank" rel="noopener noreferrer"
+                                        className="text-xs font-mono text-[#469D89] hover:underline">
+                                        {phone.number}
                                     </a>
                                 ) : (
-                                    phone.number
+                                    <p className="text-xs font-mono text-foreground">{phone.number}</p>
                                 )}
-                            </p>
+                            </div>
                         ))}
                     </div>
+                </motion.div>
 
-                    {/* Address */}
-                    <div className="flex flex-col items-center">
-                        <FaMapMarkerAlt size={30}/>
-                        <h2 className="font-semibold text-lg mt-2">Address</h2>
-                        <p>{contactInfo.address}</p>
+                {/* Address */}
+                <motion.div
+                    className="flex flex-col items-center gap-3 p-6 border border-[#469D89]/20 rounded-xl bg-background/50 backdrop-blur-sm"
+                    variants={itemVariants}
+                >
+                    <div className="w-10 h-10 flex items-center justify-center border border-[#469D89]/40 rounded-full text-[#469D89]">
+                        <FaMapMarkerAlt size={16} />
                     </div>
-                </div>
+                    <div className="text-center">
+                        <p className="text-[10px] font-mono text-[#469D89]/50 tracking-[0.2em] uppercase mb-1">Location</p>
+                        <p className="text-xs font-mono text-foreground">{contactInfo.address}</p>
+                    </div>
+                </motion.div>
             </motion.div>
 
-            {/* Map */}
-            {/*<div*/}
-            {/*    id="mapbox-map"*/}
-            {/*    className="w-full lg:w-3/4 xl:w-1/2 h-72 lg:h-96 mt-12 rounded-lg shadow-lg"*/}
-            {/*></div>*/}
-
-            <iframe
-                width="600"
-                height="450"
-                loading="lazy"
-                className="w-full lg:w-3/4 xl:w-1/2 h-72 lg:h-96 mt-12 rounded-lg shadow-lg dark"
-                color={'dark'}
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCPpxjgXy_Z3lYdkwYsEXccmBRSARHVWvw&q=Kayenath,Dhaka+Bangladesh">
-            </iframe>
-
-            {/*<div  className="w-full lg:w-3/4 xl:w-1/2 h-72 lg:h-96 mt-12 rounded-lg shadow-lg">*/}
-            {/*    <LoadScript googleMapsApiKey="AIzaSyCPpxjgXy_Z3lYdkwYsEXccmBRSARHVWvw">*/}
-            {/*        <GoogleMap*/}
-            {/*            id="google-map"*/}
-            {/*            mapContainerStyle={{ height: "500px", width: "100%" }}*/}
-            {/*            center={markerPosition}*/}
-            {/*            zoom={19}*/}
-            {/*            options={{ styles: mapStyle }}*/}
-            {/*            onLoad={onLoad}*/}
-            {/*        />*/}
-            {/*        <Marker position={markerPosition} />*/}
-            {/*    </LoadScript>*/}
-            {/*</div>*/}
-
-
+            {/* Map with neon frame */}
+            <motion.div
+                className="w-full max-w-3xl relative z-10"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+            >
+                <div className="relative border border-[#469D89]/30 rounded-xl overflow-hidden shadow-[0_0_30px_rgba(70,157,137,0.08)]">
+                    <div className="absolute top-2 left-2 w-3 h-3 border-t border-l border-[#469D89]/50 z-10 pointer-events-none" />
+                    <div className="absolute top-2 right-2 w-3 h-3 border-t border-r border-[#469D89]/50 z-10 pointer-events-none" />
+                    <div className="absolute bottom-2 left-2 w-3 h-3 border-b border-l border-[#469D89]/50 z-10 pointer-events-none" />
+                    <div className="absolute bottom-2 right-2 w-3 h-3 border-b border-r border-[#469D89]/50 z-10 pointer-events-none" />
+                    <iframe
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                        className="w-full h-72 lg:h-96"
+                        title="Location map"
+                        allowFullScreen
+                        referrerPolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCPpxjgXy_Z3lYdkwYsEXccmBRSARHVWvw&q=Kayenath,Dhaka+Bangladesh"
+                    />
+                </div>
+            </motion.div>
         </main>
     );
 };

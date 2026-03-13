@@ -2,10 +2,9 @@
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
-// Type for form data
 interface FormData {
     clientEmail: string;
     subject: string;
@@ -19,21 +18,17 @@ const EmailSentOption: React.FC = () => {
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [statusMessage, setStatusMessage] = useState<string>("");
 
-    // Handle form submit
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsLoading(true);
         setStatusMessage("");
 
-        // Prepare the form data object
         const formData: FormData = { clientEmail, subject, message };
 
         try {
             const response = await fetch("/api/send-email", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
+                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
             });
 
@@ -41,7 +36,6 @@ const EmailSentOption: React.FC = () => {
 
             if (response.ok) {
                 setStatusMessage("Email sent successfully!");
-                // Optionally, reset the form after successful submission
                 setClientEmail("");
                 setSubject("");
                 setMessage("");
@@ -56,72 +50,119 @@ const EmailSentOption: React.FC = () => {
         }
     };
 
+    const inputClass = "w-full bg-background/50 border-[#469D89]/20 focus:border-[#469D89]/60 focus:ring-[#469D89]/20 focus:shadow-[0_0_12px_rgba(70,157,137,0.15)] font-mono text-sm transition-all duration-200 rounded-lg";
+
     return (
-        <div className="space-y-6 p-6 max-w-lg mx-auto">
-            <h2 className="text-2xl font-semibold text-center">Send Email</h2>
+        <motion.div
+            className="relative border border-[#469D89]/20 rounded-2xl overflow-hidden bg-background/50 backdrop-blur-sm"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+        >
+            {/* Corner decorations */}
+            <div className="absolute top-2 left-2 w-4 h-4 border-t border-l border-[#469D89]/30 pointer-events-none" />
+            <div className="absolute top-2 right-2 w-4 h-4 border-t border-r border-[#469D89]/30 pointer-events-none" />
 
-            {/* Client Email */}
-            <div className="space-y-2">
-                <Label htmlFor="client-email" className="text-sm font-medium">Client Email</Label>
-                <Input
-                    id="client-email"
-                    type="email"
-                    placeholder="Enter client's email"
-                    value={clientEmail}
-                    onChange={(e) => setClientEmail(e.target.value)}
-                    className="w-full p-3 border border-gray-300 rounded-md"
-                    required
-                />
+            {/* Terminal header */}
+            <div className="flex items-center justify-between px-5 py-3 border-b border-[#469D89]/15 bg-[#469D89]/5">
+                <div className="flex items-center gap-2">
+                    <div className="w-2.5 h-2.5 rounded-full bg-red-400/60" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/60" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-[#469D89]/70" />
+                </div>
+                <span className="text-[10px] font-mono text-[#469D89]/50 tracking-widest">send_message.sh</span>
+                <div className="w-14" />
             </div>
 
-            {/* Subject */}
-            <div className="space-y-2">
-                <Label htmlFor="subject" className="text-sm font-medium">Subject</Label>
-                <Input
-                    id="subject"
-                    type="text"
-                    placeholder="Enter subject"
-                    value={subject}
-                    onChange={(e) => setSubject(e.target.value)}
-                    className="w-full p-3 border border-gray-300 rounded-md"
-                    required
-                />
-            </div>
+            {/* Form content */}
+            <div className="p-6 space-y-5">
+                <div className="flex items-center gap-2 mb-5">
+                    <div className="w-1 h-5 bg-gradient-to-b from-[#469D89] to-[#2d6b5f] rounded-full" />
+                    <h2 className="text-xl font-bold gradient-text-static">Send Email</h2>
+                </div>
 
-            {/* Message (Textarea) */}
-            <div className="space-y-2">
-                <Label htmlFor="message" className="text-sm font-medium">Message</Label>
-                <Textarea
-                    id="message"
-                    rows={6}
-                    placeholder="Enter your message here..."
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    className="w-full p-3 border border-gray-300 rounded-md"
-                    required
-                />
-            </div>
+                <div className="space-y-1.5">
+                    <Label htmlFor="client-email" className="text-[10px] font-mono text-[#469D89]/60 tracking-[0.2em] uppercase">
+                        Your Email
+                    </Label>
+                    <Input
+                        id="client-email"
+                        type="email"
+                        placeholder="your@email.com"
+                        value={clientEmail}
+                        onChange={(e) => setClientEmail(e.target.value)}
+                        className={inputClass}
+                        required
+                    />
+                </div>
 
-            {/* Submit Button */}
-            <div className="pt-4">
-                <Button
-                    className="w-full py-3 bg-[#469D89]"
+                <div className="space-y-1.5">
+                    <Label htmlFor="subject" className="text-[10px] font-mono text-[#469D89]/60 tracking-[0.2em] uppercase">
+                        Subject
+                    </Label>
+                    <Input
+                        id="subject"
+                        type="text"
+                        placeholder="Project inquiry..."
+                        value={subject}
+                        onChange={(e) => setSubject(e.target.value)}
+                        className={inputClass}
+                        required
+                    />
+                </div>
+
+                <div className="space-y-1.5">
+                    <Label htmlFor="message" className="text-[10px] font-mono text-[#469D89]/60 tracking-[0.2em] uppercase">
+                        Message
+                    </Label>
+                    <Textarea
+                        id="message"
+                        rows={5}
+                        placeholder="Tell me about your project..."
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        className={inputClass}
+                        required
+                    />
+                </div>
+
+                <motion.button
+                    className="relative w-full py-3 font-mono text-sm tracking-widest text-[#469D89] border border-[#469D89]/50 rounded-lg overflow-hidden transition-all duration-300 hover:border-[#469D89] hover:shadow-[0_0_20px_rgba(70,157,137,0.3)] hover:bg-[#469D89]/10 disabled:opacity-50 disabled:cursor-not-allowed"
                     onClick={handleSubmit}
                     disabled={isLoading}
+                    whileHover={{ scale: isLoading ? 1 : 1.01 }}
+                    whileTap={{ scale: isLoading ? 1 : 0.98 }}
                 >
-                    {isLoading ? "Sending..." : "Send Email"}
-                </Button>
-            </div>
+                    {isLoading ? (
+                        <span className="flex items-center justify-center gap-2">
+                            <motion.span
+                                className="w-1.5 h-1.5 rounded-full bg-[#469D89]"
+                                animate={{ opacity: [1, 0.3, 1] }}
+                                transition={{ duration: 0.8, repeat: Infinity }}
+                            />
+                            Transmitting...
+                        </span>
+                    ) : (
+                        "Send Message →"
+                    )}
+                </motion.button>
 
-            {/* Status Message */}
-            {statusMessage && (
-                <div className="mt-4 text-center text-sm">
-                    <p className={statusMessage.includes("success") ? "text-green-500" : "text-red-500"}>
+                {statusMessage && (
+                    <motion.div
+                        className={`text-center text-xs font-mono p-3 rounded-lg border ${
+                            statusMessage.includes("success")
+                                ? "text-[#469D89] border-[#469D89]/30 bg-[#469D89]/8"
+                                : "text-red-400 border-red-400/30 bg-red-400/8"
+                        }`}
+                        initial={{ opacity: 0, y: 5 }}
+                        animate={{ opacity: 1, y: 0 }}
+                    >
+                        <span className="mr-1">{statusMessage.includes("success") ? "✓" : "✗"}</span>
                         {statusMessage}
-                    </p>
-                </div>
-            )}
-        </div>
+                    </motion.div>
+                )}
+            </div>
+        </motion.div>
     );
 };
 

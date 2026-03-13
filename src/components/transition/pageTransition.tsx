@@ -3,30 +3,22 @@ import React, { ReactNode } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
-interface PageTransitionProps {
-    children: ReactNode;
-}
-
-const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
+const PageTransition: React.FC<{ children: ReactNode }> = ({ children }) => {
     const pathName = usePathname();
 
     return (
-        <AnimatePresence mode="wait" key={pathName}>
+        <AnimatePresence mode="wait">
             <motion.div
                 key={pathName}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 2, ease: "easeInOut" }}
-                className=" inset-0  pointer-events-none z-50"
+                initial={{ clipPath: "inset(0 0 100% 0)" }}
+                animate={{ clipPath: "inset(0 0 0% 0)" }}
+                exit={{ opacity: 0, transition: { duration: 0.15, ease: "easeIn" } }}
+                transition={{
+                    clipPath: { duration: 0.5, ease: [0.76, 0, 0.24, 1] },
+                }}
+                style={{ pointerEvents: "auto" }}
             >
-                {/* Child wrapper (allows interaction with navbar and other elements) */}
-                <motion.div
-                    className="w-full h-full"
-                    style={{ pointerEvents: "auto" }}
-                >
-                    {children}
-                </motion.div>
+                {children}
             </motion.div>
         </AnimatePresence>
     );
