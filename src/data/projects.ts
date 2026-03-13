@@ -61,15 +61,15 @@ export const projects: Project[] = [
         name: "Right Tracks IT",
         type: "Custom Software Development",
         image: "https://www.righttracksit.com/right-tracks-meta-image.jpeg",
-        description: "A comprehensive software development platform offering custom solutions including web and mobile app development, UI/UX design, cloud solutions, and analytics.",
+        description: "A software development agency delivering custom web, mobile, and cloud solutions across fintech, healthcare, and e-commerce. Working here as Senior Software Engineer, building production-grade systems for clients in Bangladesh and internationally.",
         id: "4",
-        timeLine: "2017 - Present",
+        timeLine: "2025 - Present",
         technologies: ["React", "React Native", "Node.js", "AWS", "Azure", "Google Cloud", "Swift", "Kotlin"],
-        responsibilities: "Designed responsive web apps using React and Node.js, built cross-platform mobile apps, implemented cloud solutions using AWS, Azure, and Google Cloud.",
+        responsibilities: "Senior Software Engineer — designing and shipping full-stack web and mobile applications, architecting cloud infrastructure on AWS, and leading technical delivery across multiple client projects.",
         status: "Ongoing",
         website: "https://www.righttracksit.com/",
-        challenge: "Building a full-service agency platform that can showcase diverse technical capabilities across web, mobile, and cloud domains.",
-        outcome: "Served 20+ clients across Bangladesh and internationally. Delivered projects in fintech, healthcare, and e-commerce verticals."
+        challenge: "Delivering consistent, high-quality custom software across a diverse portfolio of clients with varying technical requirements and timelines.",
+        outcome: "Contributing to 20+ client projects across Bangladesh and internationally, spanning fintech, healthcare, and e-commerce verticals."
     },
     {
         name: "Tribel",
