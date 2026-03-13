@@ -73,7 +73,27 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
                             src={project.image}
                             alt={project.name}
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            onError={(e) => {
+                                const el = e.currentTarget;
+                                el.style.display = "none";
+                                const fallback = el.nextElementSibling as HTMLElement | null;
+                                if (fallback) fallback.style.display = "flex";
+                            }}
                         />
+                        {/* Fallback placeholder (hidden by default) */}
+                        <div
+                            className="absolute inset-0 hidden items-center justify-center bg-[#469D89]/5 border-b border-[#469D89]/10"
+                            style={{ display: "none" }}
+                        >
+                            <div className="text-center">
+                                <div className="text-3xl font-bold text-[#469D89]/30 mb-1">
+                                    {project.name.charAt(0)}
+                                </div>
+                                <div className="text-[10px] font-mono text-[#469D89]/25 tracking-widest uppercase">
+                                    {project.type}
+                                </div>
+                            </div>
+                        </div>
                         <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
 
                         {/* Status badge */}
