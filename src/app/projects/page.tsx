@@ -82,7 +82,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
                         />
                         {/* Fallback placeholder (hidden by default) */}
                         <div
-                            className="absolute inset-0 hidden items-center justify-center bg-[#469D89]/5 border-b border-[#469D89]/10"
+                            className="absolute inset-0 items-center justify-center bg-[#469D89]/5 border-b border-[#469D89]/10"
                             style={{ display: "none" }}
                         >
                             <div className="text-center">

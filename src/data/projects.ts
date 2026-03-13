@@ -74,7 +74,7 @@ export const projects: Project[] = [
     {
         name: "Tribel",
         type: "Social Media",
-        image: "https://cdntribel.com/public/uploads/post_images/Tribel_logo.png",
+        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
         description: "A hybrid social media platform combining features of Facebook and Twitter, targeted towards the US audience. Focuses on user engagement, content sharing, and community building.",
         id: "5",
         timeLine: "June 2022 - Present",
