@@ -74,7 +74,7 @@ export const projects: Project[] = [
     {
         name: "Tribel",
         type: "Social Media",
-        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&q=80",
         description: "A hybrid social media platform combining features of Facebook and Twitter, targeted towards the US audience. Focuses on user engagement, content sharing, and community building.",
         id: "5",
         timeLine: "June 2022 - Present",
@@ -102,7 +102,7 @@ export const projects: Project[] = [
     {
         name: "Pipo Bazar",
         type: "E-commerce Marketplace",
-        image: "https://api.pipobazar.com/images/images-1688135566889.jpg",
+        image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80",
         description: "An e-commerce platform connecting small vendors and customers in emerging markets with product listings, advanced search, and secure payment methods.",
         id: "7",
         timeLine: "March 2024 - October 2024",
