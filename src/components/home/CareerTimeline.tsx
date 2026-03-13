@@ -13,6 +13,14 @@ interface TimelineEntry {
 
 const entries: TimelineEntry[] = [
     {
+        year: "2016–2020",
+        role: "BSc in Computer Science",
+        company: "BRAC University · Dhaka",
+        description: "Graduated with a CS degree while staying active beyond academics — Assistant Director of IT at BizBee (business club), Director of the Chess Club, and Senior Executive at the Computer Club.",
+        tags: ["BizBee IT", "Chess Club", "Computer Club", "CS"],
+        highlight: false,
+    },
+    {
         year: "2021",
         role: "Frontend Engineer Intern",
         company: "Gononet Online Solution · Carwan Bazar, Dhaka",
