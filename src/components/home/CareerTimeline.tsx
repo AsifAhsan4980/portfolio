@@ -16,7 +16,7 @@ const entries: TimelineEntry[] = [
         year: "2016–2020",
         role: "BSc in Computer Science",
         company: "BRAC University · Dhaka",
-        description: "Graduated with a CS degree while staying active beyond academics — Assistant Director of IT at BizBee (business club), Director of the Chess Club, and Senior Executive at the Computer Club.",
+        description: "Graduated with a CS degree while staying active beyond academics — Assistant Director of IT at BizBee (2016–2020), Director of the Chess Club (2017–2020), and Senior Executive at the Computer Club (2017–2018).",
         tags: ["BizBee IT", "Chess Club", "Computer Club", "CS"],
         highlight: false,
     },
