@@ -7,7 +7,26 @@ const emailSchema = z.object({
     clientEmail: z.string().email('Invalid email format').max(255, 'Email too long'),
     subject: z.string().min(1, 'Subject is required').max(200, 'Subject too long'),
     message: z.string().min(1, 'Message is required').max(5000, 'Message too long'),
+    captchaToken: z.string().optional(),
 });
+
+// Verify reCAPTCHA v3 token with Google
+async function verifyCaptcha(token: string): Promise<boolean> {
+    const secret = process.env.RECAPTCHA_SECRET_KEY;
+    if (!secret) return true; // Skip if not configured
+
+    try {
+        const res = await fetch('https://www.google.com/recaptcha/api/siteverify', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `secret=${secret}&response=${token}`,
+        });
+        const data = await res.json();
+        return data.success && data.score >= 0.5;
+    } catch {
+        return false;
+    }
+}
 
 // Simple in-memory rate limiting
 const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
@@ -81,7 +100,24 @@ export async function POST(request: Request) {
             );
         }
 
-        const { clientEmail, subject, message } = validationResult.data;
+        const { clientEmail, subject, message, captchaToken } = validationResult.data;
+
+        // Verify reCAPTCHA if configured
+        if (process.env.RECAPTCHA_SECRET_KEY) {
+            if (!captchaToken) {
+                return NextResponse.json(
+                    { error: 'CAPTCHA verification required.' },
+                    { status: 400 }
+                );
+            }
+            const isHuman = await verifyCaptcha(captchaToken);
+            if (!isHuman) {
+                return NextResponse.json(
+                    { error: 'CAPTCHA verification failed. Please try again.' },
+                    { status: 403 }
+                );
+            }
+        }
 
         // Sanitize inputs for HTML email
         const sanitizedMessage = sanitizeHtml(message);

@@ -2,13 +2,23 @@
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 
 interface FormData {
     clientEmail: string;
     subject: string;
     message: string;
+    captchaToken: string;
+}
+
+declare global {
+    interface Window {
+        grecaptcha: {
+            ready: (cb: () => void) => void;
+            execute: (siteKey: string, options: { action: string }) => Promise<string>;
+        };
+    }
 }
 
 const EmailSentOption: React.FC = () => {
@@ -17,13 +27,42 @@ const EmailSentOption: React.FC = () => {
     const [message, setMessage] = useState<string>("");
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [statusMessage, setStatusMessage] = useState<string>("");
+    const [recaptchaReady, setRecaptchaReady] = useState(false);
+
+    const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "";
+
+    // Load reCAPTCHA v3 script
+    useEffect(() => {
+        if (!siteKey || document.getElementById("recaptcha-v3")) return;
+
+        const script = document.createElement("script");
+        script.id = "recaptcha-v3";
+        script.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`;
+        script.async = true;
+        script.onload = () => {
+            window.grecaptcha.ready(() => setRecaptchaReady(true));
+        };
+        document.head.appendChild(script);
+    }, [siteKey]);
+
+    const getCaptchaToken = useCallback(async (): Promise<string> => {
+        if (!recaptchaReady || !siteKey) return "";
+        return window.grecaptcha.execute(siteKey, { action: "send_email" });
+    }, [recaptchaReady, siteKey]);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsLoading(true);
         setStatusMessage("");
 
-        const formData: FormData = { clientEmail, subject, message };
+        const captchaToken = await getCaptchaToken();
+        if (siteKey && !captchaToken) {
+            setStatusMessage("CAPTCHA verification failed. Please refresh and try again.");
+            setIsLoading(false);
+            return;
+        }
+
+        const formData: FormData = { clientEmail, subject, message, captchaToken };
 
         try {
             const response = await fetch("/api/send-email", {

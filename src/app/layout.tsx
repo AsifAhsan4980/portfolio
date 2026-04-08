@@ -15,6 +15,7 @@ import { FocusModeProvider } from "@/context/FocusMode";
 import FocusAwareShell from "@/components/ui/FocusAwareShell";
 import ChatBot from "@/components/chatbot/ChatBot";
 import TodayInHistory from "@/components/ui/TodayInHistory";
+import FirebaseAnalytics from "@/components/analytics/FirebaseAnalytics";
 
 const jetbrainMono = JetBrains_Mono({
     subsets: ['latin'],
@@ -211,6 +212,7 @@ export default function RootLayout({
                     <ScrollProgress />
                     <AmbientGlow />
                     <Analytics />
+                    <FirebaseAnalytics />
                     <ChatBot />
                     <TodayInHistory />
                     <FocusAwareShell
