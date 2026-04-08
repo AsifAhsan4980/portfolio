@@ -4,7 +4,7 @@ import MyContact from "@/components/hire-me/myContact";
 
 export const metadata: Metadata = {
     title: "Hire Me | Asif Ahsan",
-    description: "Get in touch with Asif Ahsan for your software development needs. Specializing in React, Next.js, and AWS solutions.",
+    description: "Get in touch with Asif Ahsan for your software development needs. Senior Software Engineer specializing in scalable distributed systems, real-time platforms, and cloud-native architectures.",
 };
 
 const HireME = () => {

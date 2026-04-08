@@ -4,19 +4,19 @@ import { motion } from "framer-motion";
 import ExpertiseCard from "@/components/expertise/ExpertiseCard";
 
 const expertiseData = [
-    { title: "Frontend",          skills: ["React.js", "Next.js", "Angular", "Redux Toolkit", "next-intl"] },
-    { title: "Backend",           skills: ["Node.js", "Express", "AWS AppSync", "AWS Amplify", "GraphQL", "Microservices"] },
-    { title: "Mobile",            skills: ["Kotlin", "Jetpack Compose", "Swift", "SwiftUI", "Flutter", "React Native"] },
-    { title: "AI Integration",    skills: ["Claude AI (Haiku)", "Anthropic API", "Prompt Engineering", "AI Image Generation", "AI Video Generation", "LLM Workflows"] },
-    { title: "WebRTC & Realtime", skills: ["WebRTC", "LiveKit SFU", "WebSocket", "MediaSoup", "ClickHouse", "Signal Server"] },
+    { title: "Frontend",          skills: ["React", "Next.js", "Angular", "Redux Toolkit", "TypeScript", "Tailwind CSS"] },
+    { title: "Backend",           skills: ["Node.js", "Express", "GraphQL", "REST APIs", "Microservices"] },
+    { title: "Mobile",            skills: ["Kotlin", "Jetpack Compose", "Swift", "SwiftUI", "Flutter"] },
+    { title: "AI Integration",    skills: ["Gemini Nano", "Banana", "Claude (Haiku)", "AI Pipelines", "AI Image Generation", "AI Video Generation"] },
+    { title: "WebRTC & Realtime", skills: ["WebRTC", "LiveKit", "Agora SDK", "WebSockets"] },
     { title: "CSS Frameworks",    skills: ["Material UI", "Ant Design", "Bootstrap", "Tailwind", "Shadcn"] },
-    { title: "Databases",         skills: ["DynamoDB", "PostgreSQL", "MongoDB", "MySQL", "Firebase", "Redis"] },
-    { title: "Languages",         skills: ["TypeScript", "JavaScript", "Kotlin", "Swift", "C++", "Java"] },
+    { title: "Databases",         skills: ["PostgreSQL", "MongoDB", "Redis", "DynamoDB", "SQLite", "ClickHouse"] },
+    { title: "Languages",         skills: ["TypeScript", "JavaScript", "Kotlin", "Swift", "C++", "Java", "Python", "Dart"] },
     { title: "Design & Creative", skills: ["Figma", "Adobe XD", "Photoshop", "Illustrator", "After Effects", "Premiere Pro", "Media Encoder"] },
-    { title: "Infrastructure",    skills: ["Docker", "Kubernetes", "Helm", "Terraform", "Redis", "DigitalOcean", "CI/CD"] },
+    { title: "Infrastructure",    skills: ["Docker", "Kubernetes", "Terraform", "CI/CD", "DigitalOcean"] },
     {
         title: "AWS",
-        skills: ["Lambda", "Cognito", "OpenSearch", "AppSync", "API Gateway", "GraphQL", "Cloud9", "EC2", "DynamoDB", "Amplify", "S3", "AWS Glue", "AWS MediaConvert", "Route53"],
+        skills: ["Lambda", "AppSync", "S3", "Cognito", "DynamoDB", "EC2", "Amplify", "API Gateway", "GraphQL", "OpenSearch", "Cloud9", "AWS Glue", "AWS MediaConvert", "Route53"],
     },
 ];
 

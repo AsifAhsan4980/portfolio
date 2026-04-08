@@ -28,15 +28,16 @@ const rowDesign = [
 ];
 
 const row3 = [
-    { name: "Unity",          color: "#ffffff" },
-    { name: "C#",             color: "#9B4F9B" },
     { name: "Kotlin",         color: "#7F52FF" },
     { name: "Swift",          color: "#F05138" },
+    { name: "Python",         color: "#3776AB" },
+    { name: "Dart",           color: "#0175C2" },
+    { name: "C++",            color: "#00599C" },
     { name: "WebRTC",         color: "#469D89" },
+    { name: "Agora SDK",      color: "#099DFD" },
     { name: "ClickHouse",     color: "#FFCC00" },
     { name: "Kubernetes",     color: "#326CE5" },
     { name: "Terraform",      color: "#7B42BC" },
-    { name: "Prisma",         color: "#5A67D8" },
     { name: "Docker",         color: "#2496ED" },
 ];
 
@@ -134,7 +135,7 @@ const TechStack: React.FC = () => {
             >
                 <span className="w-1.5 h-1.5 rounded-full bg-[#469D89]/40" />
                 <span className="text-[9px] font-mono text-[#469D89]/40 tracking-[0.3em] uppercase">
-                    Currently exploring: Unity · C#
+                    Always learning · Always building
                 </span>
                 <span className="w-1.5 h-1.5 rounded-full bg-[#469D89]/40" />
             </motion.div>

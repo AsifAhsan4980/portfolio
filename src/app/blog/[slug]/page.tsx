@@ -195,7 +195,7 @@ export default async function BlogPostPage({
                         <div className="font-bold text-sm mb-1">Asif Ahsan</div>
                         <div className="text-[10px] font-mono text-[#469D89]/60 tracking-widest uppercase mb-2">Senior Software Engineer · Dhaka, Bangladesh</div>
                         <p className="text-xs text-muted-foreground leading-6">
-                            Full-stack engineer with 8+ years building scalable products across web, mobile, and cloud. Currently building Gunti, Nexus RTC, and Nagorik.
+                            Senior Software Engineer with 5+ years of professional experience designing and building high-performance web applications. Shipped 14+ projects across 5+ countries, impacting 100K+ users.
                         </p>
                         <div className="mt-3 flex gap-3">
                             <Link href="/contacts" className="text-[11px] font-mono text-[#469D89] hover:underline tracking-wide">Get in touch →</Link>

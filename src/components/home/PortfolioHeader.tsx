@@ -194,7 +194,7 @@ const PortfolioHeader = () => {
                                     {/* Profile image */}
                                     <Image
                                         src={img}
-                                        alt="Asif Ahsan - Full Stack Developer"
+                                        alt="Asif Ahsan - Senior Software Engineer"
                                         height={612}
                                         width={410}
                                         className="w-full h-auto relative z-10 rounded-xl"

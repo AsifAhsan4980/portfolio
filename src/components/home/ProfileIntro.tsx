@@ -76,7 +76,7 @@ const ProfileIntro = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.85 }}
                     >
-                        <TypingText text="Senior Software Developer" className="block text-[#469D89]" />
+                        <TypingText text="Senior Software Engineer" className="block text-[#469D89]" />
                         <span className="block mt-1 text-muted-foreground text-sm">
                             <span className="text-[#469D89]/40">@</span> Dhaka, Bangladesh
                         </span>
@@ -91,11 +91,11 @@ const ProfileIntro = () => {
                     >
                         <span className="text-[#469D89]/40 mt-0.5">{'>'}</span>
                         <p className="text-muted-foreground text-sm leading-6">
-                            Hi, I&apos;m{" "}
-                            <span className="text-[#469D89] font-semibold">Asif Ahsan</span>.{" "}
-                            Senior Software Engineer with{" "}
+                            Detail-oriented software engineer with{" "}
                             <span className="text-[#469D89] font-semibold">5+ years</span>{" "}
-                            building scalable, high-performance web applications.
+                            of professional experience, specializing in scalable distributed systems, real-time platforms, and cloud-native architectures.{" "}
+                            <span className="text-[#469D89] font-semibold">14+ projects</span>{" "}
+                            shipped across 5+ countries, serving 20+ clients and impacting 100K+ users.
                         </p>
                     </motion.div>
 

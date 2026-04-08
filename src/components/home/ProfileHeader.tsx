@@ -25,7 +25,7 @@ interface ContactInfo {
 
 const ProfileHeader = () => {
     const contactInfo: ContactInfo = {
-        email: "asifahhsan727@gmail.com",
+        email: "asifahsan727@gmail.com",
         phone: [
             { number: "+8801795870994", isWhatsApp: false },
             { number: "+8801685436578", isWhatsApp: true },

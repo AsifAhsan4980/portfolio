@@ -29,8 +29,8 @@ const services = [
     {
         icon: <FaMobile className="w-6 h-6" />,
         title: "Cross-Platform Mobile Apps",
-        description: "React Native mobile applications that deliver a native experience on both iOS and Android from a single codebase.",
-        tags: ["React Native", "Expo", "TypeScript", "Firebase"],
+        description: "Native and cross-platform mobile applications delivering seamless experiences on both iOS and Android.",
+        tags: ["Kotlin", "Swift", "Flutter", "Jetpack Compose"],
         featured: false,
     },
 ];

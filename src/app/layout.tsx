@@ -19,24 +19,28 @@ const jetbrainMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-    title: "Asif Ahsan | Senior Software Engineer",
+    title: "Asif Ahsan | Senior Software Engineer (Full Stack)",
     description:
-        "Senior Software Engineer specializing in JavaScript, TypeScript, React, Next.js, Angular, and AWS serverless technologies. Passionate about building scalable and high-performance web applications.",
+        "Senior Software Engineer with 5+ years of experience designing and building high-performance web applications. Shipped 14+ projects across 5+ countries, serving 20+ clients and impacting 100K+ users. Specialized in scalable distributed systems, real-time platforms, and cloud-native architectures.",
     keywords: [
         "Software Engineer",
+        "Full Stack Developer",
         "JavaScript",
         "TypeScript",
         "React",
         "Next.js",
         "AWS",
-        "Serverless",
-        "Web Development",
+        "Node.js",
+        "GraphQL",
+        "WebRTC",
+        "Kotlin",
+        "Swift",
     ],
     authors: [{ name: "Asif Ahsan", url: "https://asifahsan.com" }],
     openGraph: {
-        title: "Asif Ahsan | Senior Software Engineer",
+        title: "Asif Ahsan | Senior Software Engineer (Full Stack)",
         description:
-            "Senior Software Engineer specializing in JavaScript, TypeScript, React, Next.js, Angular, and AWS serverless technologies.",
+            "Senior Software Engineer with 5+ years of experience. Shipped 14+ projects across 5+ countries, impacting 100K+ users. Specialized in scalable distributed systems, real-time platforms, and cloud-native architectures.",
         url: "https://asifahsan.com",
         siteName: "Asif Ahsan",
         images: [
@@ -51,9 +55,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Asif Ahsan | Senior Software Engineer",
+        title: "Asif Ahsan | Senior Software Engineer (Full Stack)",
         description:
-            "Senior Software Engineer specializing in JavaScript, TypeScript, React, Next.js, Angular, and AWS serverless technologies.",
+            "Senior Software Engineer with 5+ years of experience. Shipped 14+ projects across 5+ countries, impacting 100K+ users. Specialized in scalable distributed systems and cloud-native architectures.",
         images: ["/assets/images/asifahsan.jpg"],
     },
     metadataBase: new URL("https://asifahsan.com"),
@@ -66,22 +70,26 @@ const jsonLd = {
     name: 'Asif Ahsan',
     url: 'https://asifahsan.com',
     jobTitle: 'Senior Software Engineer',
-    description: 'Senior Software Engineer specializing in JavaScript, TypeScript, React, Next.js, Angular, and AWS serverless technologies.',
+    description: 'Senior Software Engineer with 5+ years of experience designing and building high-performance web applications. Specialized in scalable distributed systems, real-time platforms, and cloud-native architectures.',
     sameAs: [
         'https://www.linkedin.com/in/asif-ahsan-27832012b/',
         'https://github.com/AsifAhsan4980',
         'https://www.facebook.com/asif.ahsan727/',
     ],
     knowsAbout: [
-        'JavaScript',
         'TypeScript',
+        'JavaScript',
         'React',
         'Next.js',
-        'Angular',
-        'AWS',
         'Node.js',
-        'DynamoDB',
+        'AWS',
+        'GraphQL',
+        'WebRTC',
         'PostgreSQL',
+        'Kotlin',
+        'Swift',
+        'Docker',
+        'Kubernetes',
     ],
 };
 
