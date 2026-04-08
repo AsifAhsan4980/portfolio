@@ -3,8 +3,33 @@ import EmailSentOption from "@/components/hire-me/emailSentOption";
 import MyContact from "@/components/hire-me/myContact";
 
 export const metadata: Metadata = {
-    title: "Hire Me | Asif Ahsan",
-    description: "Get in touch with Asif Ahsan for your software development needs. Senior Software Engineer specializing in scalable distributed systems, real-time platforms, and cloud-native architectures.",
+    title: "Hire Me — Senior Software Engineer",
+    description: "Hire Asif Ahsan — Senior Software Engineer with 5+ years experience. Specializing in React, Next.js, Node.js, AWS, and cloud-native architectures. Available for full-time, freelance, and consulting.",
+    keywords: [
+        "Hire Asif Ahsan",
+        "Hire Full Stack Developer",
+        "Hire Software Engineer Bangladesh",
+        "Hire React Developer",
+        "Hire Next.js Developer",
+        "Hire Node.js Developer",
+        "Freelance Software Engineer",
+        "Remote Software Engineer",
+        "Software Development Consulting",
+    ],
+    alternates: {
+        canonical: "https://asifahsan.com/hire-me",
+    },
+    openGraph: {
+        title: "Hire Me | Asif Ahsan — Senior Software Engineer",
+        description: "Senior Software Engineer with 5+ years experience. Available for full-time roles, freelance projects, and technical consulting.",
+        url: "https://asifahsan.com/hire-me",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Hire Me | Asif Ahsan",
+        description: "Senior Software Engineer — available for full-time, freelance, and consulting. React, Next.js, Node.js, AWS.",
+    },
 };
 
 const HireME = () => {

@@ -1,9 +1,15 @@
 "use client"
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import React, { useRef } from "react";
+import { motion, useMotionValue, useSpring, useTransform, AnimatePresence } from "framer-motion";
+import React, { useRef, useState, useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { projects, statusConfig } from "@/data/projects";
 import type { Project } from "@/data/projects";
+
+const statusFilters = ["All", "Live", "Ongoing", "Active", "Finished"] as const;
+type StatusFilter = typeof statusFilters[number];
+const ownerFilters = ["all", "professional", "personal"] as const;
+type OwnerFilter = typeof ownerFilters[number];
 
 const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
     const status = statusConfig[project.status] || statusConfig.Finished;
@@ -69,9 +75,11 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
 
                     {/* Image */}
                     <div className="relative overflow-hidden h-44">
-                        <img
+                        <Image
                             src={project.image}
                             alt={project.name}
+                            width={800}
+                            height={450}
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                             onError={(e) => {
                                 const el = e.currentTarget;
@@ -147,6 +155,18 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
 };
 
 const Projects = () => {
+    const [statusFilter, setStatusFilter] = useState<StatusFilter>("All");
+    const [ownerFilter, setOwnerFilter] = useState<OwnerFilter>("all");
+
+    const filteredProjects = useMemo(() => {
+        return projects.filter((p) => {
+            if (statusFilter !== "All" && p.status !== statusFilter) return false;
+            if (ownerFilter === "personal" && !p.personal) return false;
+            if (ownerFilter === "professional" && p.personal) return false;
+            return true;
+        });
+    }, [statusFilter, ownerFilter]);
+
     return (
         <div className="relative container py-12 min-h-screen">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-[#469D89]/6 rounded-full blur-[100px] pointer-events-none" />
@@ -154,7 +174,7 @@ const Projects = () => {
             <div className="absolute top-4 right-4 w-5 h-5 border-t-2 border-r-2 border-[#469D89]/30 pointer-events-none" />
 
             <motion.div
-                className="text-center mb-12 relative z-10"
+                className="text-center mb-8 relative z-10"
                 initial={{ opacity: 0, y: -30, filter: "blur(10px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{ duration: 0.75, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -168,14 +188,68 @@ const Projects = () => {
                     My <span className="gradient-text">Projects</span>
                 </h1>
                 <p className="mt-3 text-sm font-mono text-muted-foreground">
-                    <span className="text-[#469D89]/50">{'>'}</span> {projects.length} projects shipped · click any card for case study
+                    <span className="text-[#469D89]/50">{'>'}</span> {filteredProjects.length} of {projects.length} projects · click any card for case study
                 </p>
             </motion.div>
 
+            {/* Filter bar */}
+            <motion.div
+                className="relative z-10 mb-8 flex flex-col sm:flex-row items-center justify-center gap-4"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+            >
+                {/* Status filters */}
+                <div className="flex flex-wrap justify-center gap-2">
+                    {statusFilters.map((s) => (
+                        <button
+                            key={s}
+                            onClick={() => setStatusFilter(s)}
+                            className={`px-3 py-1.5 text-[10px] font-mono tracking-widest uppercase rounded-full border transition-all duration-200 ${
+                                statusFilter === s
+                                    ? "border-[#469D89] bg-[#469D89]/15 text-[#469D89] shadow-[0_0_12px_rgba(70,157,137,0.2)]"
+                                    : "border-[#469D89]/20 text-muted-foreground hover:border-[#469D89]/40 hover:text-[#469D89]"
+                            }`}
+                        >
+                            {s}
+                        </button>
+                    ))}
+                </div>
+
+                <div className="w-px h-5 bg-[#469D89]/20 hidden sm:block" />
+
+                {/* Owner filters */}
+                <div className="flex gap-2">
+                    {ownerFilters.map((o) => (
+                        <button
+                            key={o}
+                            onClick={() => setOwnerFilter(o)}
+                            className={`px-3 py-1.5 text-[10px] font-mono tracking-widest uppercase rounded-full border transition-all duration-200 ${
+                                ownerFilter === o
+                                    ? "border-[#469D89] bg-[#469D89]/15 text-[#469D89] shadow-[0_0_12px_rgba(70,157,137,0.2)]"
+                                    : "border-[#469D89]/20 text-muted-foreground hover:border-[#469D89]/40 hover:text-[#469D89]"
+                            }`}
+                        >
+                            {o}
+                        </button>
+                    ))}
+                </div>
+            </motion.div>
+
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-5 mb-12">
-                {projects.map((item, index) => (
-                    <ProjectCard key={item.id} project={item} index={index} />
-                ))}
+                <AnimatePresence mode="popLayout">
+                    {filteredProjects.map((item, index) => (
+                        <ProjectCard key={item.id} project={item} index={index} />
+                    ))}
+                </AnimatePresence>
+                {filteredProjects.length === 0 && (
+                    <div className="col-span-full text-center py-16">
+                        <div className="text-2xl font-mono text-[#469D89]/30 mb-2">No projects found</div>
+                        <p className="text-sm font-mono text-muted-foreground">
+                            Try adjusting the filters above
+                        </p>
+                    </div>
+                )}
             </div>
         </div>
     );

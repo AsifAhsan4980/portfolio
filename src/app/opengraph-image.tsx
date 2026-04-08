@@ -84,7 +84,7 @@ export default async function Image() {
 
                 {/* Stats */}
                 <div style={{ display: "flex", gap: 48, marginTop: 48 }}>
-                    {[["8+", "Years"], ["14+", "Projects"], ["5+", "Countries"]].map(([num, label]) => (
+                    {[["5+", "Years"], ["14+", "Projects"], ["5+", "Countries"]].map(([num, label]) => (
                         <div key={label} style={{ display: "flex", flexDirection: "column" }}>
                             <span style={{ color: "#469D89", fontSize: 30, fontWeight: 700 }}>{num}</span>
                             <span style={{ color: "rgba(255,255,255,0.35)", fontSize: 13, letterSpacing: "0.1em" }}>{label}</span>

@@ -1,8 +1,8 @@
 "use client";
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
-export default function CustomCursor() {
+export default memo(function CustomCursor() {
     const mouseX = useMotionValue(-100);
     const mouseY = useMotionValue(-100);
     const [isHovering, setIsHovering] = useState(false);
@@ -82,4 +82,4 @@ export default function CustomCursor() {
             />
         </>
     );
-}
+});

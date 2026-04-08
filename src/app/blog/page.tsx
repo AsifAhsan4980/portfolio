@@ -3,8 +3,31 @@ import Link from "next/link";
 import { blogPosts } from "@/data/blog";
 
 export const metadata: Metadata = {
-    title: "Blog | Asif Ahsan",
-    description: "Technical articles on full-stack engineering, AWS serverless, WebRTC, AI integration, and modern web development.",
+    title: "Tech Blog — Full Stack Engineering Articles",
+    description: "Technical deep dives on full-stack engineering, AWS serverless patterns, WebRTC, AI integration, microservices architecture, and modern web development by Asif Ahsan.",
+    keywords: [
+        "Software Engineering Blog",
+        "Full Stack Development Blog",
+        "React Next.js Tutorial",
+        "AWS Serverless Blog",
+        "WebRTC Tutorial",
+        "Microservices Architecture",
+        "Asif Ahsan Blog",
+    ],
+    alternates: {
+        canonical: "https://asifahsan.com/blog",
+    },
+    openGraph: {
+        title: "Tech Blog | Asif Ahsan",
+        description: "Technical deep dives on full-stack engineering, AWS serverless, WebRTC, AI integration, and modern web development.",
+        url: "https://asifahsan.com/blog",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Tech Blog | Asif Ahsan",
+        description: "Technical deep dives on full-stack engineering, AWS serverless, WebRTC, AI integration, and modern web development.",
+    },
 };
 
 interface ComingSoonPost {

@@ -58,5 +58,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'yearly',
             priority: 0.8,
         },
+        {
+            url: `${baseUrl}/games`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.5,
+        },
     ];
 }

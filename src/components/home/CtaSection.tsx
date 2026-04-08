@@ -78,7 +78,7 @@ const CtaSection: React.FC = () => {
                                 View Projects
                             </motion.button>
                         </Link>
-                        <a href="/resume.pdf" download="Asif_Ahsan_Resume.pdf">
+                        <a href="/assets/pdf/Resume_of_Asif_Ahsan.pdf" download="Asif_Ahsan_Resume.pdf">
                             <motion.button
                                 className="btn-ripple px-8 py-3.5 w-full sm:w-auto lg:w-full text-sm font-mono tracking-widest text-muted-foreground border border-border/50 rounded-xl hover:border-[#469D89]/40 hover:text-[#469D89] hover:bg-[#469D89]/5 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#469D89] focus:ring-offset-2 flex items-center justify-center gap-2"
                                 whileHover={{ scale: 1.04, y: -2 }}

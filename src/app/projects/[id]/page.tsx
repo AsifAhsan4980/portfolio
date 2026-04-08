@@ -1,6 +1,7 @@
 import { projects, statusConfig } from "@/data/projects";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -12,8 +13,25 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     const project = projects.find((p) => p.id === id);
     if (!project) return {};
     return {
-        title: `${project.name} | Asif Ahsan`,
+        title: `${project.name} — ${project.type}`,
         description: project.description,
+        keywords: [...project.technologies, project.type, "Asif Ahsan", "Portfolio"],
+        alternates: {
+            canonical: `https://asifahsan.com/projects/${project.id}`,
+        },
+        openGraph: {
+            title: `${project.name} | Asif Ahsan`,
+            description: project.description,
+            url: `https://asifahsan.com/projects/${project.id}`,
+            type: "article",
+            images: project.image ? [{ url: project.image, alt: project.name }] : undefined,
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: `${project.name} | Asif Ahsan`,
+            description: project.description,
+            images: project.image ? [project.image] : undefined,
+        },
     };
 }
 
@@ -24,8 +42,35 @@ export default async function ProjectCaseStudy({ params }: { params: Promise<{ i
 
     const status = statusConfig[project.status] || statusConfig.Finished;
 
+    const projectJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'CreativeWork',
+        name: project.name,
+        description: project.description,
+        url: project.website || `https://asifahsan.com/projects/${project.id}`,
+        author: {
+            '@type': 'Person',
+            name: 'Asif Ahsan',
+            url: 'https://asifahsan.com',
+        },
+        image: project.image,
+        keywords: project.technologies.join(', '),
+        breadcrumb: {
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://asifahsan.com' },
+                { '@type': 'ListItem', position: 2, name: 'Projects', item: 'https://asifahsan.com/projects' },
+                { '@type': 'ListItem', position: 3, name: project.name, item: `https://asifahsan.com/projects/${project.id}` },
+            ],
+        },
+    };
+
     return (
         <div className="relative min-h-screen">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(projectJsonLd) }}
+            />
             {/* Background */}
             <div className="absolute inset-0 bg-cyber-grid opacity-40 pointer-events-none" />
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#469D89]/5 rounded-full blur-[120px] pointer-events-none" />
@@ -42,10 +87,13 @@ export default async function ProjectCaseStudy({ params }: { params: Promise<{ i
                 {/* Hero */}
                 <div className="relative rounded-2xl overflow-hidden border border-[#469D89]/20 mb-8">
                     <div className="relative h-56 lg:h-72 overflow-hidden">
-                        <img
+                        <Image
                             src={project.image}
                             alt={project.name}
+                            width={1200}
+                            height={630}
                             className="w-full h-full object-cover"
+                            priority
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
 

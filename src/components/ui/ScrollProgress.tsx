@@ -1,7 +1,8 @@
 "use client";
+import { memo } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
-export default function ScrollProgress() {
+export default memo(function ScrollProgress() {
     const { scrollYProgress } = useScroll();
 
     const scaleY = useSpring(scrollYProgress, {
@@ -42,4 +43,4 @@ export default function ScrollProgress() {
             </div>
         </motion.div>
     );
-}
+});

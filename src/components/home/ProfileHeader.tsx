@@ -114,6 +114,23 @@ const ProfileHeader = () => {
                     </motion.div>
                 ))}
             </motion.div>
+
+            {/* Download CV */}
+            <motion.a
+                href="/assets/pdf/Resume_of_Asif_Ahsan.pdf"
+                download="Asif_Ahsan_Resume.pdf"
+                className="flex items-center gap-2 px-5 py-2 mt-2 text-[11px] font-mono tracking-[0.2em] uppercase text-[#469D89] border border-[#469D89]/40 rounded-full bg-[#469D89]/6 hover:bg-[#469D89]/12 hover:border-[#469D89]/70 hover:shadow-[0_0_16px_rgba(70,157,137,0.3)] transition-all duration-300"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.4, duration: 0.4 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+            >
+                <svg width="12" height="12" viewBox="0 0 13 13" fill="none">
+                    <path d="M6.5 1v8M3 6.5l3.5 3.5 3.5-3.5M1 12h11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                Download CV
+            </motion.a>
         </section>
     );
 };

@@ -1,7 +1,7 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 
-export default function AmbientGlow() {
+export default memo(function AmbientGlow() {
     const glowRef = useRef<HTMLDivElement>(null);
     const [isPointerFine, setIsPointerFine] = useState(false);
 
@@ -43,4 +43,4 @@ export default function AmbientGlow() {
             }}
         />
     );
-}
+});

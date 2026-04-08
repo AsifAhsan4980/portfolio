@@ -18,6 +18,7 @@ const menuList: Menu[] = [
     { id: 2, title: "Expertise", route: "/expertise", isComponent: false },
     { id: 4, title: "Projects",  route: "/projects",  isComponent: false },
     { id: 7, title: "Blog",      route: "/blog",      isComponent: false },
+    { id: 8, title: "Games",     route: "/games",     isComponent: false },
     { id: 5, title: "Contacts",  route: "/contacts",  isComponent: false },
     { id: 6, title: "Home",      route: "/",          isComponent: true  },
 ]
@@ -88,6 +89,21 @@ const Navbar = () => {
                             <div key={r.id}><ModeToggle /></div>
                         )
                     )}
+                    <a
+                        href="/assets/pdf/Resume_of_Asif_Ahsan.pdf"
+                        download="Asif_Ahsan_Resume.pdf"
+                        aria-label="Download Resume"
+                    >
+                        <motion.div
+                            className="w-9 h-9 flex items-center justify-center border border-[#469D89]/40 rounded-lg transition-all duration-300 hover:border-[#469D89] hover:bg-[#469D89]/10 hover:shadow-[0_0_14px_rgba(70,157,137,0.3)]"
+                            whileHover={{ scale: 1.08 }}
+                            whileTap={{ scale: 0.92 }}
+                        >
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="text-[#469D89]">
+                                <path d="M7 1v8.5M3.5 6.5L7 10l3.5-3.5M1.5 12.5h11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                        </motion.div>
+                    </a>
                     <Link href="hire-me">
                         <div className="relative">
                             {/* Available for work pulse */}
@@ -187,7 +203,9 @@ const Navbar = () => {
                                     </motion.div>
                                 ) : null
                             )}
-                            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45 }}>
+                            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45 }}
+                                className="flex flex-col items-center gap-4"
+                            >
                                 <Link onClick={toggleMobileMenu} href="hire-me">
                                     <div className="relative inline-block">
                                         <motion.span
@@ -200,6 +218,17 @@ const Navbar = () => {
                                         </button>
                                     </div>
                                 </Link>
+                                <a
+                                    href="/assets/pdf/Resume_of_Asif_Ahsan.pdf"
+                                    download="Asif_Ahsan_Resume.pdf"
+                                    onClick={toggleMobileMenu}
+                                    className="flex items-center gap-2 px-8 py-3 text-sm font-mono tracking-widest text-muted-foreground border border-border/50 rounded-lg hover:border-[#469D89]/40 hover:text-[#469D89] hover:bg-[#469D89]/5 transition-all duration-300"
+                                >
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                        <path d="M6.5 1v8M3 6.5l3.5 3.5 3.5-3.5M1 12h11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                    Download CV
+                                </a>
                             </motion.div>
                         </nav>
                     </motion.div>
