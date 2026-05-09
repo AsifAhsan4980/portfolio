@@ -34,7 +34,7 @@ export function matchIntent(userMessage: string): ChatResponse {
     // Handle "view all" / "all projects" chip
     if (/^(view\s*)?all(\s*projects)?$/i.test(trimmed)) {
         return {
-            text: "Here are all of Asif's projects:",
+            text: "Here are all of my projects:",
             links: [{ label: "View All Projects", url: "/projects" }],
             chips: ["Skills", "Experience", "Contact"],
         };

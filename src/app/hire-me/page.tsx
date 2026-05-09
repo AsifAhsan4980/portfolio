@@ -4,7 +4,7 @@ import MyContact from "@/components/hire-me/myContact";
 
 export const metadata: Metadata = {
     title: "Hire Me — Senior Software Engineer",
-    description: "Hire Asif Ahsan — Senior Software Engineer with 5+ years experience. Specializing in React, Next.js, Node.js, AWS, and cloud-native architectures. Available for full-time, freelance, and consulting.",
+    description: "Hire Asif Ahsan — Senior Software Engineer with 6+ years experience. Specializing in React, Next.js, Node.js, AWS, and cloud-native architectures. Available for full-time, freelance, and consulting.",
     keywords: [
         "Hire Asif Ahsan",
         "Hire Full Stack Developer",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     },
     openGraph: {
         title: "Hire Me | Asif Ahsan — Senior Software Engineer",
-        description: "Senior Software Engineer with 5+ years experience. Available for full-time roles, freelance projects, and technical consulting.",
+        description: "Senior Software Engineer with 6+ years experience. Available for full-time roles, freelance projects, and technical consulting.",
         url: "https://asifahsan.com/hire-me",
         type: "website",
     },

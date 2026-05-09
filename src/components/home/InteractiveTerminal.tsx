@@ -16,7 +16,7 @@ const InteractiveTerminal = () => {
         {
             command: "",
             output: [
-                { type: "text", content: "Welcome to Asif's terminal. Type 'help' to get started." },
+                { type: "text", content: "Welcome to Asif's terminal. Type 'knock knock' to get started." },
             ],
         },
     ]);
@@ -69,7 +69,7 @@ const InteractiveTerminal = () => {
                     output: [
                         {
                             type: "error",
-                            content: `Command not found: ${trimmed}. Type 'help' for available commands.`,
+                            content: `Command not found: ${trimmed}. Type 'knock knock' for available commands.`,
                         },
                     ],
                 },
@@ -164,7 +164,7 @@ const InteractiveTerminal = () => {
                     <span className="gradient-text">Terminal</span>
                 </h2>
                 <p className="mt-2 text-sm font-mono text-muted-foreground">
-                    <span className="text-[#469D89]/50">{'>'}</span> Type &apos;help&apos; to explore
+                    <span className="text-[#469D89]/50">{'>'}</span> Type &apos;knock knock&apos; to explore
                 </p>
             </div>
 

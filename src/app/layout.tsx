@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         template: "%s | Asif Ahsan",
     },
     description:
-        "Senior Software Engineer with 5+ years of experience designing and building high-performance web applications. Shipped 14+ projects across 5+ countries, serving 20+ clients and impacting 100K+ users. Specialized in scalable distributed systems, real-time platforms, and cloud-native architectures.",
+        "Senior Software Engineer with 6+ years of experience designing and building high-performance web applications. Shipped 14+ projects across 5+ countries, serving 20+ clients and impacting 100K+ users. Specialized in scalable distributed systems, real-time platforms, and cloud-native architectures.",
     keywords: [
         "Asif Ahsan",
         "Senior Software Engineer",
@@ -56,6 +56,8 @@ export const metadata: Metadata = {
         "E-Commerce Development",
         "Mobile App Development",
         "Microservices Architecture",
+        "Cocos Studio",
+        "Unity Game Engine",
         "Serverless Development",
         "Hire Software Engineer Bangladesh",
         "Freelance Full Stack Developer",
@@ -82,7 +84,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Asif Ahsan | Senior Software Engineer (Full Stack)",
         description:
-            "Senior Software Engineer with 5+ years of experience. Shipped 14+ projects across 5+ countries, impacting 100K+ users. Specialized in scalable distributed systems, real-time platforms, and cloud-native architectures.",
+            "Senior Software Engineer with 6+ years of experience. Shipped 14+ projects across 5+ countries, impacting 100K+ users. Specialized in scalable distributed systems, real-time platforms, and cloud-native architectures.",
         url: "https://asifahsan.com",
         siteName: "Asif Ahsan",
         locale: "en_US",
@@ -100,7 +102,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Asif Ahsan | Senior Software Engineer (Full Stack)",
         description:
-            "Senior Software Engineer with 5+ years of experience. Shipped 14+ projects across 5+ countries, impacting 100K+ users. Specialized in scalable distributed systems and cloud-native architectures.",
+            "Senior Software Engineer with 6+ years of experience. Shipped 14+ projects across 5+ countries, impacting 100K+ users. Specialized in scalable distributed systems and cloud-native architectures.",
         images: ["/opengraph-image"],
     },
 };
@@ -129,7 +131,7 @@ const jsonLd = {
     email: 'asifahsan727@gmail.com',
     telephone: '+8801795870994',
     jobTitle: 'Senior Software Engineer',
-    description: 'Senior Software Engineer with 5+ years of experience designing and building high-performance web applications. Shipped 14+ projects across 5+ countries, serving 20+ clients and impacting 100K+ users. Specialized in scalable distributed systems, real-time platforms, and cloud-native architectures.',
+    description: 'Senior Software Engineer with 6+ years of experience designing and building high-performance web applications. Shipped 14+ projects across 5+ countries, serving 20+ clients and impacting 100K+ users. Specialized in scalable distributed systems, real-time platforms, and cloud-native architectures.',
     image: 'https://asifahsan.com/assets/images/asifahsan.jpg',
     address: {
         '@type': 'PostalAddress',

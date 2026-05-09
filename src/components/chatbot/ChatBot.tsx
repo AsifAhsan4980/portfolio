@@ -97,7 +97,7 @@ export default function ChatBot() {
                         animate={{ scale: 1, opacity: 1 }}
                         exit={{ scale: 0, opacity: 0 }}
                         transition={{ type: "spring", damping: 20, stiffness: 300 }}
-                        aria-label="Open chat assistant"
+                        aria-label="Chat with Asif"
                     >
                         <FiMessageCircle size={24} />
                     </motion.button>

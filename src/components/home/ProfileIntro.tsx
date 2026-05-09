@@ -92,7 +92,7 @@ const ProfileIntro = () => {
                         <span className="text-[#469D89]/40 mt-0.5">{'>'}</span>
                         <p className="text-muted-foreground text-sm leading-6">
                             Detail-oriented software engineer with{" "}
-                            <span className="text-[#469D89] font-semibold">5+ years</span>{" "}
+                            <span className="text-[#469D89] font-semibold">6+ years</span>{" "}
                             of professional experience, specializing in scalable distributed systems, real-time platforms, and cloud-native architectures.{" "}
                             <span className="text-[#469D89] font-semibold">14+ projects</span>{" "}
                             shipped across 5+ countries, serving 20+ clients and impacting 100K+ users.
@@ -110,7 +110,7 @@ const ProfileIntro = () => {
                             STACK<span className="text-[#469D89]/25 mx-1">::</span>React / Next.js
                         </div>
                         <div>
-                            EXP<span className="text-[#469D89]/25 mx-1">::</span>5+ years
+                            EXP<span className="text-[#469D89]/25 mx-1">::</span>6+ years
                         </div>
                         <div>
                             REGION<span className="text-[#469D89]/25 mx-1">::</span>BD / Remote

@@ -54,7 +54,7 @@ export default function ChatPanel({ messages, isTyping, onSend, onChipClick, onC
                         animate={{ opacity: [1, 0.3, 1] }}
                         transition={{ duration: 1.5, repeat: Infinity }}
                     />
-                    <span className="text-sm font-mono font-semibold text-foreground">Portfolio Assistant</span>
+                    <span className="text-sm font-mono font-semibold text-foreground">Asif Ahsan</span>
                 </div>
                 <button
                     onClick={onClose}

@@ -39,6 +39,8 @@ const row3 = [
     { name: "Kubernetes",     color: "#326CE5" },
     { name: "Terraform",      color: "#7B42BC" },
     { name: "Docker",         color: "#2496ED" },
+    { name: "Cocos Studio",   color: "#55C2E1" },
+    { name: "Unity",          color: "#ffffff" },
 ];
 
 const row2 = [

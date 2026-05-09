@@ -39,7 +39,7 @@ export function DesignerInfo() {
                     transition={{ duration: 0.6, delay: 0.22, ease: [0.25, 0.46, 0.45, 0.94] }}
                 >
                     Highly skilled full-stack developer with{" "}
-                    <span className="text-[#469D89] font-semibold">5+ years</span>{" "}
+                    <span className="text-[#469D89] font-semibold">6+ years</span>{" "}
                     designing and building dynamic, high-performance web applications.
                     Specialized in writing clean, well-documented code with a strong
                     focus on user-friendly interfaces and seamless functionality —

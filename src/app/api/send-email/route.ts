@@ -102,14 +102,8 @@ export async function POST(request: Request) {
 
         const { clientEmail, subject, message, captchaToken } = validationResult.data;
 
-        // Verify reCAPTCHA if configured
-        if (process.env.RECAPTCHA_SECRET_KEY) {
-            if (!captchaToken) {
-                return NextResponse.json(
-                    { error: 'CAPTCHA verification required.' },
-                    { status: 400 }
-                );
-            }
+        // Verify reCAPTCHA if configured and token provided
+        if (process.env.RECAPTCHA_SECRET_KEY && captchaToken) {
             const isHuman = await verifyCaptcha(captchaToken);
             if (!isHuman) {
                 return NextResponse.json(

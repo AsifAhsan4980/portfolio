@@ -11,6 +11,28 @@ export interface Command {
 }
 
 export const commands: Record<string, Command> = {
+    "knock knock": {
+        description: "Who's there? A list of commands!",
+        execute: () => [
+            { type: "text", content: "Who's there? It's Asif! Here's what I can do:" },
+            {
+                type: "list",
+                content: "",
+                items: [
+                    "knock knock — Who's there? (this message)",
+                    "about       — Who am I?",
+                    "skills      — Technical skills overview",
+                    "projects    — Featured projects",
+                    "experience  — Work experience",
+                    "contact     — Get in touch",
+                    "resume      — Download my resume",
+                    "socials     — Social media links",
+                    "clear       — Clear terminal",
+                ],
+            },
+        ],
+    },
+
     help: {
         description: "List available commands",
         execute: () => [
@@ -19,7 +41,7 @@ export const commands: Record<string, Command> = {
                 type: "list",
                 content: "",
                 items: [
-                    "help        — Show this help message",
+                    "knock knock — Who's there? (start here!)",
                     "about       — Who am I?",
                     "skills      — Technical skills overview",
                     "projects    — Featured projects",
@@ -40,7 +62,7 @@ export const commands: Record<string, Command> = {
             {
                 type: "text",
                 content:
-                    "Senior Software Engineer with 5+ years of professional experience. Specializing in scalable distributed systems, real-time platforms, and cloud-native architectures. Shipped 14+ projects across 5+ countries, serving 20+ clients and impacting 100K+ users.",
+                    "Senior Software Engineer with 6+ years of professional experience. Specializing in scalable distributed systems, real-time platforms, and cloud-native architectures. Shipped 14+ projects across 5+ countries, serving 20+ clients and impacting 100K+ users.",
             },
             { type: "text", content: "" },
             { type: "text", content: "Location: Dhaka, Bangladesh" },
@@ -64,6 +86,7 @@ export const commands: Record<string, Command> = {
                     "DevOps    → Docker, Kubernetes, CI/CD, Nginx",
                     "Real-Time → WebRTC, Agora SDK, WebSockets",
                     "AI/ML     → Gemini Nano, Banana, Claude API",
+                    "Game      → Cocos Studio, Unity",
                 ],
             },
         ],

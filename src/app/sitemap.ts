@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { projects } from '@/data/projects';
 import { blogPosts } from '@/data/blog';
+import { games } from '@/data/games';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://asifahsan.com';
@@ -17,6 +18,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.7,
+    }));
+
+    const gameRoutes: MetadataRoute.Sitemap = games.map((game) => ({
+        url: `${baseUrl}/games/${game.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.5,
     }));
 
     return [
@@ -64,5 +72,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly',
             priority: 0.5,
         },
+        ...gameRoutes,
     ];
 }

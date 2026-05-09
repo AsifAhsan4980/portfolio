@@ -1,0 +1,2869 @@
+{
+  "metadata": {
+    "name": "Asif Ahsan",
+    "firstName": "Asif",
+    "lastName": "Ahsan",
+    "title": "Senior Software Engineer (Full Stack)",
+    "email": "asifahsan727@gmail.com",
+    "location": "Mirpur 1, Dhaka, Bangladesh",
+    "address": "35/c Shah Alibag, Mirpur 1, Dhaka, Bangladesh",
+    "baseUrl": "https://asifahsan.com",
+    "resumeUrl": "/assets/pdf/Resume_of_Asif_Ahsan.pdf",
+    "resumeFilename": "Asif_Ahsan_Resume.pdf",
+    "badges": [
+      {
+        "text": "Available for Hire",
+        "color": "#469D89"
+      }
+    ]
+  },
+  "summary": {
+    "text": "Detail-oriented and passionate software engineer with 5+ years of professional experience designing and building high-performance web applications. Specialized in writing clean, well-documented code with a strong focus on user-friendly interfaces and seamless functionality — delivering scalable, maintainable solutions that drive real results.",
+    "highlights": [
+      "Shipped 14+ projects across 5+ countries, serving 20+ clients and impacting 100K+ users.",
+      "Specialized in building scalable distributed systems, real-time platforms, and cloud-native architectures."
+    ]
+  },
+  "contact": {
+    "email": "asifahsan727@gmail.com",
+    "phones": [
+      {
+        "number": "+8801795870994",
+        "label": "Primary",
+        "isWhatsApp": false
+      },
+      {
+        "number": "+8801685436578",
+        "label": "WhatsApp",
+        "isWhatsApp": true
+      }
+    ],
+    "address": "35/c Shah Alibag, Mirpur 1, Dhaka, Bangladesh",
+    "socialLinks": [
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/AsifAhsan4980",
+        "icon": "FaGithub"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/asif-ahsan-27832012b/",
+        "icon": "FaLinkedin"
+      },
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/asif.ahsan727/",
+        "icon": "FaFacebook"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/aragorn_isildurr/",
+        "icon": "FaInstagram"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": 5,
+      "suffix": "+",
+      "label": "Years Experience",
+      "sub": "5+ years professional experience"
+    },
+    {
+      "value": 14,
+      "suffix": "+",
+      "label": "Projects Shipped",
+      "sub": "Across 5+ countries"
+    },
+    {
+      "value": 20,
+      "suffix": "+",
+      "label": "Clients Served",
+      "sub": "Startups to enterprises"
+    },
+    {
+      "value": 100,
+      "suffix": "K+",
+      "label": "Users Impacted",
+      "sub": "Across all platforms"
+    }
+  ],
+  "techStack": {
+    "row1": [
+      {
+        "name": "React.js",
+        "color": "#61DAFB"
+      },
+      {
+        "name": "Next.js",
+        "color": "#ffffff"
+      },
+      {
+        "name": "TypeScript",
+        "color": "#3178C6"
+      },
+      {
+        "name": "Node.js",
+        "color": "#339933"
+      },
+      {
+        "name": "GraphQL",
+        "color": "#E10098"
+      },
+      {
+        "name": "AWS Lambda",
+        "color": "#FF9900"
+      },
+      {
+        "name": "DynamoDB",
+        "color": "#4053D6"
+      },
+      {
+        "name": "Angular",
+        "color": "#DD0031"
+      },
+      {
+        "name": "PostgreSQL",
+        "color": "#4169E1"
+      },
+      {
+        "name": "MongoDB",
+        "color": "#47A248"
+      },
+      {
+        "name": "Tailwind CSS",
+        "color": "#06B6D4"
+      },
+      {
+        "name": "Redux",
+        "color": "#764ABC"
+      }
+    ],
+    "row2": [
+      {
+        "name": "AWS AppSync",
+        "color": "#FF9900"
+      },
+      {
+        "name": "AWS Cognito",
+        "color": "#FF9900"
+      },
+      {
+        "name": "AWS S3",
+        "color": "#FF9900"
+      },
+      {
+        "name": "Express.js",
+        "color": "#ffffff"
+      },
+      {
+        "name": "Firebase",
+        "color": "#FFCA28"
+      },
+      {
+        "name": "React Native",
+        "color": "#61DAFB"
+      },
+      {
+        "name": "Shadcn UI",
+        "color": "#ffffff"
+      },
+      {
+        "name": "Material UI",
+        "color": "#007FFF"
+      },
+      {
+        "name": "Ant Design",
+        "color": "#0170FE"
+      },
+      {
+        "name": "EC2",
+        "color": "#FF9900"
+      },
+      {
+        "name": "DigitalOcean",
+        "color": "#0080FF"
+      },
+      {
+        "name": "Vercel",
+        "color": "#ffffff"
+      }
+    ],
+    "row3": [
+      {
+        "name": "Kotlin",
+        "color": "#7F52FF"
+      },
+      {
+        "name": "Swift",
+        "color": "#F05138"
+      },
+      {
+        "name": "Python",
+        "color": "#3776AB"
+      },
+      {
+        "name": "Dart",
+        "color": "#0175C2"
+      },
+      {
+        "name": "C++",
+        "color": "#00599C"
+      },
+      {
+        "name": "WebRTC",
+        "color": "#469D89"
+      },
+      {
+        "name": "Agora SDK",
+        "color": "#099DFD"
+      },
+      {
+        "name": "ClickHouse",
+        "color": "#FFCC00"
+      },
+      {
+        "name": "Kubernetes",
+        "color": "#326CE5"
+      },
+      {
+        "name": "Terraform",
+        "color": "#7B42BC"
+      },
+      {
+        "name": "Docker",
+        "color": "#2496ED"
+      },
+      {
+        "name": "Cocos Studio",
+        "color": "#55C2E1"
+      },
+      {
+        "name": "Unity",
+        "color": "#ffffff"
+      }
+    ],
+    "rowDesign": [
+      {
+        "name": "Figma",
+        "color": "#F24E1E"
+      },
+      {
+        "name": "Adobe XD",
+        "color": "#FF61F6"
+      },
+      {
+        "name": "Photoshop",
+        "color": "#31A8FF"
+      },
+      {
+        "name": "Illustrator",
+        "color": "#FF9A00"
+      },
+      {
+        "name": "After Effects",
+        "color": "#9999FF"
+      },
+      {
+        "name": "Premiere Pro",
+        "color": "#9999FF"
+      },
+      {
+        "name": "Media Encoder",
+        "color": "#B197FC"
+      }
+    ]
+  },
+  "services": [
+    {
+      "icon": "FaCode",
+      "title": "Full-Stack Web Development",
+      "description": "End-to-end web applications using React, Next.js, Angular, and Node.js — from pixel-perfect UIs to robust server-side logic.",
+      "tags": [
+        "React",
+        "Next.js",
+        "Angular",
+        "Node.js",
+        "TypeScript"
+      ],
+      "featured": true
+    },
+    {
+      "icon": "FaCloud",
+      "title": "AWS Cloud Architecture",
+      "description": "Serverless, scalable, and cost-efficient cloud solutions built on Lambda, AppSync, DynamoDB, S3, Cognito, and more.",
+      "tags": [
+        "Lambda",
+        "DynamoDB",
+        "S3",
+        "Cognito",
+        "AppSync"
+      ],
+      "featured": false
+    },
+    {
+      "icon": "SiGraphql",
+      "title": "API & Backend Engineering",
+      "description": "Designed and built GraphQL and REST APIs with real-time capabilities, robust authentication, and clean architecture.",
+      "tags": [
+        "GraphQL",
+        "REST",
+        "Express",
+        "PostgreSQL",
+        "MongoDB"
+      ],
+      "featured": false
+    },
+    {
+      "icon": "FaMobile",
+      "title": "Cross-Platform Mobile Apps",
+      "description": "Native and cross-platform mobile applications delivering seamless experiences on both iOS and Android.",
+      "tags": [
+        "Kotlin",
+        "Swift",
+        "Flutter",
+        "Jetpack Compose"
+      ],
+      "featured": false
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2016–2020",
+      "role": "BSc in Computer Science",
+      "company": "BRAC University · Dhaka",
+      "description": "Four years of computer science alongside active involvement in campus clubs — leading IT operations, competitive chess, and the university's tech community.",
+      "tags": [
+        "Algorithms",
+        "Data Structures",
+        "OOP",
+        "Web Dev"
+      ],
+      "highlight": false,
+      "activities": [
+        {
+          "title": "BizBee Business Club — Assistant Director of IT",
+          "period": "2016–2020"
+        },
+        {
+          "title": "Chess Club — Director",
+          "period": "2017–2020"
+        },
+        {
+          "title": "Computer Club — Senior Executive",
+          "period": "2017–2018"
+        }
+      ]
+    },
+    {
+      "year": "2021",
+      "role": "Frontend Engineer Intern",
+      "company": "Gononet Online Solution · Karwan Bazar, Dhaka",
+      "description": "Built complex forms and form validation flows for the Gonojob job portal using Angular.",
+      "tags": [
+        "Angular",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "highlight": false
+    },
+    {
+      "year": "2021",
+      "role": "Junior Full Stack Developer",
+      "company": "Bengal Software · Bashundhara RA, Dhaka",
+      "description": "Built Pipo Bazar (in-game top-up e-commerce for PUBG Mobile, COC, COD Mobile) and Azan (prayer time app backend with 98% notification delivery rate).",
+      "tags": [
+        "Next.js",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "AWS Lambda",
+        "React"
+      ],
+      "highlight": false
+    },
+    {
+      "year": "2021–2022",
+      "role": "Software Engineer",
+      "company": "Tech Hack Canada · Banani, Dhaka",
+      "description": "Built Remote Jobs BD — a full-stack job platform connecting Bangladeshi professionals with remote opportunities in Canada using MERN stack monorepo.",
+      "tags": [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ],
+      "highlight": false
+    },
+    {
+      "year": "2022–2025",
+      "role": "Software Engineer → Senior Software Engineer (Promoted)",
+      "company": "Doodle Technologies Ltd. · Mirpur DOHS, Dhaka",
+      "description": "Promoted to SSE — developed backend systems for Tribel (US social media platform), led Wozaif recruitment platform as team lead, architected Ticket Tomorrow's ticketing system with bKash/SSLCommerz integration, and built multilingual portfolio sites with Lighthouse 95+ scores.",
+      "tags": [
+        "Next.js",
+        "React",
+        "AWS Lambda",
+        "GraphQL",
+        "MongoDB",
+        "i18n"
+      ],
+      "highlight": true
+    },
+    {
+      "year": "2025–Present",
+      "role": "Senior Software Engineer",
+      "company": "Right Tracks IT · Mohakhali DOHS, Dhaka",
+      "description": "Built ZodoLive admin dashboard with real-time statistics and RBAC. Developed Creator AI platform with Gemini Nano and Banana AI pipelines. Built LivePlay multiplayer gaming platform with Cocos Creator 3.x, Socket.IO, and real-time bet batching.",
+      "tags": [
+        "Next.js",
+        "AWS Lambda",
+        "AppSync",
+        "Agora SDK",
+        "Cocos Creator",
+        "Socket.IO",
+        "TypeScript"
+      ],
+      "highlight": false
+    }
+  ],
+  "experience": [
+    {
+      "company": "Right Tracks IT",
+      "role": "Senior Software Engineer",
+      "location": "Mohakhali DOHS, Dhaka",
+      "period": "2025 – Present",
+      "projects": [
+        {
+          "name": "ZodoLive",
+          "type": "Live Streaming Platform — Android & iOS",
+          "bullets": [
+            "Built the entire admin dashboard from scratch, including real-time statistics, advanced theme management, and full role-based access control (RBAC)",
+            "Implemented a glass UI theme system with dynamic customization",
+            "Integrated Agora SDK for live user monitoring and stream supervision",
+            "Designed and deployed a marketing website end-to-end",
+            "Developed automated bot systems for engagement simulation",
+            "Implemented dynamic dashboard navigation using AWS Cognito roles and groups",
+            "Built backend services (user management, diamond transactions, PK battle system, cron jobs, purchase flows, data migration pipelines, DynamoDB ↔ PostgreSQL sync) in collaboration with the tech lead"
+          ],
+          "stack": [
+            "Next.js",
+            "React",
+            "Node.js",
+            "TypeScript",
+            "AWS Lambda",
+            "AppSync",
+            "DynamoDB",
+            "PostgreSQL",
+            "S3",
+            "Cognito",
+            "GraphQL",
+            "Agora SDK"
+          ]
+        },
+        {
+          "name": "Creator AI Platform",
+          "type": "Paint & Vida Apps — iOS & Android",
+          "bullets": [
+            "Built AI platform powering two applications: Paint (image generation) and Vida (video generation)",
+            "Developed unified backend and admin dashboard system",
+            "Implemented content, category, and slider management system",
+            "Integrated Gemini Nano and Banana for AI generation pipelines"
+          ],
+          "stack": [
+            "Next.js",
+            "TypeScript",
+            "AWS Amplify",
+            "AppSync",
+            "GraphQL",
+            "S3",
+            "Cognito",
+            "Redux Toolkit",
+            "Tailwind",
+            "Shadcn"
+          ]
+        },
+        {
+          "name": "LivePlay",
+          "type": "Real-Time Multiplayer Gaming Platform",
+          "bullets": [
+            "Integrated full API and WebSocket (Socket.IO) connectivity for two lightweight multiplayer games: Fruits Loop and Greedy Prime, built in Cocos Creator 3.x with TypeScript",
+            "Implemented intelligent bet batching system — debounce + hard-cap logic that coalesces rapid taps into single server calls per (board, coin) bucket, reducing server load",
+            "Built resilient networking layer: WebSocket with sequence-based resume-on-reconnect, 15s heartbeat watchdog, HTTP fallback, and error-driven recovery across 50+ error codes",
+            "Wired all dynamic game state: real-time clock sync, phase transitions (betting → processing → show), live multiplier updates, PNL calculation, and balance reconciliation",
+            "Connected wheel spin animations to server result data, fire effects, winner highlights, and confetti — synchronized with backend game state",
+            "Integrated real-time multiplayer features: live leaderboard, active user tracking, opponent bet animations, and ranked session PNL"
+          ],
+          "stack": [
+            "Cocos Creator 3.x",
+            "TypeScript",
+            "Socket.IO",
+            "CloudFront CDN",
+            "REST APIs"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Doodle Technologies Ltd.",
+      "role": "Software Engineer → Senior Software Engineer (Promoted)",
+      "location": "Mirpur DOHS, Dhaka",
+      "period": "2022 – 2025",
+      "projects": [
+        {
+          "name": "Tribel",
+          "type": "Social Media Platform — US",
+          "bullets": [
+            "Developed core backend features: posts, stories, collaborations, feeds, and trending system",
+            "Recognized as a star contributor for resolving critical bugs and improving platform stability",
+            "Optimized media processing pipelines using FFmpeg, reducing video processing time",
+            "Integrated AWS Rekognition for automated content moderation, reducing manual review workload",
+            "Built user retention mechanisms to improve engagement and reduce churn"
+          ],
+          "stack": [
+            "React",
+            "Node.js",
+            "MongoDB",
+            "Express",
+            "AWS S3",
+            "Amplify",
+            "FFmpeg",
+            "AWS Rekognition"
+          ]
+        },
+        {
+          "name": "Wozaif",
+          "type": "Recruitment Platform — Team Lead",
+          "bullets": [
+            "Led development and converted Figma designs into a production-ready application",
+            "Designed full system architecture covering employer, employee, and role management flows",
+            "Implemented authentication and authorization systems",
+            "Delivered a multilingual platform with RTL support"
+          ],
+          "stack": [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Redux",
+            "Tailwind",
+            "i18n",
+            "AWS Lambda",
+            "AppSync",
+            "S3",
+            "Cognito"
+          ]
+        },
+        {
+          "name": "Ticket Tomorrow",
+          "type": "Ticketing Platform",
+          "bullets": [
+            "Architected and developed the complete system: frontend, backend, and admin dashboard",
+            "Built user, organization, ticketing, and promotion systems end-to-end",
+            "Integrated bKash and SSLCommerz payment gateways with full refund flows",
+            "Implemented backend PDF generation and automated mailing system",
+            "Built role-based dynamic UI system",
+            "Mentored junior developers and provided architecture guidance"
+          ],
+          "stack": [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Redux",
+            "AWS Lambda",
+            "AppSync",
+            "DynamoDB",
+            "Cognito"
+          ]
+        },
+        {
+          "name": "Doodle INC & Doodle Odoo",
+          "type": "Company Website & Portfolio Platform",
+          "bullets": [
+            "Built multilingual, SEO-optimized websites achieving Lighthouse score of 95+",
+            "Increased inbound leads by 60% and organic traffic by 40%"
+          ],
+          "stack": [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "AWS Amplify",
+            "i18n"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Tech Hack Canada",
+      "role": "Software Engineer",
+      "location": "Banani, Dhaka",
+      "period": "2021 – 2022",
+      "projects": [
+        {
+          "name": "Remote Jobs BD",
+          "type": "Bangladesh–Canada Remote Job Portal",
+          "bullets": [
+            "Built a full-stack job platform connecting Bangladeshi professionals with remote opportunities in Canada",
+            "Designed employer and job seeker flows including job posting, application management, and profile system",
+            "Structured the codebase as a monorepo sharing types and utilities across frontend and backend"
+          ],
+          "stack": [
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Bengal Software",
+      "role": "Junior Full Stack Developer",
+      "location": "Bashundhara RA, Dhaka",
+      "period": "2021",
+      "projects": [
+        {
+          "name": "Pipo Bazar",
+          "type": "In-Game Top-Up E-Commerce",
+          "bullets": [
+            "Built a marketplace for in-game purchases across PUBG Mobile, Clash of Clans, and Call of Duty Mobile",
+            "Developed product listing, search, cart, and checkout systems with manual payment processing",
+            "Implemented order management and fulfillment tracking for digital goods delivery"
+          ],
+          "stack": [
+            "Next.js",
+            "Node.js",
+            "Express",
+            "MongoDB"
+          ]
+        },
+        {
+          "name": "Azan",
+          "type": "Prayer Time App — Backend & Dashboard",
+          "bullets": [
+            "Built REST APIs for global prayer time calculations",
+            "Developed admin dashboard and push notification system",
+            "Achieved 98% notification delivery rate"
+          ],
+          "stack": [
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "AWS Lambda",
+            "React"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Gononet Online Solution",
+      "role": "Frontend Engineer Intern",
+      "location": "Karwan Bazar, Dhaka",
+      "period": "2021",
+      "projects": [
+        {
+          "name": "Gonojob",
+          "type": "Job Portal",
+          "bullets": [
+            "Built complex forms and form validation flows for job listings and applicant registration",
+            "Developed reusable form components following Angular best practices"
+          ],
+          "stack": [
+            "Angular"
+          ]
+        }
+      ]
+    }
+  ],
+  "personalProjects": [
+    {
+      "name": "Gunti",
+      "type": "Personal Finance & Expense Manager — Android, iOS, Web",
+      "period": "2026 – Present",
+      "bullets": [
+        "Architected a cross-platform expense management app backed by 11 independent Node.js microservices, each with isolated PostgreSQL databases",
+        "Implemented SMS auto-parsing for 6+ Bangladeshi banks and mobile wallets (bKash, Nagad, Rocket, DBBL) to automatically detect and log transactions",
+        "Integrated 5 payment providers (bKash, Nagad, SSLCommerz, Google Play Billing, Apple In-App Purchase) with webhook handling and subscription automation",
+        "Built AI-powered spending insights using OpenAI API, with heatmaps, trend charts, and category breakdowns",
+        "Designed local-first architecture — Room DB (Android), CoreData (iOS), Serwist PWA (Web) — with background sync",
+        "Built admin dashboard with feature flags, promo codes, and MRR/churn analytics"
+      ],
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Redis",
+        "Kotlin",
+        "Jetpack Compose",
+        "Swift",
+        "SwiftUI",
+        "Docker",
+        "AWS S3",
+        "Firebase",
+        "OpenAI API"
+      ]
+    },
+    {
+      "name": "Nexus RTC SDK",
+      "type": "Real-Time Communications SDK",
+      "period": "2025 – Present",
+      "bullets": [
+        "Built a real-time communication SDK with custom media engine and signaling layer",
+        "Achieved sub-50ms end-to-end latency in controlled testing environments"
+      ],
+      "stack": [
+        "WebRTC",
+        "C++",
+        "Node.js",
+        "Kubernetes",
+        "Redis",
+        "ClickHouse",
+        "AWS"
+      ]
+    },
+    {
+      "name": "Uppsala Central Gross",
+      "type": "Sweden — Grocery E-Commerce",
+      "period": "2026 – Present",
+      "bullets": [
+        "Contributing to backend and mobile integrations for a grocery e-commerce system"
+      ],
+      "stack": [
+        "Node.js",
+        "Express",
+        "Prisma",
+        "SQLite",
+        "Kotlin"
+      ]
+    }
+  ],
+  "skills": {
+    "frontend": [
+      "React",
+      "Next.js",
+      "Angular",
+      "Redux Toolkit",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "backend": [
+      "Node.js",
+      "Express",
+      "GraphQL",
+      "REST APIs",
+      "Microservices"
+    ],
+    "cloud": [
+      "AWS Lambda",
+      "AWS AppSync",
+      "AWS S3",
+      "AWS Cognito",
+      "AWS DynamoDB",
+      "AWS EC2"
+    ],
+    "realTime": [
+      "WebRTC",
+      "LiveKit",
+      "Agora SDK",
+      "WebSockets"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "DynamoDB",
+      "SQLite",
+      "ClickHouse"
+    ],
+    "mobile": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Swift",
+      "SwiftUI"
+    ],
+    "ai": [
+      "Gemini Nano",
+      "Banana",
+      "Claude API",
+      "OpenAI API"
+    ],
+    "infrastructure": [
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "DigitalOcean"
+    ],
+    "languages": [
+      "TypeScript",
+      "JavaScript",
+      "Kotlin",
+      "C++"
+    ],
+    "design": [
+      "Figma",
+      "Adobe XD",
+      "Photoshop",
+      "Illustrator",
+      "After Effects",
+      "Premiere Pro"
+    ],
+    "gameEngines": [
+      "Cocos Creator",
+      "Unity"
+    ]
+  },
+  "projects": [
+    {
+      "id": "1",
+      "name": "Ticket Tomorrow",
+      "type": "Ticketing Platform",
+      "image": "https://s3.ap-southeast-1.amazonaws.com/www.cdntickettomorrow.com/public/meta/metaTickettomorrow.jpg.jpeg",
+      "description": "An online ticketing platform with complete frontend, backend, and admin dashboard. Features user, organization, ticketing, and promotion systems with integrated bKash and SSLCommerz payments including full refund flows.",
+      "timeLine": "September 2023 - Present",
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Redux",
+        "AWS Lambda",
+        "AppSync",
+        "DynamoDB",
+        "Cognito"
+      ],
+      "responsibilities": "Architected and developed the complete system (frontend, backend, admin dashboard). Built user, organization, ticketing, and promotion systems. Integrated bKash and SSLCommerz with full refund flows. Implemented backend PDF generation and mailing system. Built role-based dynamic UI system. Mentored junior developers and provided architecture guidance.",
+      "status": "Ongoing",
+      "website": "https://tickettomorrow.com.bd",
+      "personal": false,
+      "challenge": "Building a high-availability ticketing system that handles concurrent ticket purchases without double-selling, while integrating local Bangladeshi payment gateways with full refund flows.",
+      "outcome": "Reduced page load times by 60% using SSR and AWS CloudFront CDN. Successfully handling thousands of concurrent users during major event launches."
+    },
+    {
+      "id": "2",
+      "name": "ZodoLive",
+      "type": "Live Streaming Platform",
+      "image": "https://www.zodolive.com/logo.png",
+      "description": "A global live streaming and entertainment platform (Android & iOS) enabling creators and influencers to engage with audiences through interactive live sessions, gifting, and real-time interactions.",
+      "timeLine": "2024 - Present",
+      "technologies": [
+        "Next.js",
+        "React",
+        "Node.js",
+        "TypeScript",
+        "AWS Lambda",
+        "AppSync",
+        "DynamoDB",
+        "PostgreSQL",
+        "S3",
+        "Cognito",
+        "GraphQL",
+        "Agora SDK"
+      ],
+      "responsibilities": "Built the entire admin dashboard from scratch including real-time statistics, advanced theme management, and full RBAC. Implemented glass UI theme system with dynamic customization. Integrated Agora SDK for live user monitoring. Designed and deployed marketing website end-to-end. Developed automated bot systems for engagement simulation. Built backend services using AWS Lambda and AppSync.",
+      "status": "Live",
+      "website": "https://www.zodolive.com",
+      "personal": false,
+      "challenge": "Delivering sub-100ms latency for real-time gifting interactions across global audiences while keeping infrastructure costs manageable.",
+      "outcome": "Platform went live with 10,000+ active users. Real-time gifting system processes thousands of transactions per minute with zero downtime."
+    },
+    {
+      "id": "3",
+      "name": "Admin Dashboard — ZodoLive",
+      "type": "Live Event Platform",
+      "image": "https://www.zodolive.com/logo.png",
+      "description": "A comprehensive admin dashboard for managing live events, monitoring user activity, managing content, and overseeing the ZodoLive platform operations.",
+      "timeLine": "January 2024 - Present",
+      "technologies": [
+        "React",
+        "Node.js",
+        "TypeScript",
+        "AWS Lambda",
+        "AppSync",
+        "S3",
+        "Cognito",
+        "DynamoDB",
+        "PostgreSQL",
+        "Agora SDK"
+      ],
+      "responsibilities": "Built responsive frontend with React. Developed user management (agency/host/reseller), secure single-device login system, diamond transaction system (admin → reseller → user), DynamoDB ↔ PostgreSQL synchronization, PK battle system, post & story backend services, cron jobs (VIP expiry, reports, cleanup), purchase flows, user heartbeat system and analytics, and data migration pipelines.",
+      "status": "Ongoing",
+      "website": "https://www.zlaprit.zodolive.com/home",
+      "personal": false,
+      "challenge": "Creating an intuitive dashboard that gives operators real-time visibility into thousands of concurrent streams and user activities.",
+      "outcome": "Reduced operational response time by 45% through real-time dashboards and automated alerting systems."
+    },
+    {
+      "id": "4",
+      "name": "Right Tracks IT",
+      "type": "Custom Software Development",
+      "image": "https://www.righttracksit.com/right-tracks-meta-image.jpeg",
+      "description": "A software development agency delivering custom web, mobile, and cloud solutions across fintech, healthcare, and e-commerce.",
+      "timeLine": "2025 - Present",
+      "technologies": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "TypeScript",
+        "AWS",
+        "Swift",
+        "Kotlin"
+      ],
+      "responsibilities": "Senior Software Engineer — designing and shipping full-stack web and mobile applications, architecting cloud infrastructure on AWS, and leading technical delivery across multiple client projects.",
+      "status": "Ongoing",
+      "website": "https://www.righttracksit.com/",
+      "personal": false,
+      "challenge": "Delivering consistent, high-quality custom software across a diverse portfolio of clients with varying technical requirements and timelines.",
+      "outcome": "Contributing to 20+ client projects across Bangladesh and internationally, spanning fintech, healthcare, and e-commerce verticals."
+    },
+    {
+      "id": "5",
+      "name": "Tribel",
+      "type": "Social Media Platform",
+      "image": "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&q=80",
+      "description": "A hybrid social media platform combining features of Facebook and Twitter, targeted towards the US audience.",
+      "timeLine": "June 2022 - Present",
+      "technologies": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "AWS S3",
+        "Amplify",
+        "FFmpeg",
+        "AWS Rekognition"
+      ],
+      "responsibilities": "Developed core backend features: posts, stories, collaborations, feeds, and trending system. Recognized as a star contributor for resolving critical bugs and improving platform stability. Optimized media processing pipelines using FFmpeg. Integrated AWS Rekognition for automated content moderation. Built user retention mechanisms.",
+      "status": "Active",
+      "website": "https://tribel.com",
+      "personal": false,
+      "challenge": "Scaling a social media feed algorithm that can handle millions of posts while keeping the experience fast and relevant for each user.",
+      "outcome": "Platform serves hundreds of thousands of US users. Feed rendering optimized to under 200ms through intelligent caching and pagination strategies."
+    },
+    {
+      "id": "6",
+      "name": "Wozaif",
+      "type": "Recruitment Platform",
+      "image": "https://www.wozaif.com/logo.svg",
+      "description": "A job recruitment platform connecting job seekers and employers across Asia with advanced search, filtering, and multilingual support including full RTL layout.",
+      "timeLine": "January 2024 - Present",
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Redux",
+        "Tailwind",
+        "i18n",
+        "AWS Lambda",
+        "AppSync",
+        "S3",
+        "Cognito"
+      ],
+      "responsibilities": "Led development and converted Figma designs into production-ready application. Designed full system architecture (employer, employee, role management). Implemented authentication and authorization systems. Delivered multilingual platform with RTL support.",
+      "status": "Ongoing",
+      "website": "https://www.wozaif.com/",
+      "personal": false,
+      "challenge": "Building a multilingual job platform that works seamlessly across Arabic, English, and other Asian languages including RTL layout support.",
+      "outcome": "Launched in 3 countries with full RTL support. Search performance optimized to under 300ms for complex multi-filter queries."
+    },
+    {
+      "id": "7",
+      "name": "Pipo Bazar",
+      "type": "In-Game Top-Up E-Commerce",
+      "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80",
+      "description": "An e-commerce marketplace for in-game purchases across PUBG Mobile, Clash of Clans, and Call of Duty Mobile with manual payment processing.",
+      "timeLine": "2021",
+      "technologies": [
+        "Next.js",
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ],
+      "responsibilities": "Built a marketplace for in-game purchases. Developed product listing, search, cart, and checkout systems with manual payment processing. Implemented order management and fulfillment tracking for digital goods delivery.",
+      "status": "Finished",
+      "website": "",
+      "personal": false,
+      "challenge": "Creating a vendor marketplace for digital game goods with manual payment verification and order fulfillment tracking.",
+      "outcome": "Successfully served gamers across PUBG Mobile, Clash of Clans, and Call of Duty Mobile with reliable order fulfillment."
+    },
+    {
+      "id": "8",
+      "name": "Azan Backend & Dashboard",
+      "type": "Islamic Services Platform",
+      "image": "/assets/svg/azan-placeholder.png",
+      "description": "A backend system and admin dashboard for managing global prayer times, notifications, and user data.",
+      "timeLine": "2021",
+      "technologies": [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "AWS Lambda",
+        "React"
+      ],
+      "responsibilities": "Built REST APIs for global prayer time calculations. Developed admin dashboard and notification system. Achieved 98% notification delivery rate.",
+      "status": "Finished",
+      "website": "",
+      "personal": false,
+      "challenge": "Computing accurate prayer times across thousands of global locations using different Islamic calculation methods and accounting for DST.",
+      "outcome": "Delivered accurate prayer time calculations for 5000+ global locations. Push notification system achieved 98% delivery rate."
+    },
+    {
+      "id": "9",
+      "name": "Doodle Odoo",
+      "type": "Company Portfolio",
+      "image": "https://s3.ap-southeast-1.amazonaws.com/www.thedoodleinc.com/other_doodle_images/OG-Home.png",
+      "description": "A multilingual SEO-optimized portfolio platform for Doodle showcasing company achievements, services, and project highlights.",
+      "timeLine": "May 2024 - August 2024",
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "AWS Amplify",
+        "i18n"
+      ],
+      "responsibilities": "Developed multilingual SEO-optimized platform. Improved organic traffic by 40%.",
+      "status": "Finished",
+      "website": "https://odoo.thedoodleinc.com/",
+      "personal": false,
+      "challenge": "Implementing a smooth multilingual experience with seamless language switching and SEO-optimized content in multiple languages.",
+      "outcome": "Achieved Lighthouse score of 95+ across all metrics. Multilingual SEO implementation improved organic traffic by 40%."
+    },
+    {
+      "id": "10",
+      "name": "Doodle INC",
+      "type": "Company Portfolio",
+      "image": "https://www.thedoodleinc.com/asset/header/1200-by-675.jpg",
+      "description": "Main multilingual portfolio website for Doodle with high performance (Lighthouse 95+). Increased inbound leads by 60%.",
+      "timeLine": "April 2023 - June 2023",
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "AWS Amplify",
+        "i18n"
+      ],
+      "responsibilities": "Built multilingual portfolio website with high performance (Lighthouse 95+). Increased inbound leads by 60%.",
+      "status": "Finished",
+      "website": "https://www.thedoodleinc.com/",
+      "personal": false,
+      "challenge": "Creating a visually striking portfolio that represents the agency creative capabilities while maintaining top performance scores.",
+      "outcome": "Delivered ahead of schedule. Site became the agency primary lead generation source, increasing inbound inquiries by 60%."
+    },
+    {
+      "id": "11",
+      "name": "Creator AI",
+      "type": "AI Image & Video Generation Platform",
+      "image": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80",
+      "description": "AI platform powering two applications: Paint (image generation) and Vida (video generation) for iOS and Android.",
+      "timeLine": "2024 - Present",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "AWS Amplify",
+        "AppSync",
+        "GraphQL",
+        "S3",
+        "Cognito",
+        "Redux Toolkit",
+        "Tailwind",
+        "Shadcn"
+      ],
+      "responsibilities": "Built AI platform powering two applications (Paint and Vida). Developed unified backend and admin dashboard system. Implemented content, category, and slider management system. Integrated Gemini Nano and Banana for AI generation pipelines.",
+      "status": "Live",
+      "website": "https://main.d2eujkywr6wbyq.amplifyapp.com/",
+      "personal": false,
+      "challenge": "Integrating AI generation capabilities into a seamless mobile-first experience while managing costs, latency, and content moderation at scale.",
+      "outcome": "Platform serves thousands of AI-generated assets daily. Average generation latency under 3 seconds."
+    },
+    {
+      "id": "12",
+      "name": "Gunti",
+      "type": "Cross-Platform Expense Manager",
+      "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+      "description": "Cross-platform expense management application (Android, iOS, Web) with budgeting, analytics, RBAC, subscription system, SMS auto-parsing, and AI-powered insights. Backed by 11 independent Node.js microservices.",
+      "timeLine": "2026 - Present",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Redis",
+        "Kotlin",
+        "Jetpack Compose",
+        "Swift",
+        "SwiftUI",
+        "Docker",
+        "AWS S3",
+        "Firebase",
+        "OpenAI API"
+      ],
+      "responsibilities": "Architected cross-platform expense management app backed by 11 independent microservices. Implemented SMS auto-parsing for 6+ Bangladeshi banks. Integrated 5 payment providers. Built AI-powered spending insights. Designed local-first architecture with background sync. Built admin dashboard with feature flags and MRR analytics.",
+      "status": "Ongoing",
+      "website": "",
+      "personal": true,
+      "challenge": "Parsing unstructured SMS messages from bKash and Nagad to automatically categorize expenses without user input.",
+      "outcome": "SMS parsing accuracy of 94%+ for bKash/Nagad transactions. Supports 15+ expense categories with automated tagging and monthly budget alerts."
+    },
+    {
+      "id": "13",
+      "name": "Nexus RTC SDK",
+      "type": "Real-Time Communications SDK",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+      "description": "Real-time communication SDK with custom media engine and signaling layer. Achieved sub-50ms latency in controlled testing environments.",
+      "timeLine": "2025 - Present",
+      "technologies": [
+        "WebRTC",
+        "C++",
+        "Node.js",
+        "Kubernetes",
+        "Redis",
+        "ClickHouse",
+        "AWS"
+      ],
+      "responsibilities": "Built real-time communication SDK with custom media engine and signaling layer. Achieved sub-50ms latency.",
+      "status": "Ongoing",
+      "website": "",
+      "personal": true,
+      "challenge": "Building a self-hostable alternative to Agora RTC that supports all major platforms without sacrificing call quality.",
+      "outcome": "Achieved sub-50ms latency on local networks. ClickHouse analytics pipeline processes 1M+ QoE events per hour."
+    },
+    {
+      "id": "14",
+      "name": "Nagorik",
+      "type": "Civic Issue Reporting Platform",
+      "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&q=80",
+      "description": "A civic reporting system with microservices architecture for Bangladesh — citizens report potholes, garbage, broken infrastructure, and other local problems.",
+      "timeLine": "2025 - Present",
+      "technologies": [
+        "Next.js",
+        "Node.js",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "responsibilities": "Built civic reporting system with microservices architecture. Implemented admin dashboard and nationwide coverage.",
+      "status": "Ongoing",
+      "website": "",
+      "personal": true,
+      "challenge": "Enabling anonymous civic reporting without enabling abuse — solving the friction vs. accountability tradeoff.",
+      "outcome": "Full reporting lifecycle implemented. Location hierarchy covers all 495 Bangladesh Upazilas."
+    },
+    {
+      "id": "15",
+      "name": "Uppsala Central Gross",
+      "type": "Grocery E-Commerce",
+      "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80",
+      "description": "A Swedish grocery e-commerce platform for Uppsala Central Gross.",
+      "timeLine": "2026 - Present",
+      "technologies": [
+        "Node.js",
+        "Express",
+        "Prisma",
+        "SQLite",
+        "Kotlin"
+      ],
+      "responsibilities": "Contributing to grocery e-commerce system. Developed backend and mobile integrations.",
+      "status": "Ongoing",
+      "website": "https://uppsalacentralgross.se",
+      "personal": false,
+      "challenge": "Building a fully functional grocery e-commerce system with backend services and mobile integrations.",
+      "outcome": "Live at uppsalacentralgross.se with full product management for store staff."
+    },
+    {
+      "id": "16",
+      "name": "LivePlay",
+      "type": "Real-Time Multiplayer Gaming Platform",
+      "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80",
+      "description": "Real-time multiplayer gaming platform featuring Fruits Loop and Greedy Prime — lightweight wheel-based games with live leaderboards, bet batching, and WebSocket-driven state sync.",
+      "timeLine": "2025 - Present",
+      "technologies": [
+        "Cocos Creator 3.x",
+        "TypeScript",
+        "Socket.IO",
+        "CloudFront CDN",
+        "REST APIs"
+      ],
+      "responsibilities": "Integrated full API and WebSocket connectivity for two multiplayer games. Implemented bet batching, resilient networking, game state management, wheel animations, and real-time multiplayer features.",
+      "status": "Live",
+      "website": "",
+      "personal": false,
+      "challenge": "Building resilient real-time game clients that handle network interruptions gracefully while maintaining sub-second responsiveness for thousands of simultaneous players.",
+      "outcome": "Games running live with real-time multiplayer support, intelligent bet batching reducing server load, and graceful reconnection with zero data loss."
+    }
+  ],
+  "statusConfig": {
+    "Live": {
+      "label": "LIVE",
+      "color": "text-green-400 border-green-400/40 bg-green-400/8",
+      "glow": "bg-green-400"
+    },
+    "Ongoing": {
+      "label": "ONGOING",
+      "color": "text-[#469D89] border-[#469D89]/40 bg-[#469D89]/8",
+      "glow": "bg-[#469D89]"
+    },
+    "Active": {
+      "label": "ACTIVE",
+      "color": "text-blue-400 border-blue-400/40 bg-blue-400/8",
+      "glow": "bg-blue-400"
+    },
+    "Finished": {
+      "label": "DONE",
+      "color": "text-muted-foreground border-border/40",
+      "glow": "bg-muted-foreground"
+    }
+  },
+  "blog": [
+    {
+      "slug": "building-gunti-expense-tracker",
+      "title": "Building TakaTrack (Gunti): 4 Platforms, 11 Microservices, and Everything I Learned Shipping a Personal Finance Ecosystem for Bangladesh",
+      "date": "Mar 2025",
+      "readTime": "16 min read",
+      "tags": [
+        "Kotlin",
+        "Swift",
+        "Next.js",
+        "Microservices",
+        "Bangladesh",
+        "Personal Project"
+      ],
+      "excerpt": "TakaTrack started as a simple expense tracker and became something I didn't expect: a full personal finance ecosystem with native Android and iOS apps, a Next.js PWA, an admin dashboard, 11 backend microservices, Firebase Phone OTP, OpenAI-powered insights, and a Zakat calculator. Here's what building it actually looked like.",
+      "sections": [
+        {
+          "type": "p",
+          "content": "TakaTrack started with a single question: why does every personal finance app ignore how money actually moves in Bangladesh? bKash, Nagad, Rocket — these are the payment rails for over 60 million Bangladeshis. Every transaction generates an SMS. There are no bank APIs, no card webhooks, no open banking standards. Just SMS messages."
+        },
+        {
+          "type": "p",
+          "content": "I started building what I thought would be a simple SMS-parsing expense tracker. Twelve months later, TakaTrack (branded as Gunti — Bengali for 'count') is a four-platform ecosystem with 11 backend microservices, native Android and iOS apps, a Next.js PWA, an admin dashboard, and more features than I originally planned. Here's the honest account of building it."
+        },
+        {
+          "type": "h2",
+          "content": "The Full Architecture"
+        },
+        {
+          "type": "p",
+          "content": "TakaTrack has four client surfaces, each built natively for its platform:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Android: Kotlin + Jetpack Compose — primary platform, SMS reading with WorkManager background polling, Material 3 UI",
+            "iOS: Swift + SwiftUI — manual entry with smart prediction, Shortcuts integration",
+            "Web (desktop): Next.js 15 PWA — full dashboard with Recharts analytics, family group management, installable via service worker (Serwist)",
+            "Admin Dashboard: Next.js 15 — internal tools, user management, subscription tracking, feature flags"
+          ]
+        },
+        {
+          "type": "p",
+          "content": "Behind them, 11 Node.js microservices each own a specific business domain with their own PostgreSQL database:"
+        },
+        {
+          "type": "code",
+          "language": "text",
+          "content": "Service            Port   Responsibility\n─────────────────────────────────────────────────────\napi-gateway        3000   JWT verification, rate limiting, routing\nauth-service       3001   Firebase Phone OTP → JWT tokens\nuser-service       3002   Profiles, subscriptions, family groups\nexpense-service    3003   CRUD, categories, receipt uploads (S3)\nbudget-service     3004   Monthly budgets, threshold alerts\nloan-service       3005   EMI schedules, Zakat calculator\nnotification-svc   3006   FCM push, bill reminders\nsms-service        3007   Parses bKash / Nagad / Rocket / bank SMS\nanalytics-service  3008   Reports, trends, OpenAI insights\npayment-service    3009   bKash tokenized, Nagad, SSLCommerz\nadmin-service      3010   Feature flags, promo codes, user ops"
+        },
+        {
+          "type": "h2",
+          "content": "Security First: The BFF Pattern"
+        },
+        {
+          "type": "p",
+          "content": "One of the most important architecture decisions was implementing the Backend for Frontend (BFF) pattern for the web app. The Next.js server acts as a secure intermediary — it handles authentication with the auth-service and issues JWT tokens stored in httpOnly cookies. The browser never sees the JWT. Client-side JavaScript has no way to read or steal it."
+        },
+        {
+          "type": "code",
+          "language": "typescript",
+          "content": "// Next.js API route — acts as BFF\n// /app/api/auth/login/route.ts\nexport async function POST(req: Request) {\n    const { phone, otpCode } = await req.json();\n\n    // Verify OTP with Firebase on the server\n    const { token } = await authService.verifyOtp({ phone, otpCode });\n\n    // JWT lives only in a httpOnly cookie — never in JS\n    const response = NextResponse.json({ success: true });\n    response.cookies.set(\"auth_token\", token, {\n        httpOnly: true,\n        secure: process.env.NODE_ENV === \"production\",\n        sameSite: \"strict\",\n        maxAge: 60 * 60 * 24 * 7, // 7 days\n        path: \"/\",\n    });\n    return response;\n}"
+        },
+        {
+          "type": "callout",
+          "content": "This BFF pattern is the right way to handle auth in Next.js apps that talk to microservices. Storing JWTs in localStorage or even sessionStorage exposes them to XSS attacks. httpOnly cookies are immune — they're sent by the browser automatically but can never be read by JavaScript."
+        },
+        {
+          "type": "h2",
+          "content": "Phone-Only Authentication — A Deliberate Bangladesh Choice"
+        },
+        {
+          "type": "p",
+          "content": "TakaTrack has no email login, no Google sign-in, no password. Purely phone number + OTP via Firebase Phone Auth. This is intentional. Bangladesh has some of the highest mobile penetration rates in South Asia. Almost every adult has a phone number. Email usage is far less universal, especially among non-tech-savvy users. Phone OTP removes the friction of remembering passwords and is instantly familiar to anyone who uses bKash."
+        },
+        {
+          "type": "p",
+          "content": "Firebase Phone Auth handles OTP delivery and verification. On successful verification, Firebase returns a credential. The auth-service exchanges this for a platform JWT, which the BFF stores in the httpOnly cookie. Subsequent API calls are authenticated via that cookie — the mobile apps use Authorization headers with their own shorter-lived tokens."
+        },
+        {
+          "type": "h2",
+          "content": "The SMS Intelligence Service"
+        },
+        {
+          "type": "p",
+          "content": "The sms-service is a dedicated microservice that parses incoming transaction messages from four providers: bKash, Nagad, Rocket, and Bangladeshi banks (Islami Bank, Dutch-Bangla, BRAC Bank, etc.). Each provider has multiple message templates — send money, receive money, merchant payment, cash out, salary credit, airtime top-up, and more."
+        },
+        {
+          "type": "code",
+          "language": "typescript",
+          "content": "// sms-service: transaction extraction from raw SMS body\ninterface ParsedTransaction {\n    platform: \"bkash\" | \"nagad\" | \"rocket\" | \"bank\";\n    type: \"send\" | \"receive\" | \"payment\" | \"cashout\" | \"cashin\";\n    amount: number;\n    balance?: number;\n    recipient?: string;\n    trxId?: string;\n    timestamp: Date;\n    confidence: number; // 0–1, how certain we are about the parse\n}\n\nconst BKASH_PATTERNS: SmsPattern[] = [\n    {\n        type: \"send\",\n        regex: /You have sent Tk ([d,]+.d{2}) to (d{11}).*?balance is Tk ([d,]+.d{2}).*?TrxID (w+)/s,\n        groups: { amount: 1, recipient: 2, balance: 3, trxId: 4 },\n    },\n    {\n        type: \"receive\",\n        regex: /Tk ([d,]+.d{2}) has been credited.*?by (d{11}).*?TrxID (w+)/s,\n        groups: { amount: 1, sender: 2, trxId: 3 },\n    },\n    {\n        type: \"payment\",\n        regex: /You have paid Tk ([d,]+.d{2}) to (.+?) successfully.*?TrxID (w+)/s,\n        groups: { amount: 1, merchant: 2, trxId: 3 },\n    },\n    // 9 more bKash patterns, 8 Nagad patterns, 6 Rocket patterns, 12 bank patterns...\n];"
+        },
+        {
+          "type": "p",
+          "content": "The service returns a parsed transaction or a low-confidence flag that triggers a manual review prompt in the app. The parsing accuracy across bKash and Nagad messages is currently at 94%."
+        },
+        {
+          "type": "h2",
+          "content": "OpenAI-Powered Spending Insights"
+        },
+        {
+          "type": "p",
+          "content": "The analytics-service does standard reporting (monthly summaries, category breakdowns, trend charts via Recharts on the web). But the most interesting feature is AI-powered insights using the OpenAI API. Once a month, the service aggregates a user's anonymized spending patterns and sends them to GPT-4 with a carefully crafted prompt:"
+        },
+        {
+          "type": "code",
+          "language": "typescript",
+          "content": "async function generateInsights(userId: string): Promise<string> {\n    const summary = await buildSpendingSummary(userId); // aggregated, no PII\n\n    const prompt = `\nYou are a personal finance advisor for a Bangladeshi user.\nAnalyze this spending summary and provide 3 specific, actionable insights\nin simple language. Focus on patterns, not lectures.\n\nSpending summary (last 30 days):\n- Total spent: ৳${summary.total}\n- Top categories: ${summary.topCategories.join(\", \")}\n- vs. last month: ${summary.changeVsLastMonth}%\n- Budget adherence: ${summary.budgetAdherence}%\n- Unusual transactions: ${summary.unusualItems.join(\", \")}\n\nWrite in a friendly, non-judgmental tone. Use Bengali currency (৳).\n`;\n\n    const response = await openai.chat.completions.create({\n        model: \"gpt-4o-mini\", // cost-effective for monthly summaries\n        messages: [{ role: \"user\", content: prompt }],\n        max_tokens: 300,\n    });\n\n    return response.choices[0].message.content ?? \"\";\n}"
+        },
+        {
+          "type": "h2",
+          "content": "The Zakat Calculator — A Feature I Didn't Plan"
+        },
+        {
+          "type": "p",
+          "content": "The loan-service includes an EMI calculator as expected. What I didn't plan for was the Zakat calculator. Bangladesh is 90% Muslim, and Zakat — an annual religious obligation to donate 2.5% of qualifying wealth above a minimum threshold (Nisab) — is something many users asked about early in beta."
+        },
+        {
+          "type": "p",
+          "content": "The Nisab threshold is calculated in silver (85g) or gold (612.35g), which means it fluctuates with commodity prices. The Zakat calculator in TakaTrack uses current gold/silver prices fetched from a commodity API, calculates the Nisab in BDT, compares it to the user's declared assets, and outputs their Zakat obligation. It's a simple calculation but one that users interact with once a year and have to look up manually otherwise. Small feature, disproportionate value."
+        },
+        {
+          "type": "h2",
+          "content": "Payment Integrations — bKash Tokenized is Hard"
+        },
+        {
+          "type": "p",
+          "content": "TakaTrack has a subscription tier (premium features: AI insights, family groups, advanced analytics). The payment-service handles three providers: bKash tokenized payment, Nagad, and SSLCommerz (card payments). bKash tokenized was by far the most complex to integrate."
+        },
+        {
+          "type": "p",
+          "content": "bKash's tokenized payment flow lets users authorize TakaTrack once and then be charged automatically for recurring subscriptions without approving each transaction. The merchant agreement process is bureaucratic — it requires a trade license, TIN certificate, and bank account documentation. The technical integration itself involves a multi-step OAuth-like flow where TakaTrack exchanges a grant token for an ID and access token, which are then used to execute charges."
+        },
+        {
+          "type": "h2",
+          "content": "Family Groups and Real-Time Sync"
+        },
+        {
+          "type": "p",
+          "content": "The user-service manages family groups — a feature where multiple family members share a financial view. Shared expenses are pooled, and the system calculates net settlement amounts (who owes whom). The real-time challenge: when three family members transact throughout the day, the shared dashboard needs to stay current. I used Redis pub/sub to broadcast transaction events, with Server-Sent Events delivering updates to the Next.js web app and WebSockets to the mobile apps."
+        },
+        {
+          "type": "h2",
+          "content": "What Took Longer Than Expected"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "bKash merchant registration: 6 weeks of back-and-forth with documentation before getting sandbox access",
+            "SMS parser edge cases: SMS formats change without notice — I've had to update patterns three times already",
+            "Bilingual UI: next-intl is excellent but ensuring every string, every error message, every toast notification exists in both Bangla and English is meticulous work",
+            "Firebase Phone Auth on Android emulator: OTP interception for testing required a custom test phone numbers setup that isn't well documented",
+            "Microservice debugging: when something breaks across service boundaries, distributed tracing becomes essential — I added OpenTelemetry later than I should have"
+          ]
+        },
+        {
+          "type": "h2",
+          "content": "Current Status"
+        },
+        {
+          "type": "p",
+          "content": "TakaTrack is in closed beta with 40 users in Dhaka. The Android app is feature-complete. The iOS app covers core expense tracking; advanced features are in progress. The web dashboard is fully functional. Target: Play Store launch with 500 beta users by Q2 2025."
+        },
+        {
+          "type": "p",
+          "content": "If you're building in the Bangladeshi fintech space, or curious about any part of this architecture, I'd genuinely enjoy talking about it. The intersection of local payment infrastructure and mobile-first software design in emerging markets is a fascinating problem space."
+        }
+      ]
+    },
+    {
+      "slug": "building-nexus-rtc-sdk",
+      "title": "Building Nexus RTC: Why I'm Building a Self-Hosted Agora Alternative from Scratch",
+      "date": "Feb 2025",
+      "readTime": "18 min read",
+      "tags": [
+        "WebRTC",
+        "Kotlin",
+        "Swift",
+        "LiveKit",
+        "Kubernetes",
+        "Personal Project"
+      ],
+      "excerpt": "Agora RTC is excellent — until you look at the pricing at scale. $15–30K/month for a growing startup isn't viable. So I started building Nexus RTC: a production-grade, self-hosted real-time audio/video SDK platform with cross-platform SDKs, a C++ media engine, cloud recording, and QoE analytics.",
+      "sections": [
+        {
+          "type": "p",
+          "content": "In late 2024, while scoping a real-time feature for a client's platform, I priced out Agora RTC for 50,000 daily active users averaging 20 minutes of call time. The number came back at around $18,000/month. For a Series A startup, that's a significant infrastructure line item — one that only grows as the product succeeds."
+        },
+        {
+          "type": "p",
+          "content": "I started researching self-hosted alternatives. LiveKit is excellent as an SFU. Mediasoup gives you raw building blocks. Jitsi works for meetings. But none of them give you what Agora does: a complete platform with polished cross-platform SDKs (iOS, Android, Web, Flutter, React Native, Unity), cloud recording, live transcription, QoE analytics, and a CDN-backed delivery network. To build that on top of LiveKit would take a team months."
+        },
+        {
+          "type": "p",
+          "content": "That's the gap Nexus RTC is filling. This post is about the architecture — what I'm building, the decisions I've made, and the hard problems I'm still solving."
+        },
+        {
+          "type": "h2",
+          "content": "What Makes WebRTC Hard in Production"
+        },
+        {
+          "type": "p",
+          "content": "WebRTC has been around since 2011. The browser API is reasonably well-documented. Most developers can get a two-peer video call working in a weekend. Production is a completely different animal."
+        },
+        {
+          "type": "h3",
+          "content": "NAT Traversal"
+        },
+        {
+          "type": "p",
+          "content": "The majority of devices on the internet are behind NAT — home routers, corporate firewalls, mobile carrier NAT. Two devices behind NAT can't connect to each other directly. WebRTC uses ICE (Interactive Connectivity Establishment) to punch through NAT, which involves STUN servers for address discovery and TURN servers as relay fallbacks. In my testing, about 15% of connections require TURN relay. TURN traffic is expensive to run at scale."
+        },
+        {
+          "type": "h3",
+          "content": "Scalability: P2P Doesn't Scale"
+        },
+        {
+          "type": "p",
+          "content": "P2P WebRTC works for 1:1 calls. For group calls, it breaks down fast. If you have 8 people in a call and every participant sends to every other participant, each person is uploading 7 streams simultaneously. At 1080p that's catastrophic. The solution is an SFU (Selective Forwarding Unit) — a server that receives streams from each participant and selectively forwards them to others. The SFU doesn't decode or re-encode; it just routes packets. This is why LiveKit, Mediasoup, and Janus exist."
+        },
+        {
+          "type": "h3",
+          "content": "Codec Negotiation"
+        },
+        {
+          "type": "p",
+          "content": "Not every device supports the same codecs. VP8, VP9, H.264, H.265, AV1 — each has different hardware acceleration profiles, patent status, and browser support. WebRTC's SDP negotiation handles this, but you need to be careful about which codecs you prioritize for different device classes. On flagship Android phones, AV1 encoding is hardware-accelerated and gives the best quality per bit. On iOS, H.264 is the battle-tested choice. Getting this wrong wastes bandwidth or CPU."
+        },
+        {
+          "type": "h2",
+          "content": "The Architecture"
+        },
+        {
+          "type": "p",
+          "content": "Nexus RTC is built in layers:"
+        },
+        {
+          "type": "code",
+          "language": "text",
+          "content": "┌─────────────────────────────────────────────────────┐\n│                    SDK Layer                        │\n│   Web SDK  │  iOS SDK  │  Android SDK  │  Flutter  │\n│            │           │               │  React Native │\n└────────────────────────┬────────────────────────────┘\n                         │ WebSocket (Signaling)\n                         │ DTLS-SRTP  (Media)\n┌────────────────────────▼────────────────────────────┐\n│              Signaling Server (Node.js)             │\n│   Session management · Room state · ICE exchange   │\n└────────────────────────┬────────────────────────────┘\n                         │\n┌────────────────────────▼────────────────────────────┐\n│              SFU Layer (LiveKit)                    │\n│   Audio/video routing · Simulcast · Bandwidth est. │\n└───────────┬────────────────────────────┬────────────┘\n            │                            │\n┌───────────▼──────────┐   ┌────────────▼────────────┐\n│  Recording Pipeline  │   │   QoE Analytics         │\n│  (FFmpeg + S3)       │   │   (ClickHouse)          │\n└──────────────────────┘   └─────────────────────────┘"
+        },
+        {
+          "type": "h2",
+          "content": "The Signaling Server"
+        },
+        {
+          "type": "p",
+          "content": "The signaling server handles session lifecycle — creating rooms, authenticating participants, exchanging ICE candidates and SDP offers/answers between peers. I built it in Node.js using WebSockets (ws library) with Redis for session state so it's horizontally scalable."
+        },
+        {
+          "type": "code",
+          "language": "typescript",
+          "content": "// Simplified signaling flow\nclass SignalingServer {\n    async handleOffer(ws: WebSocket, payload: OfferPayload) {\n        const { roomId, participantId, sdp, iceServers } = payload;\n\n        // Validate JWT, check room exists\n        const room = await this.roomStore.get(roomId);\n        if (!room) throw new SignalingError(\"ROOM_NOT_FOUND\");\n\n        // Forward SDP offer to LiveKit SFU via gRPC\n        const answer = await this.livekitClient.publishTrack({\n            roomName: roomId,\n            participantIdentity: participantId,\n            offer: sdp,\n        });\n\n        // Send answer back to SDK\n        ws.send(JSON.stringify({\n            type: \"answer\",\n            sdp: answer.sdp,\n            iceServers: this.getIceServers(room.region),\n        }));\n\n        // Emit participant joined event for QoE tracking\n        await this.analytics.emit(\"participant_joined\", {\n            roomId, participantId,\n            timestamp: Date.now(),\n            region: room.region,\n        });\n    }\n}"
+        },
+        {
+          "type": "h2",
+          "content": "The Web SDK"
+        },
+        {
+          "type": "p",
+          "content": "The Web SDK wraps the browser's WebRTC APIs and the signaling protocol behind a clean developer interface. The goal: an Agora-like DX where you join a room and publish a track in under 10 lines of code."
+        },
+        {
+          "type": "code",
+          "language": "typescript",
+          "content": "import { NexusClient } from \"@nexus-rtc/web\";\n\nconst client = new NexusClient({\n    appId: \"YOUR_APP_ID\",\n    token: await fetchToken(userId, roomId), // JWT from your server\n});\n\nconst room = await client.join(roomId);\n\n// Publish local camera\nconst cameraTrack = await room.createCameraVideoTrack({\n    resolution: \"720p\",\n    codec: \"h264\", // auto-detected if omitted\n});\nawait room.publish(cameraTrack);\n\n// Subscribe to remote participants\nroom.on(\"participant-joined\", (participant) => {\n    participant.on(\"track-published\", (track) => {\n        const element = document.createElement(\"video\");\n        track.attach(element);\n        document.body.appendChild(element);\n    });\n});"
+        },
+        {
+          "type": "h2",
+          "content": "Cross-Platform SDK Strategy"
+        },
+        {
+          "type": "p",
+          "content": "Writing six SDKs (Web, iOS, Android, Flutter, React Native, Unity) from scratch would take years. My strategy is layered: write core WebRTC logic once in C++ using libwebrtc, then wrap it with thin platform-native bindings. The C++ core handles codec selection, bitrate adaptation, packet loss concealment, and jitter buffer management — the hard stuff that needs to be consistent across platforms."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "C++ Core: libwebrtc, codec management, network adaptation, audio processing",
+            "iOS: Swift wrapper using Objective-C bridge — exposes a Swift-idiomatic API",
+            "Android: Kotlin wrapper using JNI — follows Android Jetpack patterns",
+            "Flutter: Dart plugin using platform channels to the native iOS/Android wrappers",
+            "React Native: Native module for iOS + Android, with a clean JS/TS API on top",
+            "Web: TypeScript SDK using browser WebRTC APIs directly (no C++ needed)"
+          ]
+        },
+        {
+          "type": "h2",
+          "content": "QoE Analytics with ClickHouse"
+        },
+        {
+          "type": "p",
+          "content": "Call quality measurement is a first-class feature in Nexus RTC, not an afterthought. Every second, each SDK emits a telemetry packet: RTT, packet loss, jitter, audio level, video resolution, frame rate, codec, and estimated bandwidth. These land in ClickHouse — a columnar database designed for high-volume time-series analytical workloads."
+        },
+        {
+          "type": "p",
+          "content": "Why ClickHouse instead of something like TimescaleDB or InfluxDB? ClickHouse can ingest 1 million rows per second on modest hardware and query billions of rows in seconds. For a platform where 10,000 concurrent sessions each emit 1 packet/second, that's 10,000 rows/second at baseline. ClickHouse handles it without breaking a sweat."
+        },
+        {
+          "type": "code",
+          "language": "sql",
+          "content": "-- Example: find calls with degraded quality in the last hour\nSELECT\n    room_id,\n    participant_id,\n    avg(packet_loss_pct)    AS avg_loss,\n    avg(rtt_ms)             AS avg_rtt,\n    avg(jitter_ms)          AS avg_jitter,\n    min(video_resolution)   AS min_resolution\nFROM qoe_events\nWHERE\n    timestamp >= now() - INTERVAL 1 HOUR\n    AND (packet_loss_pct > 5 OR rtt_ms > 300)\nGROUP BY room_id, participant_id\nORDER BY avg_loss DESC\nLIMIT 100"
+        },
+        {
+          "type": "h2",
+          "content": "Kubernetes Infrastructure"
+        },
+        {
+          "type": "p",
+          "content": "The infrastructure is defined in Terraform and deployed on DigitalOcean managed Kubernetes. The SFU is the most resource-intensive component — it processes and forwards all media packets. I use Kubernetes HPA (Horizontal Pod Autoscaler) to scale SFU instances based on CPU and a custom metric: active WebRTC tracks per pod."
+        },
+        {
+          "type": "p",
+          "content": "One non-obvious challenge: SFU pods are stateful. When an SFU pod scales down, you can't just kill it — active rooms are running on it. The scale-down process drains a pod: it stops accepting new rooms, waits for existing rooms to end, then terminates. This graceful drain is implemented as a pre-stop hook with a 5-minute timeout."
+        },
+        {
+          "type": "h2",
+          "content": "What's Hard, What's Left"
+        },
+        {
+          "type": "p",
+          "content": "The hardest remaining problem is end-to-end encryption. Agora, Zoom, and Google Meet all have E2EE modes now. Implementing E2EE over WebRTC requires Insertable Streams (in Chrome/Firefox) to encrypt the media payload before it reaches the SFU. The SFU then forwards encrypted packets it can't read — which breaks server-side recording and transcription. Finding the right tradeoff between privacy and features is an open design question."
+        },
+        {
+          "type": "p",
+          "content": "Nexus RTC is still in active development. The Web SDK and signaling server are working. The Android SDK is in alpha. If you're building a product that needs WebRTC at scale and you'd rather own your infrastructure, I'd love to talk."
+        }
+      ]
+    },
+    {
+      "slug": "building-nagorik-civic-platform",
+      "title": "Building Nagorik: A Civic Issue Reporting Platform for Bangladesh (6 Microservices, Anonymous Reports, and a Government Dashboard)",
+      "date": "Jan 2025",
+      "readTime": "13 min read",
+      "tags": [
+        "Next.js",
+        "Microservices",
+        "Prisma",
+        "PostgreSQL",
+        "Civic Tech",
+        "Bangladesh",
+        "Personal Project"
+      ],
+      "excerpt": "Bangladesh has a pothole problem. It also has a garbage problem, a broken streetlight problem, and a drainage problem. What it doesn't have is a simple way for citizens to report these issues and actually track whether anything gets done. Nagorik is my attempt to build that — a civic issue reporting platform with anonymous submissions, trackable codes, a location hierarchy, and a government admin dashboard.",
+      "sections": [
+        {
+          "type": "p",
+          "content": "The idea for Nagorik came from a frustrating personal experience. A road near my house had a pothole the size of a dinner plate for eight months. There was nowhere obvious to report it — no app, no number that felt real, no way to know if anyone would ever see the complaint. So I built the platform I wished existed."
+        },
+        {
+          "type": "p",
+          "content": "Nagorik (Bengali for 'citizen') is a civic issue reporting platform. Citizens report local problems — potholes, garbage dumps, broken streetlights, waterlogging, damaged infrastructure — with photos, location, and a description. Each report gets a unique tracking code. Government admin staff verify, assign, and resolve reports through a dedicated dashboard. No account required to submit. That last part turned out to be the most interesting design constraint of the whole project."
+        },
+        {
+          "type": "h2",
+          "content": "The Anonymous Reporting Problem"
+        },
+        {
+          "type": "p",
+          "content": "Requiring account creation before submitting a report kills participation. It's friction at exactly the wrong moment — when someone has just spotted a problem and wants to report it before they forget. But anonymous submissions create their own problems: spam, duplicate reports, and no way to notify submitters of updates."
+        },
+        {
+          "type": "p",
+          "content": "My solution: every report — whether from a registered user or a guest — gets a unique tracking code in the format NAG-YYYY-XXXXXX, where YYYY is the year and XXXXXX is a zero-padded sequential integer. Anyone with this code can look up the current status of their report without logging in."
+        },
+        {
+          "type": "code",
+          "language": "typescript",
+          "content": "// issues service — report creation with tracking code generation\nasync function createIssue(dto: CreateIssueDto, userId?: string): Promise<Issue> {\n    const year = new Date().getFullYear();\n\n    // Atomic sequence per year — no gaps, no race conditions\n    const sequence = await prisma.$queryRaw<[{ nextval: bigint }]>`\n        SELECT nextval('issue_sequence_${year}')\n    `;\n    const seq = Number(sequence[0].nextval);\n    const trackingCode = `NAG-${year}-${String(seq).padStart(6, \"0\")}`;\n\n    return prisma.issue.create({\n        data: {\n            trackingCode,\n            title: dto.title,\n            description: dto.description,\n            categoryId: dto.categoryId,\n            locationId: dto.locationId,\n            status: \"pending\",\n            isAnonymous: !userId,\n            submittedById: userId ?? null,\n            photoKeys: dto.photoKeys,  // S3 object keys\n        },\n    });\n}"
+        },
+        {
+          "type": "callout",
+          "content": "Using a PostgreSQL sequence per year (issue_sequence_2025, issue_sequence_2026) guarantees no duplicate codes even under concurrent load, and resets the counter cleanly at year boundaries — making the tracking codes more readable: NAG-2025-000001."
+        },
+        {
+          "type": "h2",
+          "content": "The Architecture: 6 Microservices"
+        },
+        {
+          "type": "p",
+          "content": "Nagorik runs as a monorepo with six backend services, a shared Prisma schema package, and a Next.js 16 frontend. All services communicate through a central API gateway that handles routing and JWT verification so individual services stay stateless."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "api-gateway:3001 — Request routing, JWT verification, rate limiting",
+            "auth:3002 — Phone OTP auth (SMS via Twilio), JWT issuance, refresh tokens",
+            "users:3003 — Profiles, notification preferences, report history",
+            "issues:3004 — Core report CRUD, status lifecycle, upvoting, search",
+            "locations:3005 — Division / District / Upazila hierarchy with geo data",
+            "upload:3006 — S3 presigned URL generation, photo validation, virus scan hooks"
+          ]
+        },
+        {
+          "type": "p",
+          "content": "The monorepo approach with a shared Prisma schema was a deliberate tradeoff. Each service owns its domain, but they all reference the same schema package — which means schema changes require a coordinated migration, not independent deploys. For a solo project this is manageable; for a large team it would need more thought."
+        },
+        {
+          "type": "code",
+          "language": "typescript",
+          "content": "// packages/database/schema.prisma — shared across all services\nmodel Issue {\n    id           String      @id @default(cuid())\n    trackingCode String      @unique\n    title        String\n    description  String\n    status       IssueStatus @default(pending)\n    isAnonymous  Boolean     @default(true)\n    upvoteCount  Int         @default(0)\n    photoKeys    String[]\n    categoryId   String\n    locationId   String\n    submittedById String?\n\n    category  Category  @relation(fields: [categoryId], references: [id])\n    location  Location  @relation(fields: [locationId], references: [id])\n    upvotes   Upvote[]\n    comments  Comment[]\n    history   IssueHistory[]\n\n    createdAt DateTime @default(now())\n    updatedAt DateTime @updatedAt\n}\n\nenum IssueStatus {\n    pending\n    verified\n    assigned\n    in_progress\n    resolved\n    closed\n}"
+        },
+        {
+          "type": "h2",
+          "content": "The Location Hierarchy"
+        },
+        {
+          "type": "p",
+          "content": "Bangladesh has a well-defined administrative hierarchy: 8 Divisions → 64 Districts → 495 Upazilas → thousands of Union Parishads. For civic reporting, Division/District/Upazila is the right granularity — specific enough to route reports to the right authority, broad enough not to overwhelm the location picker."
+        },
+        {
+          "type": "p",
+          "content": "The locations service preloads all 495 Upazilas into memory on startup (the dataset is static, ~150KB of JSON). The frontend cascades selection: pick Division → Districts filter → pick District → Upazilas filter. No round-trips after the initial load. This matters on Bangladesh's mobile connections where a round-trip adds 200–400ms."
+        },
+        {
+          "type": "code",
+          "language": "typescript",
+          "content": "// locations service — cascading hierarchy endpoint\napp.get(\"/hierarchy\", async (req, res) => {\n    // Served from in-memory cache — static data changes ~once per decade\n    const data = locationCache.getAll();\n\n    const hierarchy = data.divisions.map(division => ({\n        ...division,\n        districts: data.districts\n            .filter(d => d.divisionId === division.id)\n            .map(district => ({\n                ...district,\n                upazilas: data.upazilas.filter(u => u.districtId === district.id),\n            })),\n    }));\n\n    res.json(hierarchy);\n});\n\n// Client-side: one fetch, then filter locally\nconst [hierarchy] = useState(() => fetch(\"/api/locations/hierarchy\").then(r => r.json()));\n\nconst filteredDistricts = useMemo(\n    () => hierarchy?.find(d => d.id === selectedDivision)?.districts ?? [],\n    [hierarchy, selectedDivision]\n);"
+        },
+        {
+          "type": "h2",
+          "content": "Photo Uploads with S3 Presigned URLs"
+        },
+        {
+          "type": "p",
+          "content": "Citizens can attach up to 5 photos to a report. Uploading images through the API server wastes bandwidth and ties up server resources — the standard solution is S3 presigned URLs: the client gets a time-limited URL and uploads directly to S3, bypassing the server entirely."
+        },
+        {
+          "type": "code",
+          "language": "typescript",
+          "content": "// upload service — presigned URL generation\napp.post(\"/presigned\", authenticateOptional, async (req, res) => {\n    const { count, mimeTypes } = req.body;\n\n    if (count > 5) return res.status(400).json({ error: \"Max 5 photos per report\" });\n\n    const allowed = [\"image/jpeg\", \"image/png\", \"image/webp\"];\n    if (mimeTypes.some((t: string) => !allowed.includes(t))) {\n        return res.status(400).json({ error: \"Only JPEG, PNG, and WebP allowed\" });\n    }\n\n    const uploads = await Promise.all(\n        mimeTypes.map(async (mimeType: string) => {\n            const key = `issues/pending/${crypto.randomUUID()}`;\n            const url = await getSignedUrl(\n                s3,\n                new PutObjectCommand({\n                    Bucket: process.env.S3_BUCKET,\n                    Key: key,\n                    ContentType: mimeType,\n                    ContentLength: 10 * 1024 * 1024, // 10MB max\n                }),\n                { expiresIn: 300 } // 5 minutes\n            );\n            return { key, url };\n        })\n    );\n\n    res.json({ uploads });\n});"
+        },
+        {
+          "type": "h2",
+          "content": "The Issue Lifecycle"
+        },
+        {
+          "type": "p",
+          "content": "The issue lifecycle was the hardest thing to get right — not technically, but from a product perspective. The states had to be meaningful to citizens checking their tracking code, not just convenient for admin staff."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "pending — Submitted, awaiting admin review",
+            "verified — Admin confirmed it's a real issue (not spam/duplicate)",
+            "assigned — Routed to the relevant department or field team",
+            "in_progress — Active work has started (admin confirms on-site activity)",
+            "resolved — Fix confirmed complete by admin",
+            "closed — Resolved and archived, or rejected as out-of-scope"
+          ]
+        },
+        {
+          "type": "p",
+          "content": "Every status transition is logged to an IssueHistory table with the admin user ID, timestamp, and optional note. Citizens tracking their report see a clean timeline of status changes — not just the current state, but the full history of what happened and when."
+        },
+        {
+          "type": "h2",
+          "content": "The Government Admin Dashboard"
+        },
+        {
+          "type": "p",
+          "content": "The admin dashboard is a separate Next.js app (same monorepo) that government staff use to triage, assign, and resolve reports. It has role-based access: super-admins can see all reports nationally, district admins see only their district, upazila staff see only their upazila."
+        },
+        {
+          "type": "p",
+          "content": "Analytics are built with Recharts — resolution rate over time, average time-to-resolve by category, most-reported locations heatmap, and an upvote-weighted priority queue that surfaces the issues citizens care most about."
+        },
+        {
+          "type": "code",
+          "language": "typescript",
+          "content": "// issues service — upvote-weighted priority score\n// Surfaces actively-complained-about issues over old forgotten ones\nasync function getPriorityQueue(locationId: string) {\n    return prisma.$queryRaw`\n        SELECT\n            i.*,\n            -- Decay older upvotes, boost recent ones\n            (i.\"upvoteCount\" * EXP(-0.1 * EXTRACT(DAY FROM NOW() - i.\"createdAt\"))) AS priority_score\n        FROM \"Issue\" i\n        WHERE i.\"locationId\" = ${locationId}\n          AND i.status IN ('pending', 'verified')\n        ORDER BY priority_score DESC\n        LIMIT 50\n    `;\n}"
+        },
+        {
+          "type": "h2",
+          "content": "Upvoting Without Login"
+        },
+        {
+          "type": "p",
+          "content": "The upvote feature lets citizens signal that a reported issue affects them too. But requiring login to upvote defeats the purpose — most people won't bother. The solution: device fingerprinting (screen resolution + timezone + user agent hash) as an anti-abuse mechanism, stored as a short hash cookie. Not perfect, but good enough to prevent trivial abuse without friction."
+        },
+        {
+          "type": "code",
+          "language": "typescript",
+          "content": "// Lightweight device fingerprint for anonymous upvote deduplication\nfunction getDeviceFingerprint(req: Request): string {\n    const ua = req.headers[\"user-agent\"] ?? \"\";\n    const lang = req.headers[\"accept-language\"] ?? \"\";\n    const ip = req.ip ?? \"\";\n    // One-way hash — not reversible, just an identifier\n    return crypto\n        .createHash(\"sha256\")\n        .update(`${ua}|${lang}|${ip}`)\n        .digest(\"hex\")\n        .slice(0, 16);\n}"
+        },
+        {
+          "type": "h2",
+          "content": "What I'd Do Differently"
+        },
+        {
+          "type": "p",
+          "content": "The shared Prisma schema was convenient but created coupling I'd avoid in production. The right move would be database-per-service with async events (Kafka or at minimum a transactional outbox) for cross-service data. For a solo project the pragmatic shortcut is fine; for a real government deployment it would be a maintenance headache."
+        },
+        {
+          "type": "p",
+          "content": "The other thing I underestimated: the location data problem. Getting accurate, complete Division/District/Upazila data for Bangladesh required significant cleanup — transliterations of Bangla names, merging multiple sources, handling special administrative zones (Dhaka City Corporation vs Dhaka District). Geographic data for emerging markets is messy in ways that geographic data for the US is not."
+        },
+        {
+          "type": "callout",
+          "content": "The most satisfying part of building civic tech: the problem is completely real, the users are real citizens, and a working solution would make a tangible difference. E-commerce is fun to build. Civic infrastructure feels important."
+        }
+      ]
+    },
+    {
+      "slug": "ai-future-of-programming",
+      "title": "Is Programming Doomed Because of AI — or Are We Standing at the Biggest Opportunity in the Field's History?",
+      "date": "Mar 2025",
+      "readTime": "16 min read",
+      "tags": [
+        "AI",
+        "Software Engineering",
+        "Career",
+        "Future"
+      ],
+      "excerpt": "Every week someone declares that AI will replace programmers within two years. After a year of building products with AI as a core tool — and shipping an AI platform myself — I think both the doomers and the dismissers are wrong. Here's the actual picture.",
+      "sections": [
+        {
+          "type": "p",
+          "content": "The takes are everywhere. On one side: 'AI will replace junior developers within 18 months. Senior developers are next. Learn prompt engineering or find a new career.' On the other side: 'AI is a fancy autocomplete. It can't understand requirements, can't architect systems, can't debug production incidents. Developers are safe.'"
+        },
+        {
+          "type": "p",
+          "content": "I've spent the past year building with AI as a first-class tool — integrating Claude into Creator AI, using Cursor and Claude for my personal projects, watching AI-assisted code land in production. My take is more nuanced than either camp, and I think the framing of 'doomed vs safe' is the wrong question entirely."
+        },
+        {
+          "type": "h2",
+          "content": "What AI Is Genuinely Excellent At"
+        },
+        {
+          "type": "p",
+          "content": "Let me be honest about what AI coding tools actually do well, because dismissing them is intellectually dishonest."
+        },
+        {
+          "type": "h3",
+          "content": "Boilerplate Elimination"
+        },
+        {
+          "type": "p",
+          "content": "AI is transformatively good at boilerplate. CRUD endpoints, form validation, database schema migrations, test fixtures, configuration files, TypeScript interface generation from JSON — work that's necessary but not mentally engaging. A task that would take a developer 45 minutes now takes 3 minutes of prompting and 5 minutes of reviewing the output. This is not small. Boilerplate represents a significant portion of real software engineering work."
+        },
+        {
+          "type": "h3",
+          "content": "Cross-Language Translation"
+        },
+        {
+          "type": "p",
+          "content": "Porting code between languages — Python to TypeScript, Java to Kotlin, old JavaScript to modern ES2024 — is mechanical work that AI does extremely well. I used Claude to port a Node.js SMS parser to Kotlin for Gunti. The translation was 90% correct on the first pass, with the remaining 10% being platform-specific idioms that needed adjustment. What would have taken a day took two hours."
+        },
+        {
+          "type": "h3",
+          "content": "Documentation and Test Generation"
+        },
+        {
+          "type": "p",
+          "content": "Generating meaningful documentation from code and writing unit tests for clearly-defined functions are AI's strongest suits. The tests it generates for pure functions with well-defined inputs and outputs are often better than what a time-pressured developer would write manually."
+        },
+        {
+          "type": "h2",
+          "content": "What AI Is Still Genuinely Bad At"
+        },
+        {
+          "type": "p",
+          "content": "Here's where honest assessment matters more, because this is where the overconfidence claims get dangerous."
+        },
+        {
+          "type": "h3",
+          "content": "Understanding Unstated Requirements"
+        },
+        {
+          "type": "p",
+          "content": "Most software requirements are incomplete. A product manager asks for a 'search feature.' What they actually mean involves: understanding the data model, knowing which fields should be weighted, handling pagination, considering performance at scale, accommodating future filter additions, and deciding whether fuzzy matching is needed. A developer asks those questions and thinks through the implications. An AI builds exactly what was asked — and then you spend three weeks refactoring it because the requirements were underspecified."
+        },
+        {
+          "type": "h3",
+          "content": "Debugging Complex Distributed Systems"
+        },
+        {
+          "type": "p",
+          "content": "When something breaks in production — a race condition, a memory leak under specific load patterns, an intermittent timeout in a distributed transaction — the debugging process requires forming and testing hypotheses across multiple system layers simultaneously. It requires intuition built from seeing similar failures before. AI tools can suggest causes and point to code, but the actual diagnosis of subtle production issues still requires a human who understands the full system."
+        },
+        {
+          "type": "h3",
+          "content": "Architectural Judgment"
+        },
+        {
+          "type": "p",
+          "content": "Should this system use a message queue or direct API calls? Should this data live in PostgreSQL or Redis? When does a microservice boundary make sense, and when does it create accidental complexity? These decisions depend on the specific constraints of a business — expected load, team size, budget, organizational structure — that can't be fully expressed in a prompt. AI gives you options. Choosing between them requires judgment that comes from experience."
+        },
+        {
+          "type": "callout",
+          "content": "The most dangerous failure mode I've seen: a developer uses AI to quickly generate a solution, it works in development, it ships to production, and two months later it collapses under load because the AI generated code that was technically correct but architecturally wrong for the actual usage pattern."
+        },
+        {
+          "type": "h2",
+          "content": "The Historical Pattern Everyone Forgets"
+        },
+        {
+          "type": "p",
+          "content": "Every generation of software tooling has been described as 'replacing programmers.' Compilers were going to make assembly programmers obsolete (they did, and massively increased the number of programmers by lowering the barrier). COBOL was going to let business people write their own software (it didn't, and business analysts became their own discipline). Visual Basic, drag-and-drop tools, website builders — all were going to eliminate the need for 'real' developers."
+        },
+        {
+          "type": "p",
+          "content": "What actually happened each time: the tools raised the productivity floor, the demand for software increased faster than the productivity gains, and more developers were needed than before. When building a website went from requiring a web developer to being doable with Squarespace, the number of web developers didn't decrease. It increased — because suddenly every small business wanted a custom website that Squarespace couldn't build."
+        },
+        {
+          "type": "p",
+          "content": "AI is the same pattern, at a larger scale and faster pace. But the pattern is recognizable."
+        },
+        {
+          "type": "h2",
+          "content": "The Floor Rises. The Ceiling Rises Higher."
+        },
+        {
+          "type": "p",
+          "content": "Here's the dynamic that I think people miss: AI tools raise the floor of developer productivity significantly. A developer who struggled with SQL can now write competent queries. A developer who was weak on testing can now generate test suites. This closes gaps. It makes average developers more capable."
+        },
+        {
+          "type": "p",
+          "content": "But it also raises the ceiling. A genuinely strong developer who knows how to use AI as an amplifier — who can review AI output critically, who uses it for leverage on the mechanical work and brings deep judgment to the architectural work — becomes dramatically more productive. The 10x developer, a controversial concept in normal times, is something closer to real when AI handles the repetitive work and an experienced engineer focuses entirely on the hard problems."
+        },
+        {
+          "type": "p",
+          "content": "This doesn't make the market better for everyone uniformly. For someone who was adding value primarily through grinding out boilerplate, the value proposition shrinks. For someone who was adding value through system thinking, architecture, and judgment — the market for their skills grows, because now they can execute faster."
+        },
+        {
+          "type": "h2",
+          "content": "The New Developer Role"
+        },
+        {
+          "type": "p",
+          "content": "What does being a 'good developer' mean in this environment? I think it looks like this:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "System thinker: Understanding how pieces fit together at a level that AI cannot replicate without deep context you provide",
+            "Critical reviewer: AI output is confident, readable, and plausible — but not always correct. The ability to spot subtle bugs, performance problems, and architectural mismatches in generated code is increasingly valuable",
+            "Requirement excavator: Getting from what a stakeholder says they want to what a system actually needs to do. This is a human skill that AI assists but doesn't replace",
+            "AI orchestrator: Knowing when to delegate to AI, what to delegate, and how to verify the result — this is its own skill set that experienced developers are still figuring out",
+            "Deep domain expert: The more context you can provide to an AI about your specific domain, constraints, and tradeoffs, the better its outputs. Deep domain knowledge becomes more, not less, valuable"
+          ]
+        },
+        {
+          "type": "h2",
+          "content": "The Uncomfortable Part"
+        },
+        {
+          "type": "p",
+          "content": "I'll be direct about something the optimistic takes skip: some jobs will change significantly. Entry-level work that was primarily about building CRUD features to well-defined specs — that work is going to look different. It will either be done faster (by fewer people), or it will be done at a more sophisticated level by the same number of people (as AI handles the mechanical implementation)."
+        },
+        {
+          "type": "p",
+          "content": "The path for early-career developers isn't to be afraid of this — it's to not spend years becoming excellent at the things AI does well. Instead: invest in understanding systems deeply, build real projects with real users, develop opinions about architecture, learn to work with AI as a multiplier rather than a replacement for thinking."
+        },
+        {
+          "type": "h2",
+          "content": "My Actual Prediction"
+        },
+        {
+          "type": "p",
+          "content": "Not doom, and not status quo. The amount of software in the world is going to increase dramatically, because the cost of building it is falling. New categories of software will become economically viable that weren't before. The demand for people who can envision, architect, and ship software systems will grow."
+        },
+        {
+          "type": "p",
+          "content": "The developers who will struggle are those who treat programming as a mechanical trade — who learn to write code but not to think about systems. The developers who will thrive are those who understand that writing code was always the easy part. The hard part was always understanding what to build, why to build it that way, and how to make it reliable at scale. AI is very good at writing code. It is not good at those other things."
+        },
+        {
+          "type": "p",
+          "content": "We're not at the end of software engineering. We're at the beginning of a period where software engineering becomes something closer to a genuine system design discipline — where the conversation between human and machine produces things neither could build alone. That's not doom. That might be the most interesting time in the field's history to be working in it."
+        }
+      ]
+    }
+  ],
+  "games": [
+    {
+      "slug": "sholo-guti",
+      "title": "Sholo Guti",
+      "description": "Traditional Bangladeshi board game. 16 Guti vs 1 Tiger — a strategic battle of wits.",
+      "icon": "🐅",
+      "component": "SholoGuti",
+      "keywords": [
+        "Sholo Guti",
+        "16 Guti",
+        "Bangladeshi Board Game",
+        "Traditional Board Game",
+        "Strategy Game"
+      ]
+    },
+    {
+      "slug": "bagh-chal",
+      "title": "Bagh-Chal",
+      "description": "Tiger & Goats — Nepali/Bengali classic. 4 tigers hunt 20 goats; goats try to trap all tigers.",
+      "icon": "🐅🐐",
+      "component": "BaghChal",
+      "keywords": [
+        "Bagh-Chal",
+        "Tiger and Goats",
+        "Nepali Board Game",
+        "Bengali Board Game",
+        "Strategy Game"
+      ]
+    },
+    {
+      "slug": "baro-guti",
+      "title": "Baro Guti",
+      "description": "12 Guti — traditional Bangladeshi capture game. Jump over opponents to capture them.",
+      "icon": "⬡",
+      "component": "BaroGuti",
+      "keywords": [
+        "Baro Guti",
+        "12 Guti",
+        "Bangladeshi Board Game",
+        "Capture Game",
+        "Traditional Game"
+      ]
+    },
+    {
+      "slug": "moksha-patam",
+      "title": "Moksha Patam",
+      "description": "Ancient Indian Snakes & Ladders. Virtues lift you up, vices pull you down. Reach Moksha!",
+      "icon": "🐍🪜",
+      "component": "MokshaPatam",
+      "keywords": [
+        "Moksha Patam",
+        "Snakes and Ladders",
+        "Indian Board Game",
+        "Ancient Board Game",
+        "Dice Game"
+      ]
+    },
+    {
+      "slug": "pallanguzhi",
+      "title": "Pallanguzhi",
+      "description": "South Indian Mancala. Sow seeds counter-clockwise, capture pits with exactly 4 seeds.",
+      "icon": "🫘",
+      "component": "Pallanguzhi",
+      "keywords": [
+        "Pallanguzhi",
+        "Mancala",
+        "South Indian Game",
+        "Seed Sowing Game",
+        "Traditional Game"
+      ]
+    },
+    {
+      "slug": "ludo",
+      "title": "Ludo",
+      "description": "The desi classic! Roll a 6 to enter, race all 4 tokens home. Land on opponents to send them back.",
+      "icon": "🎲",
+      "component": "Ludo",
+      "keywords": [
+        "Ludo",
+        "Board Game",
+        "Dice Game",
+        "Classic Game",
+        "Family Game"
+      ]
+    },
+    {
+      "slug": "tic-tac-toe",
+      "title": "Tic-Tac-Toe",
+      "description": "Classic 3x3 grid game. Play against an AI opponent powered by the minimax algorithm.",
+      "icon": "❌⭕",
+      "component": "TicTacToe",
+      "keywords": [
+        "Tic-Tac-Toe",
+        "Noughts and Crosses",
+        "AI Game",
+        "Minimax Algorithm",
+        "Classic Game"
+      ]
+    },
+    {
+      "slug": "checkers",
+      "title": "Checkers",
+      "description": "Classic draughts on an 8x8 board. Capture all opponent pieces with mandatory jumps.",
+      "icon": "🔴⚫",
+      "component": "Checkers",
+      "keywords": [
+        "Checkers",
+        "Draughts",
+        "Board Game",
+        "8x8 Board Game",
+        "Classic Game"
+      ]
+    },
+    {
+      "slug": "snake",
+      "title": "Snake",
+      "description": "Guide the snake to eat food and grow. Don't hit the walls or yourself!",
+      "icon": "🐍",
+      "component": "Snake",
+      "keywords": [
+        "Snake Game",
+        "Arcade Game",
+        "Classic Snake",
+        "Browser Game",
+        "Retro Game"
+      ]
+    },
+    {
+      "slug": "2048",
+      "title": "2048",
+      "description": "Slide tiles to combine matching numbers. Can you reach the 2048 tile?",
+      "icon": "🔢",
+      "component": "Game2048",
+      "keywords": [
+        "2048 Game",
+        "Puzzle Game",
+        "Number Puzzle",
+        "Sliding Tiles",
+        "Brain Game"
+      ]
+    },
+    {
+      "slug": "memory-match",
+      "title": "Memory Match",
+      "description": "Flip cards to find matching pairs. Test your memory with 8 pairs of emojis.",
+      "icon": "🧠",
+      "component": "MemoryMatch",
+      "keywords": [
+        "Memory Match",
+        "Card Matching",
+        "Memory Game",
+        "Emoji Game",
+        "Brain Training"
+      ]
+    },
+    {
+      "slug": "minesweeper",
+      "title": "Minesweeper",
+      "description": "Clear the minefield without detonating any mines. Flag suspected mines.",
+      "icon": "💣",
+      "component": "Minesweeper",
+      "keywords": [
+        "Minesweeper",
+        "Mine Sweeper",
+        "Puzzle Game",
+        "Logic Game",
+        "Classic Game"
+      ]
+    }
+  ],
+  "chatbot": {
+    "welcomeMessage": {
+      "text": "Hi! I'm Asif. Ask me anything about my work, skills, or experience -- or pick a topic below.",
+      "chips": [
+        "About Asif",
+        "Skills",
+        "Projects",
+        "Experience",
+        "Services",
+        "Contact"
+      ]
+    },
+    "fallbackResponse": {
+      "text": "Hmm, I'm not sure what you mean. I can tell you about my skills, projects, experience, services, education, or contact info. Try one of the options below!",
+      "chips": [
+        "About Asif",
+        "Skills",
+        "Projects",
+        "Experience",
+        "Services",
+        "Contact"
+      ]
+    },
+    "intents": [
+      {
+        "id": "greeting",
+        "keywords": [
+          "hi",
+          "hello",
+          "hey",
+          "sup",
+          "yo",
+          "greetings",
+          "howdy",
+          "assalamualaikum",
+          "salam"
+        ],
+        "priority": 1,
+        "response": {
+          "text": "Hey there! I'm Asif. I can tell you about my skills, projects, experience, services, or how to get in touch. What are you curious about?",
+          "chips": [
+            "Skills",
+            "Projects",
+            "Experience",
+            "Services",
+            "Contact"
+          ]
+        }
+      },
+      {
+        "id": "about",
+        "keywords": [
+          "about",
+          "who",
+          "introduce",
+          "yourself",
+          "asif",
+          "tell me"
+        ],
+        "priority": 5,
+        "response": {
+          "text": "I'm a Senior Software Engineer with 5+ years of professional experience. I specialize in scalable distributed systems, real-time platforms, and cloud-native architectures.\n\nI've shipped 14+ projects across 5+ countries, serving 20+ clients and impacting 100K+ users.\n\nI hold a BSc in Computer Science from BRAC University and I'm based in Dhaka, Bangladesh.",
+          "chips": [
+            "Skills",
+            "Experience",
+            "Projects"
+          ],
+          "links": [
+            {
+              "label": "Download Resume",
+              "url": "/assets/pdf/Resume_of_Asif_Ahsan.pdf"
+            }
+          ]
+        }
+      },
+      {
+        "id": "skills",
+        "keywords": [
+          "skills",
+          "tech",
+          "stack",
+          "technologies",
+          "tools",
+          "language",
+          "languages",
+          "expertise",
+          "proficient"
+        ],
+        "priority": 5,
+        "response": {
+          "text": "Here's my tech stack:\n\n- Frontend: React, Next.js, Angular, TypeScript, Tailwind CSS\n- Backend: Node.js, Express, GraphQL, REST APIs\n- Mobile: Kotlin, Swift, Jetpack Compose\n- Cloud: AWS (Lambda, AppSync, DynamoDB, S3, Cognito, EC2)\n- Databases: PostgreSQL, MongoDB, DynamoDB, Redis, ClickHouse\n- DevOps: Docker, Kubernetes, Terraform, CI/CD\n- Real-Time: WebRTC, Agora SDK, WebSockets\n- AI/ML: Gemini Nano, Banana, Claude API\n- Game Engines: Cocos Creator, Unity\n- Design: Figma, Adobe XD, Photoshop, After Effects",
+          "chips": [
+            "Projects",
+            "Services",
+            "Experience"
+          ],
+          "links": [
+            {
+              "label": "View All Expertise",
+              "url": "/expertise"
+            }
+          ]
+        }
+      },
+      {
+        "id": "projects",
+        "keywords": [
+          "projects",
+          "project",
+          "work",
+          "portfolio",
+          "built",
+          "shipped",
+          "apps"
+        ],
+        "priority": 5,
+        "response": {
+          "text": "I've shipped 14+ projects. Here are the highlights:\n\n- Ticket Tomorrow — Ticketing platform (Next.js, AWS)\n- ZodoLive — Live streaming platform (Agora, React)\n- Tribel — Social media (FFmpeg, AWS Rekognition)\n- Creator AI — AI generation (Gemini Nano, Banana)\n- LivePlay — Multiplayer games (Cocos Creator, Socket.IO)\n- Gunti — Expense manager (Kotlin, Swift, Microservices)\n- Nexus RTC SDK — Real-time communication SDK\n\nAsk me about a specific project for details!",
+          "chips": [
+            "Ticket Tomorrow",
+            "ZodoLive",
+            "Nexus RTC SDK",
+            "View All"
+          ],
+          "links": [
+            {
+              "label": "View All Projects",
+              "url": "/projects"
+            }
+          ]
+        }
+      },
+      {
+        "id": "experience",
+        "keywords": [
+          "experience",
+          "career",
+          "job",
+          "jobs",
+          "work history",
+          "resume",
+          "company",
+          "companies",
+          "worked",
+          "employment"
+        ],
+        "priority": 5,
+        "response": {
+          "text": "Here's my career journey:\n\n- 2025-Present: Senior Software Engineer @ Right Tracks IT\n- 2022-2025: Software Engineer -> SSE (Promoted) @ Doodle Technologies\n- 2021-2022: Software Engineer @ Tech Hack Canada\n- 2021: Junior Full Stack Developer @ Bengal Software\n- 2021: Frontend Engineer Intern @ Gononet Online Solution\n- 2016-2020: BSc in CSE @ BRAC University",
+          "chips": [
+            "Skills",
+            "Projects",
+            "Contact"
+          ]
+        }
+      },
+      {
+        "id": "services",
+        "keywords": [
+          "services",
+          "service",
+          "offer",
+          "offerings",
+          "hire",
+          "freelance",
+          "consulting"
+        ],
+        "priority": 5,
+        "response": {
+          "text": "I offer four core services:\n\n1. Full-Stack Web Development — React, Next.js, Angular, Node.js\n2. AWS Cloud Architecture — Lambda, AppSync, DynamoDB, S3, Cognito\n3. API & Backend Engineering — GraphQL, REST, PostgreSQL, MongoDB\n4. Cross-Platform Mobile Apps — Kotlin, Swift, Jetpack Compose\n\nI'm currently available for new projects.",
+          "chips": [
+            "Contact",
+            "Projects",
+            "Skills"
+          ],
+          "links": [
+            {
+              "label": "Hire Asif",
+              "url": "/hire-me"
+            }
+          ]
+        }
+      },
+      {
+        "id": "contact",
+        "keywords": [
+          "contact",
+          "email",
+          "phone",
+          "reach",
+          "message",
+          "whatsapp",
+          "connect",
+          "get in touch"
+        ],
+        "priority": 5,
+        "response": {
+          "text": "You can reach me through:\n\n- Email: asifahsan727@gmail.com\n- Phone: +8801795870994\n- WhatsApp: +8801685436578\n\nOr use the contact form on the Hire Me page.",
+          "chips": [
+            "Services",
+            "Projects"
+          ],
+          "links": [
+            {
+              "label": "Go to Hire Me Page",
+              "url": "/hire-me"
+            }
+          ]
+        }
+      },
+      {
+        "id": "socials",
+        "keywords": [
+          "social",
+          "socials",
+          "github",
+          "linkedin",
+          "facebook",
+          "instagram",
+          "twitter"
+        ],
+        "priority": 3,
+        "response": {
+          "text": "Find me on social media:",
+          "links": [
+            {
+              "label": "GitHub",
+              "url": "https://github.com/AsifAhsan4980"
+            },
+            {
+              "label": "LinkedIn",
+              "url": "https://www.linkedin.com/in/asif-ahsan-27832012b/"
+            },
+            {
+              "label": "Facebook",
+              "url": "https://www.facebook.com/asif.ahsan727/"
+            },
+            {
+              "label": "Instagram",
+              "url": "https://www.instagram.com/aragorn_isildurr/"
+            }
+          ],
+          "chips": [
+            "Contact",
+            "Projects"
+          ]
+        }
+      },
+      {
+        "id": "education",
+        "keywords": [
+          "education",
+          "degree",
+          "university",
+          "college",
+          "brac",
+          "study",
+          "studied",
+          "academic"
+        ],
+        "priority": 4,
+        "response": {
+          "text": "I hold a BSc in Computer Science & Engineering from BRAC University (2016-2020), Dhaka, Bangladesh.\n\nDuring university I was active in:\n- BizBee Business Club — Assistant Director of IT\n- Chess Club — Director\n- Computer Club — Senior Executive",
+          "chips": [
+            "Experience",
+            "Skills"
+          ]
+        }
+      },
+      {
+        "id": "location",
+        "keywords": [
+          "location",
+          "where",
+          "based",
+          "country",
+          "city",
+          "live",
+          "from",
+          "dhaka",
+          "bangladesh"
+        ],
+        "priority": 3,
+        "response": {
+          "text": "I'm based in Dhaka, Bangladesh. I've worked with clients across 5+ countries including Bangladesh, Canada, the USA, and Sweden.",
+          "chips": [
+            "Contact",
+            "Experience"
+          ]
+        }
+      },
+      {
+        "id": "availability",
+        "keywords": [
+          "available",
+          "availability",
+          "open",
+          "freelance",
+          "contract",
+          "remote"
+        ],
+        "priority": 6,
+        "response": {
+          "text": "Yes! I'm currently available for new projects. Whether it's full-stack web development, cloud architecture, API engineering, or mobile apps — I'm open to freelance, contract, and full-time opportunities.",
+          "chips": [
+            "Services",
+            "Contact"
+          ],
+          "links": [
+            {
+              "label": "Hire Asif",
+              "url": "/hire-me"
+            }
+          ]
+        }
+      },
+      {
+        "id": "stats",
+        "keywords": [
+          "stats",
+          "numbers",
+          "metrics",
+          "achievements",
+          "impact"
+        ],
+        "priority": 4,
+        "response": {
+          "text": "My impact by the numbers:\n\n- 5+ years of professional experience\n- 14+ projects shipped\n- 20+ clients served\n- 100K+ users impacted\n- Across 5+ countries",
+          "chips": [
+            "Projects",
+            "Experience"
+          ]
+        }
+      },
+      {
+        "id": "resume",
+        "keywords": [
+          "resume",
+          "cv",
+          "download"
+        ],
+        "priority": 6,
+        "response": {
+          "text": "You can download my resume below:",
+          "links": [
+            {
+              "label": "Download Resume (PDF)",
+              "url": "/assets/pdf/Resume_of_Asif_Ahsan.pdf"
+            }
+          ],
+          "chips": [
+            "Experience",
+            "Skills",
+            "Contact"
+          ]
+        }
+      },
+      {
+        "id": "project_ticket_tomorrow",
+        "keywords": [
+          "ticket tomorrow",
+          "tickettomorrow",
+          "ticketing"
+        ],
+        "priority": 8,
+        "response": {
+          "text": "Ticket Tomorrow is an online ticketing platform I built with complete frontend, backend, and admin dashboard. Features user, organization, ticketing, and promotion systems with bKash and SSLCommerz payment integration.\n\nOutcome: Reduced page load times by 60% using SSR and AWS CloudFront CDN.\n\nTech: Next.js, React, TypeScript, Redux, AWS Lambda, AppSync, DynamoDB, Cognito",
+          "chips": [
+            "ZodoLive",
+            "All Projects"
+          ],
+          "links": [
+            {
+              "label": "Visit Ticket Tomorrow",
+              "url": "https://tickettomorrow.com.bd"
+            }
+          ]
+        }
+      },
+      {
+        "id": "project_zodolive",
+        "keywords": [
+          "zodolive",
+          "zodo",
+          "live streaming",
+          "streaming"
+        ],
+        "priority": 8,
+        "response": {
+          "text": "ZodoLive is a global live streaming platform for iOS and Android. I built the entire admin dashboard from scratch — real-time stats, RBAC, glass UI theming, and Agora SDK integration.\n\nOutcome: 10,000+ active users. Real-time gifting processes thousands of transactions per minute.\n\nTech: Next.js, React, Node.js, TypeScript, AWS, PostgreSQL, GraphQL, Agora SDK",
+          "chips": [
+            "Ticket Tomorrow",
+            "Nexus RTC SDK",
+            "All Projects"
+          ],
+          "links": [
+            {
+              "label": "Visit ZodoLive",
+              "url": "https://www.zodolive.com"
+            }
+          ]
+        }
+      },
+      {
+        "id": "project_nexus",
+        "keywords": [
+          "nexus",
+          "rtc",
+          "webrtc",
+          "real-time communication"
+        ],
+        "priority": 8,
+        "response": {
+          "text": "Nexus RTC SDK is my personal project — a real-time audio/video SDK with custom media engine and signaling layer.\n\nOutcome: Sub-50ms latency. ClickHouse analytics processes 1M+ QoE events per hour.\n\nTech: WebRTC, C++, Node.js, Kubernetes, Redis, ClickHouse, AWS",
+          "chips": [
+            "Gunti",
+            "All Projects"
+          ]
+        }
+      },
+      {
+        "id": "project_gunti",
+        "keywords": [
+          "gunti",
+          "expense",
+          "takatrack"
+        ],
+        "priority": 8,
+        "response": {
+          "text": "Gunti (TakaTrack) is a cross-platform expense management app (Android, iOS, Web) backed by 11 independent Node.js microservices. Features SMS auto-parsing for BD banks, 5 payment providers, AI-powered insights, and local-first architecture.\n\nTech: Kotlin, Jetpack Compose, Swift, SwiftUI, Next.js, Node.js, PostgreSQL, Redis, Docker",
+          "chips": [
+            "Nexus RTC SDK",
+            "All Projects"
+          ],
+          "links": [
+            {
+              "label": "Read Blog Post",
+              "url": "/blog/building-gunti-expense-tracker"
+            }
+          ]
+        }
+      },
+      {
+        "id": "project_liveplay",
+        "keywords": [
+          "liveplay",
+          "live play",
+          "fruits loop",
+          "greedy",
+          "cocos"
+        ],
+        "priority": 8,
+        "response": {
+          "text": "LivePlay is a real-time multiplayer gaming platform I built at Right Tracks IT. Features two games (Fruits Loop and Greedy Prime) built in Cocos Creator 3.x with Socket.IO WebSocket connectivity, intelligent bet batching, and resilient networking.\n\nTech: Cocos Creator 3.x, TypeScript, Socket.IO, CloudFront CDN",
+          "chips": [
+            "ZodoLive",
+            "All Projects"
+          ]
+        }
+      },
+      {
+        "id": "thanks",
+        "keywords": [
+          "thanks",
+          "thank",
+          "thank you",
+          "thx",
+          "ty",
+          "appreciate"
+        ],
+        "priority": 2,
+        "response": {
+          "text": "You're welcome! Feel free to ask anything else, or reach out directly if you'd like to collaborate.",
+          "chips": [
+            "Contact",
+            "Services",
+            "Projects"
+          ]
+        }
+      },
+      {
+        "id": "games",
+        "keywords": [
+          "games",
+          "game",
+          "play",
+          "arcade",
+          "fun"
+        ],
+        "priority": 4,
+        "response": {
+          "text": "Check out the Games section! There are 12 games including traditional South Asian board games (Sholo Guti, Bagh-Chal, Ludo, Moksha Patam) and classic arcade games (Snake, 2048, Minesweeper, and more).",
+          "chips": [
+            "Projects",
+            "Skills"
+          ],
+          "links": [
+            {
+              "label": "Play Games",
+              "url": "/games"
+            }
+          ]
+        }
+      },
+      {
+        "id": "blog",
+        "keywords": [
+          "blog",
+          "article",
+          "articles",
+          "posts",
+          "writing",
+          "read"
+        ],
+        "priority": 4,
+        "response": {
+          "text": "I write about my technical projects and engineering insights. Check out the blog for deep-dives into building real products.",
+          "chips": [
+            "Projects",
+            "Skills"
+          ],
+          "links": [
+            {
+              "label": "Read Blog",
+              "url": "/blog"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "terminal": {
+    "commands": {
+      "knock knock": {
+        "description": "Who's there? A list of commands!",
+        "outputs": [
+          {
+            "type": "text",
+            "content": "Who's there? It's Asif! Here's what I can do:"
+          },
+          {
+            "type": "list",
+            "content": "",
+            "items": [
+              "knock knock — Who's there? (this message)",
+              "about       — Who am I?",
+              "skills      — Technical skills overview",
+              "projects    — Featured projects",
+              "experience  — Work experience",
+              "contact     — Get in touch",
+              "resume      — Download my resume",
+              "socials     — Social media links",
+              "clear       — Clear terminal"
+            ]
+          }
+        ]
+      },
+      "help": {
+        "description": "List available commands",
+        "outputs": [
+          {
+            "type": "text",
+            "content": "Available commands:"
+          },
+          {
+            "type": "list",
+            "content": "",
+            "items": [
+              "knock knock — Who's there? (start here!)",
+              "about       — Who am I?",
+              "skills      — Technical skills overview",
+              "projects    — Featured projects",
+              "experience  — Work experience",
+              "contact     — Get in touch",
+              "resume      — Download my resume",
+              "socials     — Social media links",
+              "clear       — Clear terminal"
+            ]
+          }
+        ]
+      },
+      "about": {
+        "description": "About me",
+        "outputs": [
+          {
+            "type": "text",
+            "content": "━━━ About Asif Ahsan ━━━"
+          },
+          {
+            "type": "text",
+            "content": "Senior Software Engineer with 5+ years of professional experience. Specializing in scalable distributed systems, real-time platforms, and cloud-native architectures. Shipped 14+ projects across 5+ countries, serving 20+ clients and impacting 100K+ users."
+          },
+          {
+            "type": "text",
+            "content": ""
+          },
+          {
+            "type": "text",
+            "content": "Location: Dhaka, Bangladesh"
+          },
+          {
+            "type": "text",
+            "content": "Education: BSc in CSE — BRAC University"
+          }
+        ]
+      },
+      "skills": {
+        "description": "Technical skills",
+        "outputs": [
+          {
+            "type": "text",
+            "content": "━━━ Tech Stack ━━━"
+          },
+          {
+            "type": "list",
+            "content": "",
+            "items": [
+              "Frontend  → React, Next.js, TypeScript, Tailwind CSS",
+              "Backend   → Node.js, Express, GraphQL, REST",
+              "Mobile    → Kotlin, Swift, Jetpack Compose",
+              "Cloud     → AWS (Lambda, AppSync, DynamoDB, S3, Cognito)",
+              "Database  → PostgreSQL, MongoDB, DynamoDB, Redis",
+              "DevOps    → Docker, Kubernetes, CI/CD, Nginx",
+              "Real-Time → WebRTC, Agora SDK, WebSockets",
+              "AI/ML     → Gemini Nano, Banana, Claude API",
+              "Game      → Cocos Creator, Unity"
+            ]
+          }
+        ]
+      },
+      "projects": {
+        "description": "Featured projects",
+        "outputs": [
+          {
+            "type": "text",
+            "content": "━━━ Featured Projects ━━━"
+          },
+          {
+            "type": "list",
+            "content": "",
+            "items": [
+              "Ticket Tomorrow  — Ticketing platform (Next.js, AWS)",
+              "ZodoLive         — Live streaming platform (Agora, React)",
+              "LivePlay         — Multiplayer games (Cocos Creator, Socket.IO)",
+              "Tribel           — Social media (FFmpeg, AWS Rekognition)",
+              "Creator AI       — AI generation (Gemini Nano, Banana)",
+              "Gunti            — Expense manager (Kotlin, Swift, Microservices)",
+              "Nexus RTC SDK    — Real-time communication SDK"
+            ]
+          },
+          {
+            "type": "link",
+            "content": "View all projects →",
+            "url": "/projects"
+          }
+        ]
+      },
+      "experience": {
+        "description": "Work experience",
+        "outputs": [
+          {
+            "type": "text",
+            "content": "━━━ Work Experience ━━━"
+          },
+          {
+            "type": "list",
+            "content": "",
+            "items": [
+              "2025–Present  Right Tracks IT — Senior Software Engineer",
+              "2022–2025     Doodle Technologies Ltd — Software Engineer → SSE (Promoted)",
+              "2021–2022     Tech Hack Canada — Software Engineer",
+              "2021          Bengal Software — Junior Full Stack Developer",
+              "2021          Gononet Online Solution — Frontend Engineer Intern"
+            ]
+          }
+        ]
+      },
+      "contact": {
+        "description": "Contact info",
+        "outputs": [
+          {
+            "type": "text",
+            "content": "━━━ Contact ━━━"
+          },
+          {
+            "type": "text",
+            "content": "Email: asifahsan727@gmail.com"
+          },
+          {
+            "type": "text",
+            "content": "Phone: +8801795870994"
+          },
+          {
+            "type": "text",
+            "content": "WhatsApp: +8801685436578"
+          },
+          {
+            "type": "link",
+            "content": "Send a message →",
+            "url": "/hire-me"
+          }
+        ]
+      },
+      "resume": {
+        "description": "Download resume",
+        "outputs": [
+          {
+            "type": "text",
+            "content": "Downloading resume..."
+          },
+          {
+            "type": "link",
+            "content": "Click here if download doesn't start →",
+            "url": "/assets/pdf/Resume_of_Asif_Ahsan.pdf"
+          }
+        ]
+      },
+      "socials": {
+        "description": "Social media links",
+        "outputs": [
+          {
+            "type": "text",
+            "content": "━━━ Socials ━━━"
+          },
+          {
+            "type": "link",
+            "content": "GitHub",
+            "url": "https://github.com/AsifAhsan4980"
+          },
+          {
+            "type": "link",
+            "content": "LinkedIn",
+            "url": "https://www.linkedin.com/in/asif-ahsan-27832012b/"
+          },
+          {
+            "type": "link",
+            "content": "Facebook",
+            "url": "https://www.facebook.com/asif.ahsan727/"
+          },
+          {
+            "type": "link",
+            "content": "Instagram",
+            "url": "https://www.instagram.com/aragorn_isildurr/"
+          }
+        ]
+      }
+    }
+  },
+  "featuredWork": {
+    "categories": [
+      "All",
+      "UI/UX Designer",
+      "Branding & Logo",
+      "Developed Project",
+      "Illustration"
+    ],
+    "items": [
+      {
+        "title": "Empty State Illustration Pack",
+        "category": "Illustration",
+        "size": "large"
+      },
+      {
+        "title": "[NEWEST] Senja v2 - Icon Pack",
+        "category": "UI/UX Designer",
+        "size": "normal"
+      },
+      {
+        "title": "SociaPlan - Dashboard UI Kit",
+        "category": "Developed Project",
+        "size": "wide"
+      },
+      {
+        "title": "Square Dashboard UI Kit",
+        "category": "UI/UX Designer",
+        "size": "normal"
+      }
+    ]
+  },
+  "education": {
+    "degree": "BSc in Computer Science",
+    "university": "BRAC University",
+    "location": "Dhaka, Bangladesh",
+    "period": "2016 – 2020",
+    "activities": [
+      {
+        "title": "BizBee Business Club — Assistant Director of IT",
+        "period": "2016–2020"
+      },
+      {
+        "title": "Chess Club — Director",
+        "period": "2017–2020"
+      },
+      {
+        "title": "Computer Club — Senior Executive",
+        "period": "2017–2018"
+      }
+    ]
+  },
+  "languages": [
+    {
+      "language": "Bangla",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Professional"
+    }
+  ]
+}
