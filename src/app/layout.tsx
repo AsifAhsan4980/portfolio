@@ -25,7 +25,7 @@ const jetbrainMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://asifahsan.com"),
+    metadataBase: new URL("https://www.asifahsan.com"),
     title: {
         default: "Asif Ahsan | Senior Software Engineer (Full Stack)",
         template: "%s | Asif Ahsan",
@@ -62,13 +62,13 @@ export const metadata: Metadata = {
         "Hire Software Engineer Bangladesh",
         "Freelance Full Stack Developer",
     ],
-    authors: [{ name: "Asif Ahsan", url: "https://asifahsan.com" }],
+    authors: [{ name: "Asif Ahsan", url: "https://www.asifahsan.com" }],
     creator: "Asif Ahsan",
     publisher: "Asif Ahsan",
     category: "Technology",
     classification: "Software Engineering Portfolio",
     alternates: {
-        canonical: "https://asifahsan.com",
+        canonical: "https://www.asifahsan.com",
     },
     robots: {
         index: true,
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
         title: "Asif Ahsan | Senior Software Engineer (Full Stack)",
         description:
             "Senior Software Engineer with 6+ years of experience. Shipped 14+ projects across 5+ countries, impacting 100K+ users. Specialized in scalable distributed systems, real-time platforms, and cloud-native architectures.",
-        url: "https://asifahsan.com",
+        url: "https://www.asifahsan.com",
         siteName: "Asif Ahsan",
         locale: "en_US",
         images: [
@@ -112,12 +112,12 @@ const websiteJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Asif Ahsan — Senior Software Engineer',
-    url: 'https://asifahsan.com',
+    url: 'https://www.asifahsan.com',
     description: 'Portfolio of Asif Ahsan, Senior Software Engineer specializing in scalable distributed systems, real-time platforms, and cloud-native architectures.',
     author: {
         '@type': 'Person',
         name: 'Asif Ahsan',
-        url: 'https://asifahsan.com',
+        url: 'https://www.asifahsan.com',
     },
 };
 
@@ -127,12 +127,12 @@ const jsonLd = {
     name: 'Asif Ahsan',
     givenName: 'Asif',
     familyName: 'Ahsan',
-    url: 'https://asifahsan.com',
+    url: 'https://www.asifahsan.com',
     email: 'asifahsan727@gmail.com',
     telephone: '+8801795870994',
     jobTitle: 'Senior Software Engineer',
     description: 'Senior Software Engineer with 6+ years of experience designing and building high-performance web applications. Shipped 14+ projects across 5+ countries, serving 20+ clients and impacting 100K+ users. Specialized in scalable distributed systems, real-time platforms, and cloud-native architectures.',
-    image: 'https://asifahsan.com/assets/images/asifahsan.jpg',
+    image: 'https://www.asifahsan.com/assets/images/asifahsan.jpg',
     address: {
         '@type': 'PostalAddress',
         addressLocality: 'Dhaka',
