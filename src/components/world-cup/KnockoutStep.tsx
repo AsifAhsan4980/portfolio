@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useRef, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import {
@@ -43,6 +43,14 @@ export default function KnockoutStep({
   readOnly,
 }: Props) {
   const [mobileRound, setMobileRound] = useState<KnockoutRound>("R32");
+  const mobileRef = useRef<HTMLDivElement>(null);
+
+  const goToRound = useCallback((round: KnockoutRound) => {
+    setMobileRound(round);
+    setTimeout(() => {
+      mobileRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 50);
+  }, []);
 
   const resolvedTeams = useMemo(
     () => resolveKnockoutTeams(groupPredictions, knockoutPredictions),
@@ -114,7 +122,7 @@ export default function KnockoutStep({
       )}
 
       {/* ========== MOBILE: Round-by-round tab view ========== */}
-      <div className="md:hidden">
+      <div ref={mobileRef} className="md:hidden">
         {/* Round tabs */}
         <div className="flex gap-1 mb-4 overflow-x-auto">
           {ROUNDS.map((round) => {
@@ -124,7 +132,7 @@ export default function KnockoutStep({
             return (
               <button
                 key={round}
-                onClick={() => setMobileRound(round)}
+                onClick={() => goToRound(round)}
                 className={`
                   flex flex-col items-center px-3 py-2 rounded-xl border font-mono text-xs shrink-0 transition-all
                   ${
@@ -196,7 +204,7 @@ export default function KnockoutStep({
             <button
               onClick={() => {
                 if (mobileRoundIdx > 0) {
-                  setMobileRound(ROUNDS[mobileRoundIdx - 1]);
+                  goToRound(ROUNDS[mobileRoundIdx - 1]);
                 }
               }}
               disabled={mobileRoundIdx === 0}
@@ -207,7 +215,7 @@ export default function KnockoutStep({
             <button
               onClick={() => {
                 if (mobileRoundIdx < ROUNDS.length - 1) {
-                  setMobileRound(ROUNDS[mobileRoundIdx + 1]);
+                  goToRound(ROUNDS[mobileRoundIdx + 1]);
                 }
               }}
               disabled={mobileRoundIdx === ROUNDS.length - 1}

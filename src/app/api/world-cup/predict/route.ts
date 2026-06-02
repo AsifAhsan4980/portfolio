@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { getDb } from "@/lib/db";
+import { ensureDb } from "@/lib/db";
 import { teams, groups } from "@/data/world-cup-2026";
 
 function generateId(length = 10): string {
@@ -70,19 +70,20 @@ export async function POST(request: Request) {
       result.data;
     const id = generateId();
 
-    const db = getDb();
-    db.prepare(
-      `INSERT INTO predictions (id, nickname, group_predictions, knockout_predictions, champion, ip_address, user_agent)
-       VALUES (?, ?, ?, ?, ?, ?, ?)`
-    ).run(
-      id,
-      nickname,
-      JSON.stringify(groupPredictions),
-      JSON.stringify(knockoutPredictions),
-      champion,
-      ip,
-      request.headers.get("user-agent") || ""
-    );
+    const db = await ensureDb();
+    await db.execute({
+      sql: `INSERT INTO predictions (id, nickname, group_predictions, knockout_predictions, champion, ip_address, user_agent)
+            VALUES (?, ?, ?, ?, ?, ?, ?)`,
+      args: [
+        id,
+        nickname,
+        JSON.stringify(groupPredictions),
+        JSON.stringify(knockoutPredictions),
+        champion,
+        ip,
+        request.headers.get("user-agent") || "",
+      ],
+    });
 
     return NextResponse.json({ id, shareUrl: `/world-cup/${id}` });
   } catch (error) {

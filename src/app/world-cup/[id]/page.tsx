@@ -22,21 +22,23 @@ export default async function PredictionPage({
 }) {
   const { id } = await params;
 
-  const { getDb } = await import("@/lib/db");
-  const db = getDb();
-  const row = db
-    .prepare("SELECT * FROM predictions WHERE id = ?")
-    .get(id) as Record<string, string> | undefined;
+  const { ensureDb } = await import("@/lib/db");
+  const db = await ensureDb();
+  const result = await db.execute({
+    sql: "SELECT * FROM predictions WHERE id = ?",
+    args: [id],
+  });
+  const row = result.rows[0];
 
   if (!row) notFound();
 
   const prediction: Prediction = {
-    id: row.id,
-    nickname: row.nickname,
-    createdAt: row.created_at,
-    groupPredictions: JSON.parse(row.group_predictions),
-    knockoutPredictions: JSON.parse(row.knockout_predictions),
-    champion: row.champion,
+    id: row.id as string,
+    nickname: row.nickname as string,
+    createdAt: row.created_at as string,
+    groupPredictions: JSON.parse(row.group_predictions as string),
+    knockoutPredictions: JSON.parse(row.knockout_predictions as string),
+    champion: row.champion as string,
   };
 
   return (

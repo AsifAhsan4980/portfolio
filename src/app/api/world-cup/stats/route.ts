@@ -1,56 +1,60 @@
 import { NextResponse } from "next/server";
-import { getDb } from "@/lib/db";
+import { ensureDb } from "@/lib/db";
 import { groups } from "@/data/world-cup-2026";
 import type { GroupPredictions } from "@/types/world-cup";
 
 export async function GET() {
-  const db = getDb();
+  const db = await ensureDb();
 
-  const totalRow = db
-    .prepare("SELECT COUNT(*) as count FROM predictions")
-    .get() as { count: number };
+  const totalResult = await db.execute(
+    "SELECT COUNT(*) as count FROM predictions"
+  );
+  const totalPredictions = Number(totalResult.rows[0]?.count ?? 0);
 
-  const championsRows = db
-    .prepare(
-      `SELECT champion, COUNT(*) as count
-       FROM predictions
-       GROUP BY champion
-       ORDER BY count DESC
-       LIMIT 10`
-    )
-    .all() as { champion: string; count: number }[];
+  const championsResult = await db.execute(
+    `SELECT champion, COUNT(*) as count
+     FROM predictions
+     GROUP BY champion
+     ORDER BY count DESC
+     LIMIT 10`
+  );
+  const topChampions = championsResult.rows.map((r) => ({
+    champion: r.champion as string,
+    count: Number(r.count),
+  }));
 
   // Recent predictions (last 10)
-  const recentRows = db
-    .prepare(
-      `SELECT id, nickname, champion, created_at
-       FROM predictions
-       ORDER BY created_at DESC
-       LIMIT 10`
-    )
-    .all() as {
-    id: string;
-    nickname: string;
-    champion: string;
-    created_at: string;
-  }[];
+  const recentResult = await db.execute(
+    `SELECT id, nickname, champion, created_at
+     FROM predictions
+     ORDER BY created_at DESC
+     LIMIT 10`
+  );
+  const recentPredictions = recentResult.rows.map((r) => ({
+    id: r.id as string,
+    nickname: r.nickname as string,
+    champion: r.champion as string,
+    created_at: r.created_at as string,
+  }));
 
   // Most predicted 1st place per group
-  const allPredictions = db
-    .prepare("SELECT group_predictions FROM predictions")
-    .all() as { group_predictions: string }[];
+  const allResult = await db.execute(
+    "SELECT group_predictions FROM predictions"
+  );
 
   const groupFavorites: Record<string, { team: string; count: number }> = {};
 
-  if (allPredictions.length > 0) {
+  if (allResult.rows.length > 0) {
     const groupCounts: Record<string, Record<string, number>> = {};
     for (const g of groups) {
       groupCounts[g.name] = {};
     }
 
-    for (const row of allPredictions) {
+    for (const row of allResult.rows) {
       try {
-        const gp = JSON.parse(row.group_predictions) as GroupPredictions;
+        const gp = JSON.parse(
+          row.group_predictions as string
+        ) as GroupPredictions;
         for (const [groupName, pred] of Object.entries(gp)) {
           if (pred?.first && groupCounts[groupName]) {
             groupCounts[groupName][pred.first] =
@@ -75,9 +79,9 @@ export async function GET() {
 
   return NextResponse.json(
     {
-      totalPredictions: totalRow.count,
-      topChampions: championsRows,
-      recentPredictions: recentRows,
+      totalPredictions,
+      topChampions,
+      recentPredictions,
       groupFavorites,
     },
     {

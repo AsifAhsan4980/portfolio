@@ -69,6 +69,14 @@ export default function WorldCupPredictor() {
   const isUndoRedo = useRef(false);
 
   const champion = knockoutPredictions["F"] || "";
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const goToStep = useCallback((next: WizardStep) => {
+    setStep(next);
+    setTimeout(() => {
+      containerRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 50);
+  }, []);
 
   // Restore from localStorage on mount
   useEffect(() => {
@@ -189,7 +197,7 @@ export default function WorldCupPredictor() {
   }, [nickname, groupPredictions, knockoutPredictions, champion]);
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <div ref={containerRef} className="max-w-6xl mx-auto">
       {/* Restored banner */}
       <AnimatePresence>
         {restored && (
@@ -268,15 +276,15 @@ export default function WorldCupPredictor() {
             <NicknameStep
               nickname={nickname}
               setNickname={setNickname}
-              onNext={() => setStep("groups")}
+              onNext={() => goToStep("groups")}
             />
           )}
           {step === "groups" && (
             <GroupStageStep
               groupPredictions={groupPredictions}
               setGroupPredictions={setGroupPredictions}
-              onNext={() => setStep("knockout")}
-              onBack={() => setStep("nickname")}
+              onNext={() => goToStep("knockout")}
+              onBack={() => goToStep("nickname")}
             />
           )}
           {step === "knockout" && (
@@ -284,8 +292,8 @@ export default function WorldCupPredictor() {
               groupPredictions={groupPredictions}
               knockoutPredictions={knockoutPredictions}
               setKnockoutPredictions={setKnockoutPredictions}
-              onNext={() => setStep("review")}
-              onBack={() => setStep("groups")}
+              onNext={() => goToStep("review")}
+              onBack={() => goToStep("groups")}
             />
           )}
           {step === "review" && (
@@ -296,7 +304,7 @@ export default function WorldCupPredictor() {
               champion={champion}
               onSave={handleSave}
               saving={saving}
-              onBack={() => setStep("knockout")}
+              onBack={() => goToStep("knockout")}
             />
           )}
           {step === "saved" && savedId && (

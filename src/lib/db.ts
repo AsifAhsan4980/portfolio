@@ -1,38 +1,40 @@
-import Database from "better-sqlite3";
-import path from "path";
-import fs from "fs";
+import { createClient, type Client } from "@libsql/client";
 
-const DB_PATH = path.join(process.cwd(), "data", "predictions.db");
+let client: Client | null = null;
+let initialized = false;
 
-let db: Database.Database | null = null;
-
-export function getDb(): Database.Database {
-  if (!db) {
-    const dir = path.dirname(DB_PATH);
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
-    }
-    db = new Database(DB_PATH);
-    db.pragma("journal_mode = WAL");
-    db.pragma("foreign_keys = ON");
-    initializeDb(db);
+export function getDb(): Client {
+  if (!client) {
+    client = createClient({
+      url: process.env.TURSO_DATABASE_URL!,
+      authToken: process.env.TURSO_AUTH_TOKEN,
+    });
   }
-  return db;
+  return client;
 }
 
-function initializeDb(db: Database.Database) {
-  db.exec(`
-    CREATE TABLE IF NOT EXISTS predictions (
-      id TEXT PRIMARY KEY,
-      nickname TEXT NOT NULL,
-      created_at TEXT NOT NULL DEFAULT (datetime('now')),
-      group_predictions TEXT NOT NULL,
-      knockout_predictions TEXT NOT NULL,
-      champion TEXT NOT NULL,
-      ip_address TEXT,
-      user_agent TEXT
+export async function ensureDb(): Promise<Client> {
+  const db = getDb();
+  if (!initialized) {
+    await db.execute(`
+      CREATE TABLE IF NOT EXISTS predictions (
+        id TEXT PRIMARY KEY,
+        nickname TEXT NOT NULL,
+        created_at TEXT NOT NULL DEFAULT (datetime('now')),
+        group_predictions TEXT NOT NULL,
+        knockout_predictions TEXT NOT NULL,
+        champion TEXT NOT NULL,
+        ip_address TEXT,
+        user_agent TEXT
+      )
+    `);
+    await db.execute(
+      "CREATE INDEX IF NOT EXISTS idx_predictions_created ON predictions(created_at)"
     );
-    CREATE INDEX IF NOT EXISTS idx_predictions_created ON predictions(created_at);
-    CREATE INDEX IF NOT EXISTS idx_predictions_champion ON predictions(champion);
-  `);
+    await db.execute(
+      "CREATE INDEX IF NOT EXISTS idx_predictions_champion ON predictions(champion)"
+    );
+    initialized = true;
+  }
+  return db;
 }
