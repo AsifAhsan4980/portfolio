@@ -14,10 +14,14 @@ export const metadata: Metadata = {
     "World Cup Bracket",
     "FIFA 2026 Bracket",
   ],
+  alternates: {
+    canonical: "https://www.asifahsan.com/world-cup",
+  },
   openGraph: {
     title: "FIFA World Cup 2026 Predictions",
     description:
       "Predict the 2026 FIFA World Cup bracket and share your picks!",
+    url: "https://www.asifahsan.com/world-cup",
   },
 };
 
