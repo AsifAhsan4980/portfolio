@@ -9,9 +9,38 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
+
+  let nickname = "Someone";
+  let champion = "";
+  try {
+    const { ensureDb } = await import("@/lib/db");
+    const db = await ensureDb();
+    const result = await db.execute({
+      sql: "SELECT nickname, champion FROM predictions WHERE id = ?",
+      args: [id],
+    });
+    const row = result.rows[0];
+    if (row) {
+      nickname = row.nickname as string;
+      champion = row.champion as string;
+    }
+  } catch {}
+
+  const { getTeamByCode } = await import("@/data/world-cup-2026");
+  const team = champion ? getTeamByCode(champion) : null;
+  const champName = team?.name || "their champion";
+
   return {
-    title: `World Cup 2026 Prediction | ${id}`,
-    description: "View this FIFA World Cup 2026 bracket prediction.",
+    title: `${nickname}'s World Cup 2026 Prediction`,
+    description: `${nickname} predicts ${champName} will win the FIFA World Cup 2026! See their full bracket prediction.`,
+    alternates: {
+      canonical: `https://www.asifahsan.com/world-cup/${id}`,
+    },
+    openGraph: {
+      title: `${nickname}'s World Cup 2026 Prediction`,
+      description: `${nickname} predicts ${champName} will win the FIFA World Cup 2026!`,
+      url: `https://www.asifahsan.com/world-cup/${id}`,
+    },
   };
 }
 
