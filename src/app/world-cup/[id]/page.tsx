@@ -40,7 +40,7 @@ export default async function PredictionPage({
   };
 
   return (
-    <div className="relative container py-12 min-h-screen overflow-x-clip">
+    <div className="relative container py-12 min-h-screen overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-[#469D89]/6 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute top-4 left-4 w-5 h-5 border-t-2 border-l-2 border-[#469D89]/30 pointer-events-none" />
       <div className="absolute top-4 right-4 w-5 h-5 border-t-2 border-r-2 border-[#469D89]/30 pointer-events-none" />

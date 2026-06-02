@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 import { motion } from "framer-motion";
 import type { Group } from "@/data/world-cup-2026";
 import type { GroupPrediction } from "@/types/world-cup";
@@ -32,6 +32,16 @@ export default function GroupCard({
   } | null>(null);
   const cardRef = useRef<HTMLDivElement>(null);
   const slotRefs = useRef<Map<string, HTMLDivElement>>(new Map());
+  const touchDraggingRef = useRef<string | null>(null);
+  const dragOverRef = useRef<string | null>(null);
+
+  // Keep refs in sync with state for use in imperative listener
+  useEffect(() => {
+    touchDraggingRef.current = touchDragging;
+  }, [touchDragging]);
+  useEffect(() => {
+    dragOverRef.current = dragOver;
+  }, [dragOver]);
 
   const assigned = [
     prediction?.first,
@@ -105,16 +115,24 @@ export default function GroupCard({
     applyDrop(teamCode, slot);
   };
 
-  // --- Touch drag handlers (mobile) ---
-  const findSlotUnderPoint = (x: number, y: number): string | null => {
-    for (const [slotName, el] of slotRefs.current.entries()) {
-      const rect = el.getBoundingClientRect();
-      if (x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom) {
-        return slotName;
+  // --- Touch drag handlers (mobile / iOS Safari safe) ---
+  const findSlotUnderPoint = useCallback(
+    (x: number, y: number): string | null => {
+      for (const [slotName, el] of slotRefs.current.entries()) {
+        const rect = el.getBoundingClientRect();
+        if (
+          x >= rect.left &&
+          x <= rect.right &&
+          y >= rect.top &&
+          y <= rect.bottom
+        ) {
+          return slotName;
+        }
       }
-    }
-    return null;
-  };
+      return null;
+    },
+    []
+  );
 
   const onTouchStart = (teamCode: string) => (e: React.TouchEvent) => {
     if (readOnly) return;
@@ -123,20 +141,32 @@ export default function GroupCard({
     setTouchGhost({ x: touch.clientX, y: touch.clientY, code: teamCode });
   };
 
-  const onTouchMove = (e: React.TouchEvent) => {
-    if (!touchDragging) return;
-    e.preventDefault();
-    const touch = e.touches[0];
-    setTouchGhost((prev) =>
-      prev ? { ...prev, x: touch.clientX, y: touch.clientY } : null
-    );
-    const slot = findSlotUnderPoint(touch.clientX, touch.clientY);
-    setDragOver(slot);
-  };
+  // Attach touchmove with { passive: false } so preventDefault works on iOS Safari
+  useEffect(() => {
+    const el = cardRef.current;
+    if (!el) return;
+
+    const handleTouchMove = (e: TouchEvent) => {
+      if (!touchDraggingRef.current) return;
+      e.preventDefault(); // works because listener is non-passive
+      const touch = e.touches[0];
+      setTouchGhost((prev) =>
+        prev ? { ...prev, x: touch.clientX, y: touch.clientY } : null
+      );
+      const slot = findSlotUnderPoint(touch.clientX, touch.clientY);
+      setDragOver(slot);
+    };
+
+    el.addEventListener("touchmove", handleTouchMove, { passive: false });
+    return () => el.removeEventListener("touchmove", handleTouchMove);
+  }, [findSlotUnderPoint]);
 
   const onTouchEnd = () => {
     if (!touchDragging) return;
-    if (dragOver && POSITIONS.includes(dragOver as (typeof POSITIONS)[number])) {
+    if (
+      dragOver &&
+      POSITIONS.includes(dragOver as (typeof POSITIONS)[number])
+    ) {
       applyDrop(touchDragging, dragOver as "first" | "second" | "third");
     }
     setTouchDragging(null);
@@ -156,7 +186,6 @@ export default function GroupCard({
       ref={cardRef}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
       onTouchCancel={onTouchEnd}
       className={`
@@ -200,6 +229,7 @@ export default function GroupCard({
                   onDragLeave={onDragLeave}
                   onDrop={(e) => onDrop(e, pos)}
                   onTouchStart={onTouchStart(t.code)}
+                  style={{ touchAction: "none" }}
                   className={`flex items-center gap-2 px-3 py-1.5 rounded-lg border border-[#469D89]/40 bg-[#469D89]/10 text-sm transition-all select-none ${
                     readOnly
                       ? "cursor-default"
@@ -263,6 +293,7 @@ export default function GroupCard({
                 onDragStart={(e) => onDragStart(e, t.code)}
                 onTouchStart={onTouchStart(t.code)}
                 onClick={() => handleAssignNext(t.code)}
+                style={{ touchAction: "none" }}
                 className={`flex items-center gap-2.5 px-3 py-2 rounded-lg border border-[#469D89]/30 bg-background/80 cursor-grab active:cursor-grabbing hover:border-[#469D89]/60 hover:bg-[#469D89]/10 transition-all select-none ${
                   touchDragging === t.code ? "opacity-40" : ""
                 }`}
@@ -281,10 +312,12 @@ export default function GroupCard({
       {/* Touch drag ghost */}
       {touchGhost && (
         <div
-          className="fixed z-50 pointer-events-none px-3 py-1.5 rounded-lg border border-[#469D89] bg-[#469D89]/20 backdrop-blur-sm text-sm font-mono font-medium shadow-lg"
+          className="fixed z-50 pointer-events-none px-3 py-1.5 rounded-lg border border-[#469D89] bg-[#469D89]/20 text-sm font-mono font-medium shadow-lg"
           style={{
             left: touchGhost.x - 40,
             top: touchGhost.y - 20,
+            WebkitBackdropFilter: "blur(8px)",
+            backdropFilter: "blur(8px)",
           }}
         >
           {(() => {

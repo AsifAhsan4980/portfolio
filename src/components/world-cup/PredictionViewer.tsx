@@ -16,7 +16,7 @@ export default function PredictionViewer({ prediction }: Props) {
   const [_kp] = useState(prediction.knockoutPredictions);
 
   return (
-    <div className="max-w-6xl mx-auto overflow-x-clip">
+    <div className="max-w-6xl mx-auto overflow-hidden">
       {/* Header */}
       <div className="text-center mb-8">
         <p className="text-[9px] font-mono text-[#469D89] tracking-widest uppercase mb-1">
