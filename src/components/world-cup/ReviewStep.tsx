@@ -44,6 +44,23 @@ export default function ReviewStep({
         </div>
       )}
 
+      {/* Top save button */}
+      <div className="flex justify-between mb-8">
+        <button
+          onClick={onBack}
+          className="px-6 py-2.5 rounded-xl border border-[#469D89]/30 text-foreground font-mono text-sm hover:border-[#469D89]/60 transition-all"
+        >
+          ← Back
+        </button>
+        <button
+          onClick={onSave}
+          disabled={saving}
+          className="px-8 py-2.5 rounded-xl border border-[#469D89]/50 bg-[#469D89]/15 text-[#469D89] font-mono text-sm font-bold hover:bg-[#469D89]/25 hover:border-[#469D89] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          {saving ? "Saving..." : "Save Prediction →"}
+        </button>
+      </div>
+
       {/* Groups summary */}
       <div className="mb-8">
         <h3 className="text-sm font-mono font-bold mb-3">
