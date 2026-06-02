@@ -327,6 +327,14 @@ export default function KnockoutStep({
                 : knockoutPredictions["F"];
             })()}
           </p>
+          {!readOnly && bracketComplete && (
+            <button
+              onClick={onNext}
+              className="mt-4 px-8 py-2.5 rounded-xl border border-[#469D89]/30 bg-[#469D89]/10 text-[#469D89] font-mono text-sm font-bold hover:bg-[#469D89]/20 hover:border-[#469D89]/50 transition-all duration-300"
+            >
+              Review & Submit →
+            </button>
+          )}
         </div>
       )}
 
