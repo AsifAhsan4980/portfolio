@@ -1,0 +1,66 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import PredictionViewer from "@/components/world-cup/PredictionViewer";
+import type { Prediction } from "@/types/world-cup";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  return {
+    title: `World Cup 2026 Prediction | ${id}`,
+    description: "View this FIFA World Cup 2026 bracket prediction.",
+  };
+}
+
+export default async function PredictionPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+
+  const { getDb } = await import("@/lib/db");
+  const db = getDb();
+  const row = db
+    .prepare("SELECT * FROM predictions WHERE id = ?")
+    .get(id) as Record<string, string> | undefined;
+
+  if (!row) notFound();
+
+  const prediction: Prediction = {
+    id: row.id,
+    nickname: row.nickname,
+    createdAt: row.created_at,
+    groupPredictions: JSON.parse(row.group_predictions),
+    knockoutPredictions: JSON.parse(row.knockout_predictions),
+    champion: row.champion,
+  };
+
+  return (
+    <div className="relative container py-12 min-h-screen overflow-x-clip">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-[#469D89]/6 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-4 left-4 w-5 h-5 border-t-2 border-l-2 border-[#469D89]/30 pointer-events-none" />
+      <div className="absolute top-4 right-4 w-5 h-5 border-t-2 border-r-2 border-[#469D89]/30 pointer-events-none" />
+
+      <div className="text-center mb-12 relative z-10">
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#469D89]/50" />
+          <span className="text-[10px] font-mono text-[#469D89]/60 tracking-[0.3em] uppercase">
+            Prediction
+          </span>
+          <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#469D89]/50" />
+        </div>
+        <h1 className="text-4xl lg:text-5xl font-bold neon-text-pulse">
+          World Cup <span className="gradient-text">2026</span>
+        </h1>
+      </div>
+
+      <div className="relative z-10">
+        <PredictionViewer prediction={prediction} />
+      </div>
+    </div>
+  );
+}

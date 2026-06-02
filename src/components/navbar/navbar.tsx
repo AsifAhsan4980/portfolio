@@ -19,6 +19,7 @@ const menuList: Menu[] = [
     { id: 4, title: "Projects",  route: "/projects",  isComponent: false },
     { id: 7, title: "Blog",      route: "/blog",      isComponent: false },
     { id: 8, title: "Games",     route: "/games",     isComponent: false },
+    { id: 9, title: "World Cup", route: "/world-cup", isComponent: false },
     { id: 5, title: "Contacts",  route: "/contacts",  isComponent: false },
     { id: 6, title: "Home",      route: "/",          isComponent: true  },
 ]
