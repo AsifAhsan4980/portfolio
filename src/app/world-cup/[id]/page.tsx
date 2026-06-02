@@ -41,6 +41,11 @@ export async function generateMetadata({
       description: `${nickname} predicts ${champName} will win the FIFA World Cup 2026!`,
       url: `https://www.asifahsan.com/world-cup/${id}`,
     },
+    twitter: {
+      card: "summary_large_image",
+      title: `${nickname}'s World Cup 2026 Prediction`,
+      description: `${nickname} predicts ${champName} will win the FIFA World Cup 2026!`,
+    },
   };
 }
 

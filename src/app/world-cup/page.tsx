@@ -23,6 +23,12 @@ export const metadata: Metadata = {
       "Predict the 2026 FIFA World Cup bracket and share your picks!",
     url: "https://www.asifahsan.com/world-cup",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "FIFA World Cup 2026 Predictions",
+    description:
+      "Predict the 2026 FIFA World Cup bracket and share your picks!",
+  },
 };
 
 export default function WorldCupPage() {
