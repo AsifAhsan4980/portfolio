@@ -33,6 +33,12 @@ function loadSavedState(): WizardState | null {
     const parsed = JSON.parse(raw) as WizardState;
     // Don't restore if already saved
     if (parsed.step === "saved") return null;
+    // Don't restore if there's no meaningful progress
+    const hasProgress =
+      parsed.nickname.trim().length > 0 ||
+      Object.keys(parsed.groupPredictions).length > 0 ||
+      Object.keys(parsed.knockoutPredictions).length > 0;
+    if (!hasProgress) return null;
     return parsed;
   } catch {
     return null;
@@ -97,7 +103,14 @@ export default function WorldCupPredictor() {
       clearSavedState();
       return;
     }
-    saveState({ step, nickname, groupPredictions, knockoutPredictions });
+    // Only save if there's meaningful progress
+    const hasProgress =
+      nickname.trim().length > 0 ||
+      Object.keys(groupPredictions).length > 0 ||
+      Object.keys(knockoutPredictions).length > 0;
+    if (hasProgress) {
+      saveState({ step, nickname, groupPredictions, knockoutPredictions });
+    }
   }, [step, nickname, groupPredictions, knockoutPredictions]);
 
   // Push to undo history on prediction changes
