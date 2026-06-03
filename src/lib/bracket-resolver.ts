@@ -31,8 +31,44 @@ export function resolveKnockoutTeams(
     }
   }
 
-  // Track which thirds have been assigned to bracket slots
-  const assignedThirds = new Set<string>();
+  // Pre-compute optimal third-place assignment using backtracking
+  // so all 8 best_third slots are filled if a valid assignment exists
+  const thirdSlots: { matchId: string; side: "A" | "B"; pools: string[] }[] = [];
+  const r32Matches = knockoutMatches.filter((m) => m.round === "R32");
+  for (const match of r32Matches) {
+    if (match.sourceA.type === "best_third") {
+      thirdSlots.push({ matchId: match.id, side: "A", pools: match.sourceA.pools });
+    }
+    if (match.sourceB.type === "best_third") {
+      thirdSlots.push({ matchId: match.id, side: "B", pools: match.sourceB.pools });
+    }
+  }
+
+  const thirdAssignment = new Map<string, string>(); // "matchId:side" -> group
+  const availableGroups = new Set(allThirds.keys());
+
+  function backtrack(idx: number): boolean {
+    if (idx === thirdSlots.length) return true;
+    const slot = thirdSlots[idx];
+    for (const group of slot.pools) {
+      if (availableGroups.has(group)) {
+        availableGroups.delete(group);
+        thirdAssignment.set(`${slot.matchId}:${slot.side}`, group);
+        if (backtrack(idx + 1)) return true;
+        availableGroups.add(group);
+        thirdAssignment.delete(`${slot.matchId}:${slot.side}`);
+      }
+    }
+    return false;
+  }
+  backtrack(0);
+
+  // Build a lookup: "matchId:side" -> teamCode
+  const thirdLookup = new Map<string, string>();
+  for (const [key, group] of thirdAssignment) {
+    const team = allThirds.get(group);
+    if (team) thirdLookup.set(key, team);
+  }
 
   const orderedRounds = ["R32", "R16", "QF", "SF", "F"] as const;
 
@@ -44,15 +80,15 @@ export function resolveKnockoutTeams(
           match.sourceA,
           groupPreds,
           knockoutPreds,
-          allThirds,
-          assignedThirds
+          thirdLookup,
+          `${match.id}:A`
         ),
         teamB: resolveSource(
           match.sourceB,
           groupPreds,
           knockoutPreds,
-          allThirds,
-          assignedThirds
+          thirdLookup,
+          `${match.id}:B`
         ),
       };
     }
@@ -65,8 +101,8 @@ function resolveSource(
   source: KnockoutSource,
   groupPreds: GroupPredictions,
   knockoutPreds: KnockoutPredictions,
-  allThirds: Map<string, string>,
-  assignedThirds: Set<string>
+  thirdLookup: Map<string, string>,
+  slotKey: string
 ): string | null {
   switch (source.type) {
     case "group": {
@@ -80,15 +116,7 @@ function resolveSource(
       return knockoutPreds[source.matchId] || null;
     }
     case "best_third": {
-      // Find first available third-place team from the pool
-      for (const group of source.pools) {
-        const team = allThirds.get(group);
-        if (team && !assignedThirds.has(team)) {
-          assignedThirds.add(team);
-          return team;
-        }
-      }
-      return null;
+      return thirdLookup.get(slotKey) || null;
     }
   }
 }
