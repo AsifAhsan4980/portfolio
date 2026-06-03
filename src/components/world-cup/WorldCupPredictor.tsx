@@ -6,11 +6,13 @@ import { groups, knockoutMatches } from "@/data/world-cup-2026";
 import type {
   GroupPredictions,
   KnockoutPredictions,
+  AdvancingThirds,
   WizardStep,
 } from "@/types/world-cup";
 import WizardStepper from "./WizardStepper";
 import NicknameStep from "./NicknameStep";
 import GroupStageStep from "./GroupStageStep";
+import ThirdPlaceStep from "./ThirdPlaceStep";
 import KnockoutStep from "./KnockoutStep";
 import ReviewStep from "./ReviewStep";
 import SavedStep from "./SavedStep";
@@ -22,6 +24,7 @@ interface WizardState {
   step: WizardStep;
   nickname: string;
   groupPredictions: GroupPredictions;
+  advancingThirds: AdvancingThirds;
   knockoutPredictions: KnockoutPredictions;
 }
 
@@ -63,6 +66,7 @@ export default function WorldCupPredictor() {
   const [step, setStep] = useState<WizardStep>("nickname");
   const [nickname, setNickname] = useState("");
   const [groupPredictions, setGroupPredictions] = useState<GroupPredictions>({});
+  const [advancingThirds, setAdvancingThirds] = useState<AdvancingThirds>([]);
   const [knockoutPredictions, setKnockoutPredictions] =
     useState<KnockoutPredictions>({});
   const [savedId, setSavedId] = useState<string | null>(null);
@@ -91,6 +95,7 @@ export default function WorldCupPredictor() {
       setStep(saved.step);
       setNickname(saved.nickname);
       setGroupPredictions(saved.groupPredictions);
+      setAdvancingThirds(saved.advancingThirds || []);
       setKnockoutPredictions(saved.knockoutPredictions);
       setRestored(true);
       setTimeout(() => setRestored(false), 3000);
@@ -109,9 +114,9 @@ export default function WorldCupPredictor() {
       Object.keys(groupPredictions).length > 0 ||
       Object.keys(knockoutPredictions).length > 0;
     if (hasProgress) {
-      saveState({ step, nickname, groupPredictions, knockoutPredictions });
+      saveState({ step, nickname, groupPredictions, advancingThirds, knockoutPredictions });
     }
-  }, [step, nickname, groupPredictions, knockoutPredictions]);
+  }, [step, nickname, groupPredictions, advancingThirds, knockoutPredictions]);
 
   // Push to undo history on prediction changes
   useEffect(() => {
@@ -123,6 +128,7 @@ export default function WorldCupPredictor() {
       step,
       nickname,
       groupPredictions,
+      advancingThirds,
       knockoutPredictions,
     };
     setHistory((prev) => {
@@ -135,7 +141,7 @@ export default function WorldCupPredictor() {
       const newIdx = prev + 1;
       return newIdx >= MAX_HISTORY ? MAX_HISTORY - 1 : newIdx;
     });
-  }, [groupPredictions, knockoutPredictions]);
+  }, [groupPredictions, advancingThirds, knockoutPredictions]);
 
   const canUndo = historyIndex > 0;
   const canRedo = historyIndex < history.length - 1;
@@ -147,6 +153,7 @@ export default function WorldCupPredictor() {
     setStep(prev.step);
     setNickname(prev.nickname);
     setGroupPredictions(prev.groupPredictions);
+    setAdvancingThirds(prev.advancingThirds || []);
     setKnockoutPredictions(prev.knockoutPredictions);
     setHistoryIndex((i) => i - 1);
   }, [canUndo, history, historyIndex]);
@@ -158,6 +165,7 @@ export default function WorldCupPredictor() {
     setStep(next.step);
     setNickname(next.nickname);
     setGroupPredictions(next.groupPredictions);
+    setAdvancingThirds(next.advancingThirds || []);
     setKnockoutPredictions(next.knockoutPredictions);
     setHistoryIndex((i) => i + 1);
   }, [canRedo, history, historyIndex]);
@@ -191,6 +199,7 @@ export default function WorldCupPredictor() {
         body: JSON.stringify({
           nickname,
           groupPredictions,
+          advancingThirds,
           knockoutPredictions,
           champion,
         }),
@@ -207,7 +216,7 @@ export default function WorldCupPredictor() {
     } finally {
       setSaving(false);
     }
-  }, [nickname, groupPredictions, knockoutPredictions, champion]);
+  }, [nickname, groupPredictions, advancingThirds, knockoutPredictions, champion]);
 
   return (
     <div ref={containerRef} className="max-w-6xl mx-auto">
@@ -296,23 +305,34 @@ export default function WorldCupPredictor() {
             <GroupStageStep
               groupPredictions={groupPredictions}
               setGroupPredictions={setGroupPredictions}
-              onNext={() => goToStep("knockout")}
+              onNext={() => goToStep("thirds")}
               onBack={() => goToStep("nickname")}
+            />
+          )}
+          {step === "thirds" && (
+            <ThirdPlaceStep
+              groupPredictions={groupPredictions}
+              advancingThirds={advancingThirds}
+              setAdvancingThirds={setAdvancingThirds}
+              onNext={() => goToStep("knockout")}
+              onBack={() => goToStep("groups")}
             />
           )}
           {step === "knockout" && (
             <KnockoutStep
               groupPredictions={groupPredictions}
+              advancingThirds={advancingThirds}
               knockoutPredictions={knockoutPredictions}
               setKnockoutPredictions={setKnockoutPredictions}
               onNext={() => goToStep("review")}
-              onBack={() => goToStep("groups")}
+              onBack={() => goToStep("thirds")}
             />
           )}
           {step === "review" && (
             <ReviewStep
               nickname={nickname}
               groupPredictions={groupPredictions}
+              advancingThirds={advancingThirds}
               knockoutPredictions={knockoutPredictions}
               champion={champion}
               onSave={handleSave}

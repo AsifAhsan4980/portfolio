@@ -40,6 +40,9 @@ const predictionSchema = z.object({
     z.string().refine((k) => groupLetters.includes(k)),
     groupPredictionSchema
   ),
+  advancingThirds: z
+    .array(z.string().refine((k) => groupLetters.includes(k)))
+    .length(8),
   knockoutPredictions: z.record(z.string(), z.string()),
   champion: z.string().refine((c) => teamCodes.includes(c)),
 });
@@ -66,18 +69,19 @@ export async function POST(request: Request) {
       );
     }
 
-    const { nickname, groupPredictions, knockoutPredictions, champion } =
+    const { nickname, groupPredictions, advancingThirds, knockoutPredictions, champion } =
       result.data;
     const id = generateId();
 
     const db = await ensureDb();
     await db.execute({
-      sql: `INSERT INTO predictions (id, nickname, group_predictions, knockout_predictions, champion, ip_address, user_agent)
-            VALUES (?, ?, ?, ?, ?, ?, ?)`,
+      sql: `INSERT INTO predictions (id, nickname, group_predictions, advancing_thirds, knockout_predictions, champion, ip_address, user_agent)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
       args: [
         id,
         nickname,
         JSON.stringify(groupPredictions),
+        JSON.stringify(advancingThirds),
         JSON.stringify(knockoutPredictions),
         champion,
         ip,

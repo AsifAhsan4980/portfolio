@@ -5,8 +5,9 @@ import type { WizardStep } from "@/types/world-cup";
 const steps: { key: WizardStep; label: string; number: number }[] = [
   { key: "nickname", label: "Identity", number: 1 },
   { key: "groups", label: "Groups", number: 2 },
-  { key: "knockout", label: "Bracket", number: 3 },
-  { key: "review", label: "Review", number: 4 },
+  { key: "thirds", label: "3rd Place", number: 3 },
+  { key: "knockout", label: "Bracket", number: 4 },
+  { key: "review", label: "Review", number: 5 },
 ];
 
 interface Props {

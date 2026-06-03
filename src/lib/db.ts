@@ -34,6 +34,14 @@ export async function ensureDb(): Promise<Client> {
     await db.execute(
       "CREATE INDEX IF NOT EXISTS idx_predictions_champion ON predictions(champion)"
     );
+    // Migration: add advancing_thirds column
+    try {
+      await db.execute(
+        "ALTER TABLE predictions ADD COLUMN advancing_thirds TEXT DEFAULT '[]'"
+      );
+    } catch {
+      // Column already exists
+    }
     initialized = true;
   }
   return db;

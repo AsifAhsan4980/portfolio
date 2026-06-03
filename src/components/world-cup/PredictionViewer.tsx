@@ -68,6 +68,7 @@ export default function PredictionViewer({ prediction }: Props) {
         </h3>
         <KnockoutStep
           groupPredictions={prediction.groupPredictions}
+          advancingThirds={prediction.advancingThirds?.length ? prediction.advancingThirds : undefined}
           knockoutPredictions={prediction.knockoutPredictions}
           setKnockoutPredictions={() => {}}
           onNext={() => {}}

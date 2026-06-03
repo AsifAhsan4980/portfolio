@@ -16,14 +16,19 @@ export type ResolvedTeams = Record<
  */
 export function resolveKnockoutTeams(
   groupPreds: GroupPredictions,
-  knockoutPreds: KnockoutPredictions
+  knockoutPreds: KnockoutPredictions,
+  advancingThirds?: string[]
 ): ResolvedTeams {
   const resolved: ResolvedTeams = {};
 
-  // Collect all third-place teams that the user picked
+  // Collect third-place teams (only from advancing groups if specified)
   const allThirds = new Map<string, string>(); // group -> teamCode
   for (const [group, pred] of Object.entries(groupPreds)) {
-    if (pred?.third) allThirds.set(group, pred.third);
+    if (pred?.third) {
+      if (!advancingThirds || advancingThirds.includes(group)) {
+        allThirds.set(group, pred.third);
+      }
+    }
   }
 
   // Track which thirds have been assigned to bracket slots

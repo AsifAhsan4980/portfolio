@@ -1,11 +1,12 @@
 "use client";
 
 import { groups, getTeamByCode, knockoutMatches } from "@/data/world-cup-2026";
-import type { GroupPredictions, KnockoutPredictions } from "@/types/world-cup";
+import type { GroupPredictions, KnockoutPredictions, AdvancingThirds } from "@/types/world-cup";
 
 interface Props {
   nickname: string;
   groupPredictions: GroupPredictions;
+  advancingThirds: AdvancingThirds;
   knockoutPredictions: KnockoutPredictions;
   champion: string;
   onSave: () => void;
@@ -16,6 +17,7 @@ interface Props {
 export default function ReviewStep({
   nickname,
   groupPredictions,
+  advancingThirds,
   knockoutPredictions,
   champion,
   onSave,
@@ -97,6 +99,37 @@ export default function ReviewStep({
           })}
         </div>
       </div>
+
+      {/* Advancing third-place teams */}
+      {advancingThirds.length > 0 && (
+        <div className="mb-8">
+          <h3 className="text-sm font-mono font-bold mb-3">
+            Advancing 3rd Place Teams
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            {groups.map((g) => {
+              const pred = groupPredictions[g.name];
+              if (!pred?.third) return null;
+              const team = getTeamByCode(pred.third);
+              const isAdvancing = advancingThirds.includes(g.name);
+              return (
+                <div
+                  key={g.name}
+                  className={`flex items-center gap-2 px-3 py-1.5 rounded-lg border text-xs font-mono ${
+                    isAdvancing
+                      ? "border-[#469D89]/40 bg-[#469D89]/10 text-foreground"
+                      : "border-muted-foreground/20 text-muted-foreground/50 line-through"
+                  }`}
+                >
+                  <span>{team?.flag}</span>
+                  <span>{team?.code}</span>
+                  <span className="text-[9px] text-muted-foreground">({g.name})</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* Knockout path summary */}
       <div className="mb-8">

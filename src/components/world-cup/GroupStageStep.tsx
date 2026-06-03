@@ -78,7 +78,7 @@ export default function GroupStageStep({
             }
           `}
         >
-          Fill Bracket →
+          Select Advancing Teams →
         </button>
       </div>
     </div>

@@ -26,6 +26,9 @@ export async function GET(
     nickname: row.nickname,
     createdAt: row.created_at,
     groupPredictions: JSON.parse(row.group_predictions as string),
+    advancingThirds: row.advancing_thirds
+      ? JSON.parse(row.advancing_thirds as string)
+      : [],
     knockoutPredictions: JSON.parse(row.knockout_predictions as string),
     champion: row.champion,
   });

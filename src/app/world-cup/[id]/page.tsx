@@ -71,6 +71,9 @@ export default async function PredictionPage({
     nickname: row.nickname as string,
     createdAt: row.created_at as string,
     groupPredictions: JSON.parse(row.group_predictions as string),
+    advancingThirds: row.advancing_thirds
+      ? JSON.parse(row.advancing_thirds as string)
+      : [],
     knockoutPredictions: JSON.parse(row.knockout_predictions as string),
     champion: row.champion as string,
   };

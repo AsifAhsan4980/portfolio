@@ -9,7 +9,7 @@ import {
   getTeamByCode,
   type KnockoutRound,
 } from "@/data/world-cup-2026";
-import type { GroupPredictions, KnockoutPredictions } from "@/types/world-cup";
+import type { GroupPredictions, KnockoutPredictions, AdvancingThirds } from "@/types/world-cup";
 import {
   resolveKnockoutTeams,
   clearDownstreamPicks,
@@ -18,6 +18,7 @@ import BracketMatch from "./BracketMatch";
 
 interface Props {
   groupPredictions: GroupPredictions;
+  advancingThirds?: AdvancingThirds;
   knockoutPredictions: KnockoutPredictions;
   setKnockoutPredictions: React.Dispatch<
     React.SetStateAction<KnockoutPredictions>
@@ -36,6 +37,7 @@ const BRACKET_HEIGHT = R32_COUNT * SLOT_HEIGHT;
 
 export default function KnockoutStep({
   groupPredictions,
+  advancingThirds,
   knockoutPredictions,
   setKnockoutPredictions,
   onNext,
@@ -53,8 +55,8 @@ export default function KnockoutStep({
   }, []);
 
   const resolvedTeams = useMemo(
-    () => resolveKnockoutTeams(groupPredictions, knockoutPredictions),
-    [groupPredictions, knockoutPredictions]
+    () => resolveKnockoutTeams(groupPredictions, knockoutPredictions, advancingThirds),
+    [groupPredictions, knockoutPredictions, advancingThirds]
   );
 
   const handlePickWinner = (matchId: string, teamCode: string) => {
@@ -344,7 +346,7 @@ export default function KnockoutStep({
             onClick={onBack}
             className="px-6 py-2.5 rounded-xl border border-[#469D89]/30 text-foreground font-mono text-sm hover:border-[#469D89]/60 transition-all"
           >
-            ← Groups
+            ← 3rd Place
           </button>
           <button
             onClick={onNext}
