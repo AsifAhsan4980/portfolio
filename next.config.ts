@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "www.wozaif.com" },
       { protocol: "https", hostname: "s3.ap-southeast-1.amazonaws.com" },
       { protocol: "https", hostname: "www.thedoodleinc.com" },
+      { protocol: "https", hostname: "www.tickettomorrowcdn.com" },
     ],
   },
 };

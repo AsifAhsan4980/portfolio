@@ -86,7 +86,7 @@ export default async function Image() {
                 {/* Stats */}
                 <div style={{ display: "flex", gap: 48, marginTop: 48 }}>
                     <div style={{ display: "flex", flexDirection: "column" }}>
-                        <span style={{ color: "#469D89", fontSize: 30, fontWeight: 700 }}>5+</span>
+                        <span style={{ color: "#469D89", fontSize: 30, fontWeight: 700 }}>6+</span>
                         <span style={{ color: "rgba(255,255,255,0.35)", fontSize: 13, letterSpacing: "0.1em" }}>Years</span>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column" }}>

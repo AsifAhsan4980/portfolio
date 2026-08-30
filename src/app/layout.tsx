@@ -56,7 +56,7 @@ export const metadata: Metadata = {
         "E-Commerce Development",
         "Mobile App Development",
         "Microservices Architecture",
-        "Cocos Studio",
+        "Cocos Creator",
         "Unity Game Engine",
         "Serverless Development",
         "Hire Software Engineer Bangladesh",

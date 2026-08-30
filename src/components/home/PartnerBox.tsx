@@ -81,11 +81,11 @@ function Partners() {
                     },
                 }}
             >
-                <PartnerBox logoSrc="https://www.tickettomorrow.com.bd/_next/static/media/Logo.585c4ecc.svg" altText="Ticket Tomorrow" logoTheme="color" />
+                <PartnerBox logoSrc="https://www.tickettomorrowcdn.com/public/Final-Logo.png" altText="Ticket Tomorrow" logoTheme="color" />
                 <PartnerBox logoSrc="/assets/svg/tribel.png" altText="Tribel" logoTheme="dark" />
                 <PartnerBox logoSrc="https://www.wozaif.com/_next/static/media/navbarLogo.7695c96c.svg" altText="Wozaif" logoTheme="dark" />
+                <PartnerBox logoSrc="https://www.tickettomorrowcdn.com/public/971e6d00-d46b-4adc-bd40-037e16111229.png" altText="Connect Global" logoTheme="color" />
                 <PartnerBox logoSrc="/assets/svg/doodle.png" altText="Doodle" logoTheme="light" />
-                <PartnerBox logoSrc="https://www.pipobazar.com/logo.png" altText="Pipobazar" logoTheme="color" />
             </motion.div>
         </motion.section>
     );

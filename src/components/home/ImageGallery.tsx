@@ -12,7 +12,7 @@ interface StatItem {
 }
 
 const stats: StatItem[] = [
-    { number: 5,  suffix: '+', text: 'Years of Experience',  icon: <FaClock className="w-7 h-7" />,          size: 'large'  },
+    { number: 6,  suffix: '+', text: 'Years of Experience',  icon: <FaClock className="w-7 h-7" />,          size: 'large'  },
     { number: 20, suffix: '+', text: 'Satisfied Customers',  icon: <FaUsers className="w-5 h-5" />,          size: 'normal' },
     { number: 10, suffix: '+', text: 'Delivered Projects',   icon: <FaProjectDiagram className="w-5 h-5" />, size: 'normal' },
     { number: 12, suffix: '+', text: 'Projects are Live',    icon: <FaRocket className="w-5 h-5" />,         size: 'wide'   },

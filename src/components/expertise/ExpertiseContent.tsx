@@ -5,7 +5,7 @@ import ExpertiseCard from "@/components/expertise/ExpertiseCard";
 
 const expertiseData = [
     { title: "Frontend",          skills: ["React", "Next.js", "Angular", "Redux Toolkit", "TypeScript", "Tailwind CSS"] },
-    { title: "Backend",           skills: ["Node.js", "Express", "GraphQL", "REST APIs", "Microservices"] },
+    { title: "Backend",           skills: ["Node.js", "Express", "GraphQL", "REST APIs", "Microservices", "Prisma", "BullMQ", "Socket.io"] },
     { title: "Mobile",            skills: ["Kotlin", "Jetpack Compose", "Swift", "SwiftUI", "Flutter"] },
     { title: "AI Integration",    skills: ["Gemini Nano", "Banana", "Claude (Haiku)", "AI Pipelines", "AI Image Generation", "AI Video Generation"] },
     { title: "WebRTC & Realtime", skills: ["WebRTC", "LiveKit", "Agora SDK", "WebSockets"] },
@@ -13,11 +13,13 @@ const expertiseData = [
     { title: "Databases",         skills: ["PostgreSQL", "MongoDB", "Redis", "DynamoDB", "SQLite", "ClickHouse"] },
     { title: "Languages",         skills: ["TypeScript", "JavaScript", "Kotlin", "Swift", "C++", "Java", "Python", "Dart"] },
     { title: "Design & Creative", skills: ["Figma", "Adobe XD", "Photoshop", "Illustrator", "After Effects", "Premiere Pro", "Media Encoder"] },
-    { title: "Game Engines",       skills: ["Cocos Studio", "Unity"] },
+    { title: "Game Engines",      skills: ["Unity", "Cocos Creator", "Android Studio", "Xcode"] },
     { title: "Infrastructure",    skills: ["Docker", "Kubernetes", "Terraform", "CI/CD", "DigitalOcean"] },
+    { title: "IDEs & Tools",      skills: ["WebStorm", "Rider", "IntelliJ IDEA", "Android Studio", "Xcode", "VS Code", "Postman", "Git"] },
+    { title: "Payments & Media",  skills: ["Stripe", "bKash", "SSLCommerz", "FFmpeg", "AWS Rekognition"] },
     {
         title: "AWS",
-        skills: ["Lambda", "AppSync", "S3", "Cognito", "DynamoDB", "EC2", "Amplify", "API Gateway", "GraphQL", "OpenSearch", "Cloud9", "AWS Glue", "AWS MediaConvert", "Route53"],
+        skills: ["Lambda", "AppSync", "S3", "Cognito", "DynamoDB", "EC2", "Amplify", "API Gateway", "GraphQL", "OpenSearch", "Cloud9", "AWS Glue", "AWS MediaConvert", "Route53", "SES"],
     },
 ];
 

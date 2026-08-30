@@ -4,7 +4,7 @@ import { motion, useMotionValue, useTransform, useSpring, useScroll } from "fram
 import ProfileHeader from "./ProfileHeader";
 import ProfileIntro from "./ProfileIntro";
 import Image from "next/image";
-import img from "@/assets/images/Untitled-1.png";
+import img from "@/assets/images/asif-profile.jpg";
 
 const DataPoint = ({ x, y, delay }: { x: string; y: string; delay: number }) => (
     <motion.div
@@ -150,7 +150,7 @@ const PortfolioHeader = () => {
                         >
                             <div
                                 ref={imageRef}
-                                className="perspective-1000"
+                                className="perspective-1000 w-full max-w-[380px]"
                                 onMouseMove={handleMouseMove}
                                 onMouseLeave={handleMouseLeave}
                             >
@@ -195,9 +195,8 @@ const PortfolioHeader = () => {
                                     <Image
                                         src={img}
                                         alt="Asif Ahsan - Senior Software Engineer"
-                                        height={612}
-                                        width={410}
-                                        className="w-full h-auto relative z-10 rounded-xl"
+                                        fill
+                                        className="object-cover relative z-10 rounded-xl"
                                         priority
                                     />
 

@@ -39,23 +39,42 @@ const row3 = [
     { name: "Kubernetes",     color: "#326CE5" },
     { name: "Terraform",      color: "#7B42BC" },
     { name: "Docker",         color: "#2496ED" },
-    { name: "Cocos Studio",   color: "#55C2E1" },
+    { name: "Cocos Creator",  color: "#55C2E1" },
     { name: "Unity",          color: "#ffffff" },
 ];
 
 const row2 = [
-    { name: "AWS AppSync",   color: "#FF9900" },
-    { name: "AWS Cognito",   color: "#FF9900" },
-    { name: "AWS S3",        color: "#FF9900" },
-    { name: "Express.js",    color: "#ffffff" },
-    { name: "Firebase",      color: "#FFCA28" },
-    { name: "React Native",  color: "#61DAFB" },
-    { name: "Shadcn UI",     color: "#ffffff" },
-    { name: "Material UI",   color: "#007FFF" },
-    { name: "Ant Design",    color: "#0170FE" },
-    { name: "EC2",           color: "#FF9900" },
-    { name: "DigitalOcean",  color: "#0080FF" },
-    { name: "Vercel",        color: "#ffffff" },
+    { name: "AWS AppSync",     color: "#FF9900" },
+    { name: "AWS Cognito",     color: "#FF9900" },
+    { name: "AWS S3",          color: "#FF9900" },
+    { name: "AWS Amplify",     color: "#FF9900" },
+    { name: "AWS Rekognition", color: "#FF9900" },
+    { name: "Express.js",      color: "#ffffff" },
+    { name: "Firebase",        color: "#FFCA28" },
+    { name: "React Native",    color: "#61DAFB" },
+    { name: "Shadcn UI",       color: "#ffffff" },
+    { name: "Material UI",     color: "#007FFF" },
+    { name: "Ant Design",      color: "#0170FE" },
+    { name: "EC2",             color: "#FF9900" },
+    { name: "DigitalOcean",    color: "#0080FF" },
+    { name: "Vercel",          color: "#ffffff" },
+];
+
+const rowTools = [
+    { name: "Redis",              color: "#DC382D" },
+    { name: "Prisma",             color: "#2D3748" },
+    { name: "BullMQ",             color: "#D93435" },
+    { name: "Stripe",             color: "#635BFF" },
+    { name: "SQLite",             color: "#003B57" },
+    { name: "FFmpeg",             color: "#007808" },
+    { name: "JetBrains WebStorm", color: "#00CDD7" },
+    { name: "JetBrains Rider",    color: "#C90F5E" },
+    { name: "IntelliJ IDEA",      color: "#FE315D" },
+    { name: "Android Studio",     color: "#3DDC84" },
+    { name: "Xcode",              color: "#147EFB" },
+    { name: "VS Code",            color: "#007ACC" },
+    { name: "Postman",            color: "#FF6C37" },
+    { name: "Git",                color: "#F05032" },
 ];
 
 const Chip = ({ name, color }: { name: string; color: string }) => (
@@ -120,9 +139,18 @@ const TechStack: React.FC = () => {
             </div>
 
             {/* Row 3 — scrolls left, exploring label */}
-            <div className="overflow-hidden mb-6">
+            <div className="overflow-hidden mb-3">
                 <div className="marquee-track">
                     {[...row3, ...row3].map((tech, i) => (
+                        <Chip key={i} name={tech.name} color={tech.color} />
+                    ))}
+                </div>
+            </div>
+
+            {/* Row Tools — scrolls right */}
+            <div className="overflow-hidden mb-6">
+                <div className="marquee-track-reverse">
+                    {[...rowTools, ...rowTools].map((tech, i) => (
                         <Chip key={i} name={tech.name} color={tech.color} />
                     ))}
                 </div>

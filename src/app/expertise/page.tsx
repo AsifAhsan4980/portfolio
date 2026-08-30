@@ -21,8 +21,11 @@ export const metadata: Metadata = {
         "MongoDB",
         "Docker Kubernetes",
         "Microservices Architecture",
-        "Cocos Studio",
+        "Cocos Creator",
         "Unity Game Engine",
+        "JetBrains WebStorm",
+        "JetBrains Rider",
+        "Redis",
     ],
     alternates: {
         canonical: "https://asifahsan.com/expertise",
@@ -30,7 +33,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Technical Expertise | Asif Ahsan",
         description:
-            "Full-stack technical skills spanning frontend, backend, mobile, cloud, AI, and infrastructure. 6+ years of professional experience across 11 technology categories.",
+            "Full-stack technical skills spanning frontend, backend, mobile, cloud, AI, and infrastructure. 6+ years of professional experience across 14 technology categories.",
         url: "https://asifahsan.com/expertise",
         type: "website",
     },

@@ -62,8 +62,8 @@ const entries: TimelineEntry[] = [
         year: "2025–Present",
         role: "Senior Software Engineer",
         company: "Right Tracks IT · Mohakhali DOHS, Dhaka",
-        description: "Current role — built ZodoLive's admin dashboard from scratch with real-time statistics, RBAC, and Agora SDK integration. Developed Creator AI platform powering Paint and Vida apps with Gemini Nano and Banana AI pipelines. Also building personal projects: Gunti, Nexus RTC, and Nagorik.",
-        tags: ["Next.js", "AWS Lambda", "AppSync", "Agora SDK", "AI", "TypeScript"],
+        description: "Current role — built ZodoLive's admin dashboard from scratch with real-time statistics, RBAC, and Agora SDK integration. Developed Creator AI platform powering Paint and Vida apps with Gemini Nano and Banana AI pipelines. Currently building a mobile game with Unity and Cocos Creator. Also building personal projects: Gunti, Nexus RTC, and Nagorik.",
+        tags: ["Next.js", "AWS Lambda", "AppSync", "Agora SDK", "Unity", "Cocos Creator", "AI"],
         highlight: false,
     },
 ];

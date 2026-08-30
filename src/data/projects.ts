@@ -24,7 +24,7 @@ export const projects: Project[] = [
         timeLine: "September 2023 - Present",
         technologies: ["Next.js", "React", "TypeScript", "Redux", "AWS Lambda", "AppSync", "DynamoDB", "Cognito"],
         responsibilities: "Architected and developed the complete system (frontend, backend, admin dashboard). Built user, organization, ticketing, and promotion systems. Integrated bKash and SSLCommerz with full refund flows. Implemented backend PDF generation and mailing system. Built role-based dynamic UI system. Mentored junior developers and provided architecture guidance. Currently contributing to UI redesign and stadium system.",
-        status: "Ongoing",
+        status: "Live",
         website: "https://tickettomorrow.com.bd",
         challenge: "Building a high-availability ticketing system that handles concurrent ticket purchases without double-selling, while integrating local Bangladeshi payment gateways with full refund flows.",
         outcome: "Reduced page load times by 60% using SSR and AWS CloudFront CDN. Successfully handling thousands of concurrent users during major event launches."
@@ -52,7 +52,7 @@ export const projects: Project[] = [
         timeLine: "January 2024 - Present",
         technologies: ["React", "Node.js", "TypeScript", "AWS Lambda", "AppSync", "S3", "Cognito", "DynamoDB", "PostgreSQL", "Agora SDK"],
         responsibilities: "Built responsive frontend with React. Developed user management (agency/host/reseller), secure single-device login system, diamond transaction system (admin → reseller → user), DynamoDB ↔ PostgreSQL synchronization, PK battle system, post & story backend services, cron jobs (VIP expiry, reports, cleanup), purchase flows, user heartbeat system and analytics, and data migration pipelines.",
-        status: "Ongoing",
+        status: "Live",
         website: "https://www.zlaprit.zodolive.com/home",
         challenge: "Creating an intuitive dashboard that gives operators real-time visibility into thousands of concurrent streams and user activities.",
         outcome: "Reduced operational response time by 45% through real-time dashboards and automated alerting systems."
@@ -66,7 +66,7 @@ export const projects: Project[] = [
         timeLine: "2025 - Present",
         technologies: ["React", "Next.js", "Node.js", "TypeScript", "AWS", "Swift", "Kotlin"],
         responsibilities: "Senior Software Engineer — designing and shipping full-stack web and mobile applications, architecting cloud infrastructure on AWS, and leading technical delivery across multiple client projects.",
-        status: "Ongoing",
+        status: "Live",
         website: "https://www.righttracksit.com/",
         challenge: "Delivering consistent, high-quality custom software across a diverse portfolio of clients with varying technical requirements and timelines.",
         outcome: "Contributing to 20+ client projects across Bangladesh and internationally, spanning fintech, healthcare, and e-commerce verticals."
@@ -94,10 +94,24 @@ export const projects: Project[] = [
         timeLine: "January 2024 - Present",
         technologies: ["Next.js", "React", "TypeScript", "Redux", "Tailwind", "i18n", "AWS Lambda", "AppSync", "S3", "Cognito"],
         responsibilities: "Led development and converted Figma designs into production-ready application. Designed full system architecture (employer, employee, role management). Implemented authentication and authorization systems. Delivered multilingual platform with RTL support.",
-        status: "Ongoing",
+        status: "Live",
         website: "https://www.wozaif.com/",
         challenge: "Building a multilingual job platform that works seamlessly across Arabic, English, and other Asian languages including RTL layout support.",
         outcome: "Launched in 3 countries with full RTL support. Search performance optimized to under 300ms for complex multi-filter queries."
+    },
+    {
+        name: "Connect Global",
+        type: "Influencer & Celebrity Management Platform",
+        image: "https://www.tickettomorrowcdn.com/public/971e6d00-d46b-4adc-bd40-037e16111229.png",
+        description: "A comprehensive influencer and celebrity management platform for talent agencies — covering talent onboarding, profile management, brand deals, campaign management, task workflows, contracts, and payments. Built across three independent apps: public website, admin/manager/influencer dashboard, and backend API.",
+        id: "16",
+        timeLine: "June 2026 - Present",
+        technologies: ["Next.js", "React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "Redis", "BullMQ", "Tailwind CSS", "shadcn/ui", "Redux Toolkit"],
+        responsibilities: "Architecting and building the full platform end-to-end: public marketing site, admin/manager/influencer dashboard, and REST API backend. Designed the RBAC system (Super Admin, Content Admin, Finance Admin, Manager, Influencer), profile edit-approval workflow, task management pipeline, brand CRM, and campaign/contract/payment modules.",
+        status: "Ongoing",
+        website: "https://connectglobal.live/en",
+        challenge: "Designing a multi-tenant RBAC system where influencers, managers, and admins each get scoped access — plus a profile edit-approval workflow that keeps public portfolio pages accurate without giving talent direct publish access.",
+        outcome: "Core auth, RBAC, profile management, and task workflow modules are live in development; public talent portfolio pages and dashboard are actively being built out."
     },
     {
         name: "Pipo Bazar",

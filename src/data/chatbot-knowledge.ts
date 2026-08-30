@@ -50,7 +50,7 @@ export const intents: Intent[] = [
         patterns: [/what\s*(tech|tools|languages|skills)/i, /tech\s*stack/i, /what\s*can\s*(he|you)\s*(do|build)/i],
         priority: 5,
         response: {
-            text: "Here's my tech stack:\n\n- Frontend: React, Next.js, Angular, TypeScript, Tailwind CSS\n- Backend: Node.js, Express, GraphQL, REST APIs\n- Mobile: Kotlin, Swift, Flutter, Jetpack Compose\n- Cloud: AWS (Lambda, AppSync, DynamoDB, S3, Cognito, EC2)\n- Databases: PostgreSQL, MongoDB, DynamoDB, Redis, ClickHouse\n- DevOps: Docker, Kubernetes, Terraform, CI/CD\n- Real-Time: WebRTC, Agora SDK, WebSockets\n- AI/ML: Gemini Nano, Banana, Claude API\n- Game Engines: Cocos Studio, Unity\n- Design: Figma, Adobe XD, Photoshop, After Effects",
+            text: "Here's my tech stack:\n\n- Frontend: React, Next.js, Angular, TypeScript, Tailwind CSS\n- Backend: Node.js, Express, GraphQL, REST APIs, Prisma, BullMQ\n- Mobile: Kotlin, Swift, Flutter, Jetpack Compose\n- Cloud: AWS (Lambda, AppSync, DynamoDB, S3, Cognito, EC2, Amplify, Rekognition)\n- Databases: PostgreSQL, MongoDB, DynamoDB, Redis, SQLite, ClickHouse\n- DevOps: Docker, Kubernetes, Terraform, CI/CD\n- Real-Time: WebRTC, Agora SDK, WebSockets\n- AI/ML: Gemini Nano, Banana, Claude API\n- Game Engines: Unity, Cocos Creator\n- IDEs & Tools: JetBrains WebStorm, JetBrains Rider, Android Studio, Xcode, VS Code, Postman, Git\n- Design: Figma, Adobe XD, Photoshop, After Effects",
             chips: ["Projects", "Services", "Experience"],
             links: [{ label: "View All Expertise", url: "/expertise" }],
         },
