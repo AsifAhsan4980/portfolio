@@ -29,6 +29,7 @@ export const projects: Project[] = [
         challenge: "Building a high-availability ticketing system that handles concurrent ticket purchases without double-selling, while integrating local Bangladeshi payment gateways with full refund flows.",
         outcome: "Reduced page load times by 60% using SSR and AWS CloudFront CDN. Successfully handling thousands of concurrent users during major event launches."
     },
+    /* Hidden: ZodoLive projects
     {
         name: "ZodoLive",
         type: "Live Streaming Platform",
@@ -57,6 +58,7 @@ export const projects: Project[] = [
         challenge: "Creating an intuitive dashboard that gives operators real-time visibility into thousands of concurrent streams and user activities.",
         outcome: "Reduced operational response time by 45% through real-time dashboards and automated alerting systems."
     },
+    */
     {
         name: "Right Tracks IT",
         type: "Custom Software Development",
